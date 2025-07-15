@@ -778,7 +778,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"bookingStatus\": \"CONFIRMED\",\n    \"currentDate\": \"2025-07-27\" \n}",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"bookingStatus\": \"CONFIRMED\",\n    \"currentDate\": \"2025-07-24\" \n}",
 					"options": {
 						"raw": {
 							"language": "json"
