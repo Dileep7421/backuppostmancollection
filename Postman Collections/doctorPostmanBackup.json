@@ -1,0 +1,1075 @@
+{
+	"info": {
+		"_postman_id": "7fe81a69-d283-4941-b4a9-01f677233e10",
+		"name": "Doctor's API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create-doctor-details",
+			"id": "65100e75-17d7-40b5-ac12-91bb4d1bb7e6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"Ganesh\",\r\n    \"title\": \"Dr\",\r\n    \"gender\": \"Male\",\r\n    \"email\": \"ampoludileep8@gmail.com\",\r\n    \"mobileNumber\": \"917075960581\",\r\n    \"city\": \"Los Angeles\",\r\n    \"identityProof\": \"Passport98765\",\r\n    \"mobileVerified\": true,\r\n    \"specialty\": \"Dermatologist\",\r\n    \"serviceStatus\": \"PENDING_REVIEW\",\r\n    \"personalDetailsStatus\": \"PENDING_REVIEW\",\r\n    \"images\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"identityProofFile\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"education\": [\r\n        {\r\n            \"degree\": \"MBBS\",\r\n            \"university\": \"Stanford University School of Medicine\",\r\n            \"startYear\": 2011,\r\n            \"endYear\": 2016,\r\n            \"location\": \"Stanford, CA\",\r\n            \"status\": \"PENDING_REVIEW\",\r\n            \"eductionCertificates\": [\r\n                {\r\n                    \"bucket\": \"aesthetics\",\r\n                    \"object\": \"image/doctor-icon.jpg\"\r\n                }\r\n            ]\r\n        }\r\n    ],\r\n    \"experiences\": [\r\n        {\r\n            \"clinicOrHospitalName\": \"Sunshine Clinic\",\r\n            \"position\": \"Consultant Dermatologist\",\r\n            \"startDate\": \"03/2018\",\r\n            \"endDate\": \"Present\",\r\n            \"location\": \"Los Angeles, CA\",\r\n            \"status\": \"PENDING_REVIEW\",\r\n            \"experienceCertificates\": [\r\n                {\r\n                    \"bucket\": \"aesthetics\",\r\n                    \"object\": \"image/doctor-icon.jpg\"\r\n                }\r\n            ],\r\n            \"workingHere\": false\r\n        }\r\n    ],\r\n    \"licenses\": [\r\n        {\r\n            \"hprId\": \"HPR654321\",\r\n            \"licenseNumber\": \"LIC123456\",\r\n            \"specialization\": \"Dermatology\",\r\n            \"registrationCouncil\": \"California Medical Board\",\r\n            \"registrationYear\": 2017,\r\n            \"validTill\": 2032,\r\n            \"status\": \"PENDING_REVIEW\",\r\n            \"licenseCertificates\": [\r\n                {\r\n                    \"bucket\": \"aesthetics\",\r\n                    \"object\": \"image/doctor-icon.jpg\"\r\n                }\r\n            ]\r\n        }\r\n    ],\r\n    \"services\": [\r\n        \"Cosmetic Surgery\"\r\n    ],\r\n    \"clinicDetails\": [\r\n        {\r\n            \"clinicName\": \"SunBorn Clinic\",\r\n            \"address\": \"826, Main Street, HBR Layout\",\r\n            \"city\": \"Bengaluru\",\r\n            \"pincode\": \"578259\",\r\n            \"locality\": \"HBR Layout\",\r\n            \"state\": \"Karnataka\",\r\n            \"sessionDetails\": [\r\n                {\r\n                    \"day\": \"Monday\",\r\n                    \"sessionTimings\": [\r\n                        {\r\n                            \"startTime\": \"09:00\",\r\n                            \"endTime\": \"12:00\"\r\n                        },\r\n                        {\r\n                            \"startTime\": \"14:00\",\r\n                            \"endTime\": \"17:00\"\r\n                        }\r\n                    ]\r\n                },\r\n                {\r\n                    \"day\": \"Wednesday\",\r\n                    \"sessionTimings\": [\r\n                        {\r\n                            \"startTime\": \"10:00\",\r\n                            \"endTime\": \"13:00\"\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \"status\": \"PENDING_REVIEW\"\r\n        },\r\n        {\r\n            \"clinicName\": \"SkinAesthetics Hub\",\r\n            \"address\": \"265, Main Street, Indiranagar\",\r\n            \"city\": \"Hyderabad\",\r\n            \"pincode\": \"584907\",\r\n            \"locality\": \"Hitech City\",\r\n            \"state\": \"Telangana\",\r\n            \"sessionDetails\": [\r\n                {\r\n                    \"day\": \"Monday\",\r\n                    \"sessionTimings\": [\r\n                        {\r\n                            \"startTime\": \"09:00\",\r\n                            \"endTime\": \"12:00\"\r\n                        },\r\n                        {\r\n                            \"startTime\": \"14:00\",\r\n                            \"endTime\": \"17:00\"\r\n                        }\r\n                    ]\r\n                },\r\n                {\r\n                    \"day\": \"Wednesday\",\r\n                    \"sessionTimings\": [\r\n                        {\r\n                            \"startTime\": \"10:00\",\r\n                            \"endTime\": \"13:00\"\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \"status\": \"PENDING_REVIEW\"\r\n        }\r\n    ],\r\n    \"onboardingStatus\": \"PENDING_REVIEW\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/details"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-doctor-details",
+			"id": "2387a516-71b6-4bff-9f56-898e5fb125d2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"searchBy\":\"\",\r\n    \"pageNumber\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/get-all-doctor-details"
+			},
+			"response": []
+		},
+		{
+			"name": "get-doctor-details-by-id",
+			"id": "41ee5f92-438f-4799-a7e5-12d88c75924b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-id?id=4e4957bb-7934-450b-b8d7-b52d3bc7a09e",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"doctor",
+						"onboarding",
+						"get-doctor-details-by-id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4e4957bb-7934-450b-b8d7-b52d3bc7a09e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-doctor-details-by-id",
+			"id": "b3dce458-9d6f-479d-a73c-33d574d3b5ed",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/doctor/onboarding/delete-doctor-details-by-id?id=5d54a3d4-fd0b-4d3a-b3d6-c0410e9887db",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"doctor",
+						"onboarding",
+						"delete-doctor-details-by-id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5d54a3d4-fd0b-4d3a-b3d6-c0410e9887db",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_doctor_details",
+			"id": "e2d67bad-4d24-4c3b-acea-00ac54f74b18",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\r\n        \"fullName\": \"Dr. Jane Smith1\",\r\n        \"title\": \"MD\",\r\n        \"gender\": \"Female\",\r\n        \"email\": \"janesmith1@example.com\",\r\n        \"mobileNumber\": \"98765432181\",\r\n        \"city\": \"Los Angeles\",\r\n        \"identityProof\": \"Passport98765\",\r\n        \"mobileVerified\": true,\r\n        \"specialty\": \"Dermatologist\",\r\n        \"images\": {\r\n            \"id\": \"32bfc4f2-5b2f-4177-87d4-3b20474e1d13\",\r\n            \"bucket\": \"aesthetics\",\r\n            \"object\": \"image/doctor-icon.jpg\"\r\n        },\r\n        \"identityProofFile\": {\r\n            \"id\": \"f05c90e0-9c3b-4574-9ebd-bed1af161496\",\r\n            \"bucket\": \"aesthetics\",\r\n            \"object\": \"image/doctor-icon.jpg\"\r\n        },\r\n        \"education\": [\r\n            {\r\n                \"id\": \"c9fb3c74-42ff-4d79-a9d0-44f0a1c1ab98\",\r\n                \"degree\": \"MBBS\",\r\n                \"university\": \"Stanford University School of Medicine\",\r\n                \"startYear\": 2011,\r\n                \"endYear\": 2016,\r\n                \"location\": \"Stanford, CA\",\r\n                \"eductionCertificates\": [\r\n                    {\r\n                        \"id\": \"a5cfb98d-489c-4dee-a950-c81c1a38a376\",\r\n                        \"bucket\": \"aesthetics\",\r\n                        \"object\": \"image/doctor-icon.jpg\"\r\n                    }\r\n                ],\r\n                \"status\": \"PENDING_REVIEW\"\r\n            }\r\n        ],\r\n        \"experiences\": [\r\n            {\r\n                \"id\": \"6c045b8f-5808-4109-a8d6-5879d9abb065\",\r\n                \"clinicOrHospitalName\": \"Sunshine Clinic\",\r\n                \"position\": \"Consultant Dermatologist\",\r\n                \"startDate\": \"03/2018\",\r\n                \"endDate\": \"Present\",\r\n                \"location\": \"Los Angeles, CA\",\r\n                \"experienceCertificates\": [\r\n                    {\r\n                        \"id\": \"cc357f2a-95b0-4f5a-9075-d2d561776b07\",\r\n                        \"bucket\": \"aesthetics\",\r\n                        \"object\": \"image/doctor-icon.jpg\"\r\n                    }\r\n                ],\r\n                \"status\": \"PENDING_REVIEW\",\r\n                \"workingHere\": false\r\n            }\r\n        ],\r\n        \"licenses\": [\r\n            {\r\n                \"id\": \"f8d90740-1131-4b5f-a080-4560e7aae3f3\",\r\n                \"hprId\": \"HPR654321\",\r\n                \"licenseNumber\": \"LIC123456\",\r\n                \"specialization\": \"Dermatology\",\r\n                \"registrationCouncil\": \"California Medical Board\",\r\n                \"registrationYear\": 2017,\r\n                \"validTill\": 2032,\r\n                \"licenseCertificates\": [\r\n                    {\r\n                        \"id\": \"c70a3919-a491-438f-938f-4a680369213d\",\r\n                        \"bucket\": \"aesthetics\",\r\n                        \"object\": \"image/doctor-icon.jpg\"\r\n                    }\r\n                ],\r\n                \"hprValidationStatus\": \"PENDING_REVIEW\",\r\n                \"hprResponseJson\": null,\r\n                \"status\": \"PENDING_REVIEW\"\r\n            }\r\n        ],\r\n        \"createdOn\": \"2025-06-10T20:02:20.5105\",\r\n        \"updatedOn\": \"2025-06-10T20:02:20.5105\",\r\n        \"onboardingStatus\": \"PENDING_REVIEW\",\r\n        \"deletedAt\": null,\r\n        \"clinicDetails\": [\r\n            {\r\n                \"id\": \"7d32711f-437d-40d5-be50-ef2533776b16\",\r\n                \"clinicName\": \"Rejuvenate Wellness\",\r\n                \"sessionDetails\": [\r\n                    {\r\n                        \"id\": \"07c1a62f-267b-470a-8703-ee60f4c9ef4d\",\r\n                        \"day\": \"Monday\",\r\n                        \"sessionTimings\": [\r\n                            {\r\n                                \"id\": \"7252e754-3ff5-4217-a8ad-a2a8068f3e3c\",\r\n                                \"startTime\": \"09:00\",\r\n                                \"endTime\": \"12:00\"\r\n                            },\r\n                            {\r\n                                \"id\": \"cee48231-fd53-487b-ae3a-e8b478833101\",\r\n                                \"startTime\": \"14:00\",\r\n                                \"endTime\": \"17:00\"\r\n                            }\r\n                        ]\r\n                    },\r\n                    {\r\n                        \"id\": \"8e6a271d-06f4-4b68-a2a9-d8d9794f983e\",\r\n                        \"day\": \"Wednesday\",\r\n                        \"sessionTimings\": [\r\n                            {\r\n                                \"id\": \"f385c52a-d106-4a96-a16e-ef93db033639\",\r\n                                \"startTime\": \"10:00\",\r\n                                \"endTime\": \"13:00\"\r\n                            }\r\n                        ]\r\n                    }\r\n                ],\r\n                \"status\": \"PENDING_REVIEW\"\r\n            },\r\n              {\r\n            \"clinicName\": \"SkinAesthetics Hub\",\r\n            \"sessionDetails\": [\r\n                {\r\n                    \"day\": \"Monday\",\r\n                    \"sessionTimings\": [\r\n                        {\r\n                            \"startTime\": \"09:00\",\r\n                            \"endTime\": \"12:00\"\r\n                        },\r\n                        {\r\n                            \"startTime\": \"14:00\",\r\n                            \"endTime\": \"17:00\"\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \"status\": \"PENDING_REVIEW\"\r\n        }\r\n        ],\r\n        \"services\": [\r\n            \"Cosmetic Surgery\"\r\n        ],\r\n        \"serviceStatus\": \"PENDING_REVIEW\",\r\n        \"personalDetailsStatus\": \"PENDING_REVIEW\",\r\n        \"distance\": 0.0,\r\n        \"updated\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/details"
+			},
+			"response": []
+		},
+		{
+			"name": "file-upload",
+			"id": "867f8273-bef4-4cf4-8339-e1201b6d7676",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/pdf",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"uuid": "0390cb42-1252-4e45-af6a-41ce768142c7",
+							"src": "postman-cloud:///1f02dba3-cc4e-48f0-a186-69d27499ca35"
+						},
+						{
+							"key": "type",
+							"value": "image",
+							"type": "text",
+							"uuid": "26095e83-86b9-42a5-9238-3c3a8dacb1a6"
+						}
+					]
+				},
+				"url": "localhost:8081/user-service/file/upload"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-metadata",
+			"id": "d44c330b-f116-44b8-8fd7-1f551f4e3776",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8081/user-service/doctor/onboarding/get-metadata"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-clinics",
+			"id": "a6108bb8-1ccb-43c1-9187-94b9b88c83d8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"searchBy\": \"\",\r\n    \"pageNumber\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/get-all-clinics"
+			},
+			"response": []
+		},
+		{
+			"name": "create-clinic",
+			"id": "b33e673c-15b6-4111-87f2-bf7b1b51ffaa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjZlODk1YzQ3YTA0YzVmNmRlMzExMmFmZjE2ODFhMzUwNzdkMWNjZDQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vb3RwZ2VuZXJhdGlvbi0xNzc3ZiIsImF1ZCI6Im90cGdlbmVyYXRpb24tMTc3N2YiLCJhdXRoX3RpbWUiOjE3NDkwNjExMjEsInVzZXJfaWQiOiJVcTB0UGk4WWRVU2FkZFZkelBBTjV6VXU3aEQzIiwic3ViIjoiVXEwdFBpOFlkVVNhZGRWZHpQQU41elV1N2hEMyIsImlhdCI6MTc0OTE5NjE2MywiZXhwIjoxNzQ5MTk5NzYzLCJwaG9uZV9udW1iZXIiOiIrOTE5NDQ0MjQ2NDczIiwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJwaG9uZSI6WyIrOTE5NDQ0MjQ2NDczIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGhvbmUifX0.R5Y1j9oEjzCtVGuXSfxbu_ZRbOCxEqzz2abziEDK-PMWzyGko-6VTyeTapHJYBil5cbMFSXnxaLwtucsz2KGkfP1fjEWJUwyOJ5JfEP0EDf8-kS0XFuW9y_3mSNBquFABAqR1f82l_gNfxaVoSmVZWdckNjGTYRZ1zm1t3w8_kPbWq9sHR6bpcDAmsjtLGrMe8Sy63U4n4htNCWdBAaLgyPCqiWdBW8_Fs4zobMEYhPXgmVY3Vc4w7fEmObEgPm20JPWRkFVaj5L7YobmIr3OtIUztH9VmcSQbQDn-c0snLUI86nzcjViyRIbTLvt9tGh_Sj8IlmRBoEXRGQsaeOdQ"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address\": \"941, Main Street, Banjara Hills\",\r\n    \"city\": \"Chennai\",\r\n    \"locality\": \"Banjara Hills\",\r\n    \"name\": \"Rejuvenate Wellness\",\r\n    \"pincode\": \"570047\",\r\n    \"source\": \"USER_ADDED\",\r\n    \"state\": \"Tamil Nadu\",\r\n    \"status\": \"APPROVED\",\r\n    \"workingDays\": \"Mon,Tue,Wed,Thu,Fri\",\r\n    \"workingHours\": \"10:00 AM to 07:00 PM\",\r\n    \"description\": \"Known for its personalized cosmetic surgery consults and patient care.\",\r\n    \"clinicLogo\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/clinic-logo.png\"\r\n    },\r\n    \"clinicImages\": [\r\n        {\r\n            \"bucket\": \"aesthetics\",\r\n            \"object\": \"image/clinic-image.png\"\r\n        }\r\n    ]\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dev-api-gateway.aesthatiq.com/user-service/doctor/onboarding/create-clinic"
+			},
+			"response": []
+		},
+		{
+			"name": "get-clinic-by-id",
+			"id": "f9ceee19-15d5-4ddc-b203-cad9a707beb2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-clinic-by-id?id=6ae72bdf-8ebd-4ef0-a547-9c46410e5b04",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"doctor",
+						"onboarding",
+						"get-clinic-by-id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6ae72bdf-8ebd-4ef0-a547-9c46410e5b04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clinicDataJson",
+			"id": "96329578-9a9b-4348-b9a5-f4d88e81632f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"address\": \"997, Main Street, Anna Nagar\",\r\n    \"city\": \"Delhi\",\r\n    \"locality\": \"Anna Nagar\",\r\n    \"name\": \"Elite Aesthetic Centre\",\r\n    \"pincode\": \"581135\",\r\n    \"source\": \"USER_ADDED\",\r\n    \"state\": \"Delhi\",\r\n    \"status\": \"APPROVED\",\r\n    \"workingDays\": \"Mon,Tue,Wed,Thu,Fri\",\r\n    \"workingHours\": \"10:00 AM to 07:00 PM\",\r\n    \"description\": \"Luxury wellness space offering skincare, haircare, and non-surgical enhancements.\",\r\n    \"clinicLogo\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/clinic-logo.png\"\r\n    },\r\n    \"clinicImages\": [\r\n        {\r\n            \"bucket\": \"aesthetics\",\r\n            \"object\": \"image/clinic-image.png\"\r\n        }\r\n    ]\r\n  },\r\n  {\r\n    \"address\": \"265, Main Street, Indiranagar\",\r\n    \"city\": \"Hyderabad\",\r\n    \"locality\": \"Indiranagar\",\r\n    \"name\": \"SkinAesthetics Hub\",\r\n    \"pincode\": \"584907\",\r\n    \"source\": \"ADMIN_ADDED\",\r\n    \"state\": \"Telangana\",\r\n    \"status\": \"APPROVED\",\r\n    \"workingDays\": \"Mon,Tue,Wed,Thu,Fri\",\r\n    \"workingHours\": \"10:00 AM to 07:00 PM\",\r\n    \"description\": \"Specializes in skin rejuvenation and laser hair removal services.\",\r\n    \"clinicLogo\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/clinic-logo.png\"\r\n    },\r\n    \"clinicImages\": [\r\n        {\r\n            \"bucket\": \"aesthetics\",\r\n            \"object\": \"image/clinic-image.png\"\r\n        }\r\n    ]\r\n  },\r\n  {\r\n    \"address\": \"546, Main Street, Jubilee Hills\",\r\n    \"city\": \"Mumbai\",\r\n    \"locality\": \"Jubilee Hills\",\r\n    \"name\": \"The Hair & Laser Studio\",\r\n    \"pincode\": \"577759\",\r\n    \"source\": \"ADMIN_ADDED\",\r\n    \"state\": \"Maharashtra\",\r\n    \"status\": \"APPROVED\",\r\n    \"workingDays\": \"Mon,Tue,Wed,Thu,Fri\",\r\n    \"workingHours\": \"10:00 AM to 07:00 PM\",\r\n    \"description\": \"Advanced trichology and injectables clinic with certified doctors.\",\r\n    \"clinicLogo\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/clinic-logo.png\"\r\n    },\r\n    \"clinicImages\": [\r\n        {\r\n            \"bucket\": \"aesthetics\",\r\n            \"object\": \"image/clinic-image.png\"\r\n        }\r\n    ]\r\n  },\r\n  {\r\n    \"address\": \"826, Main Street, HBR Layout\",\r\n    \"city\": \"Bengaluru\",\r\n    \"locality\": \"HBR Layout\",\r\n    \"name\": \"SunBorn Clinic\",\r\n    \"pincode\": \"578259\",\r\n    \"source\": \"USER_ADDED\",\r\n    \"state\": \"Karnataka\",\r\n    \"status\": \"APPROVED\",\r\n    \"workingDays\": \"Mon,Tue,Wed,Thu,Fri\",\r\n    \"workingHours\": \"10:00 AM to 07:00 PM\",\r\n    \"description\": \"A premium clinic offering aesthetic dermatology and anti-aging treatments.\",\r\n    \"clinicLogo\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/clinic-logo.png\"\r\n    },\r\n    \"clinicImages\": [\r\n        {\r\n            \"bucket\": \"aesthetics\",\r\n            \"object\": \"image/clinic-image.png\"\r\n        }\r\n    ]\r\n  },\r\n  {\r\n    \"address\": \"941, Main Street, Banjara Hills\",\r\n    \"city\": \"Chennai\",\r\n    \"locality\": \"Banjara Hills\",\r\n    \"name\": \"Rejuvenate Wellness\",\r\n    \"pincode\": \"570047\",\r\n    \"source\": \"USER_ADDED\",\r\n    \"state\": \"Tamil Nadu\",\r\n    \"status\": \"APPROVED\",\r\n    \"workingDays\": \"Mon,Tue,Wed,Thu,Fri\",\r\n    \"workingHours\": \"10:00 AM to 07:00 PM\",\r\n    \"description\": \"Known for its personalized cosmetic surgery consults and patient care.\",\r\n    \"clinicLogo\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/clinic-logo.png\"\r\n    },\r\n    \"clinicImages\": [\r\n        {\r\n            \"bucket\": \"aesthetics\",\r\n            \"object\": \"image/clinic-image.png\"\r\n        }\r\n    ]\r\n  }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get-doctor-details-by-mobile-number",
+			"id": "bcaa9d01-2045-457c-9da5-390ce05f1f40",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-mobile-number?mobileNumber=9198765432181",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"doctor",
+						"onboarding",
+						"get-doctor-details-by-mobile-number"
+					],
+					"query": [
+						{
+							"key": "mobileNumber",
+							"value": "9198765432181"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-doctor-status",
+			"id": "bb6c2fb0-ab0e-43cc-8e17-644b836228a8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": \"0701f00d-af1c-4644-8313-1fc6daaf4801\",\r\n        \"status\": \"PENDING_REVIEW\",\r\n        \"type\": \"ONBOARDED_DETAILS\",\r\n        \"doctorId\": \"0701f00d-af1c-4644-8313-1fc6daaf4801\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/update-doctor-status"
+			},
+			"response": []
+		},
+		{
+			"name": "booking-get-all-doctor-details",
+			"id": "edd636ed-7ce0-41e3-8b6f-972c476fd5de",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=958D030929EE8520B0BB5745AED57A8A"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"category\": \"Cosmetic Surgery\",\n    \"unit\": \"km\",\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/booking/get-all-doctor-details"
+			},
+			"response": []
+		},
+		{
+			"name": "booking-get-approved-doctor-by-id",
+			"id": "3121214b-f3d7-4cee-a095-61928f584c22",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=958D030929EE8520B0BB5745AED57A8A; JSESSIONID=A238123F8BB582C97ACCA4C75D0EC225"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"unit\": \"km\",\n    \"doctorId\": \"09b95a97-bdac-42f4-b95d-8acf5f0ca73e\",\n    \"clinicName\": \"The Hair & Laser Studio\",\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/booking/get-approved-doctor-by-id"
+			},
+			"response": []
+		},
+		{
+			"name": "add-favorite-doctor",
+			"id": "591ac97b-9c9d-411c-a489-c889aff69660",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\",\r\n    \"doctorId\": \"e93b848d-7e5e-4fe7-baa3-14005d03f2b2\",\r\n    \"clinicName\": \"SkinAesthetics Hub\",\r\n    \"favorite\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/booking/add-favorite-doctor"
+			},
+			"response": []
+		},
+		{
+			"name": "remove-favorite-doctor",
+			"id": "46ab2f11-3aee-4e1e-9f97-8c3fa96242d0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\",\r\n    \"doctorId\": \"e93b848d-7e5e-4fe7-baa3-14005d03f2b2\",\r\n    \"clinicName\": \"SkinAesthetics Hub\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/booking/remove-favorite-doctor"
+			},
+			"response": []
+		},
+		{
+			"name": "get-booked-slots-by-patient",
+			"id": "f884b977-10d1-47e8-ae9b-92bea984823b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\",\n    \"pageNumber\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/booking/get-booked-slots-by-patient"
+			},
+			"response": []
+		},
+		{
+			"name": "update-booked-slot-status",
+			"id": "cae0dc0d-ee53-4036-bebd-6b8f028a193c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"slotId\": \"92d658be-33c6-454f-875a-439564640837\",\r\n  \"status\": \"CANCELLED\",\r\n  \"updatedOn\": \"2025-07-15T14:00:41.394318\",\r\n  \"endTime\": \"22:30\",\r\n    \"orderId\": \"order_QjjFJbLT1a1ifY\",\r\n    \"notificationRequest\": {\r\n        \"patientName\": \"John Doe\",\r\n        \"doctorName\": \"Dr. Smith\",\r\n        \"bookingId\": \"BK123456\",\r\n        \"serviceName\": \"General Consultation\",\r\n        \"slotDate\": \"2025-07-01\",\r\n        \"slotTime\": \"10:30 AM\",\r\n        \"cancellationReason\": \"Patient not available\",\r\n        \"clinicName\": \"HealthCare Clinic\",\r\n        \"clinicAddress\": \"123 Main Street, Springfield\",\r\n        \"patientMobileNumber\": \"917075960589\",\r\n        \"patientEmailId\": \"ampoludileep7@gmail.com\",\r\n        \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\",\r\n        \"amount\": \"15000\",\r\n        \"deviceTokens\": {\r\n            \"patientDeviceToken\": \"fM1dwls_TmOLnjdpz2ubsn:APA91bGgJNm-ufAz3uGQIXpMtXVdDoTtkRWcH1OGfav1tiNkGpNjoDrZ5LNv3QQ3UE5TL0RPmOx4-8sXHGQymAW24Bvs1tcvitBiKUSZvlC3ifnstqMj9Zs\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/user-service/booking/update-booked-slot-status"
+			},
+			"response": []
+		},
+		{
+			"name": "get-booked-slots",
+			"id": "8f8319a3-5a8a-4a59-8c8a-482749d08743",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\r\n    \"clinicName\": \"SkinAesthetics Hub\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/booking/get-booked-slots"
+			},
+			"response": []
+		},
+		{
+			"name": "booking-slot",
+			"id": "6a80d7d6-f1fa-42ca-99a6-febd363ac738",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"slotTime\": \"09:00\",\r\n  \"slotDate\": \"2025-07-26\",\r\n  \"slotDay\": \"Monday\",\r\n  \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\r\n  \"patientId\": \"907974a8-f222-42d2-b49a-a02e7c53f4a0\",\r\n  \"clinicName\": \"SkinAesthetics Hub\",\r\n  \"serviceId\": \"123f6391-ac1d-4884-a66e-6cb64499cc49\",\r\n  \"serviceName\": \"Thigh Lift\",\r\n  \"createdOn\": \"2025-07-08T22:55:21.720852\",\r\n  \"patientServiceType\": \"CONSULT_DOCTOR\",\r\n  \"consultationType\": \"ONLINE_CONSULTATION\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/booking/booking-slot"
+			},
+			"response": []
+		},
+		{
+			"name": "payment-create-order",
+			"id": "12fd1895-0706-4e5b-85a0-8d2e1f34b022",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amount\": 1500,\r\n  \"currency\": \"INR\",\r\n  \"createdAt\": \"2025-06-22T10:30:23.720852\",\r\n  \"serviceId\": \"123f6391-ac1d-4884-a66e-6cb64499cc49\",\r\n  \"serviceName\": \"Thigh Lift\",\r\n  \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\r\n  \"clinicId\": \"6ae72bdf-8ebd-4ef0-a547-9c46410e5b04\",\r\n  \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8088/payment-service/api/payment/create-order"
+			},
+			"response": []
+		},
+		{
+			"name": "payment-update-order-status",
+			"id": "ffa1b559-2715-419f-918e-573855810333",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg3NzQ4NTAwMmYwNWJlMDI2N2VmNDU5ZjViNTEzNTMzYjVjNThjMTIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vb3RwZ2VuZXJhdGlvbi0xNzc3ZiIsImF1ZCI6Im90cGdlbmVyYXRpb24tMTc3N2YiLCJhdXRoX3RpbWUiOjE3NTE0NTU5NzUsInVzZXJfaWQiOiJNZ3JWbDNxQU0yZnFja01IRnlJWnM1bFU3YkoyIiwic3ViIjoiTWdyVmwzcUFNMmZxY2tNSEZ5SVpzNWxVN2JKMiIsImlhdCI6MTc1MTQ1NTk3NSwiZXhwIjoxNzUxNDU5NTc1LCJlbWFpbCI6InByaXR1c2gua2hhZGVAZGltZW5zaW9ubGVhcC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsicHJpdHVzaC5raGFkZUBkaW1lbnNpb25sZWFwLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.j4SJpbi4GVIXk4D8laDj8QVGwn-iz-7EKBFkSuE5kGQEeHujrw1Q8AZIkaxuURIKJKRi8_sS446J0p7fHfPmuMKTNWNRU3iVN-V3T5cyvAvwy86B2NmeGxGWyFY5bzscQOldLXuT_QF66HCCBmTXzjv_8qil5o5K99cHFx0M_Kr9SvQ2yjAz8wQnRiMSwujjSuiquHZTvn07947K3cLA-TXFrfLGrQ1XMrvtP_gwgT2okvJGWexo_TP8Tr8x_CADGJ2f8lCKrYM5V17zW6a0pgzkXg7dQFQdpwqB3yd7edUPsUDyUJQiaZsq2VvoUbwkBSNzdk0QyFXsC4n4x8Me-g"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"order_QjjFJbLT1a1ifY\",\r\n    \"status\": \"SUCCESSFUL\",\r\n    \"paymentId\": \"pay_QjjFJbLT1a1ifY\",\r\n    \"doctorName\": \"Ravi\",\r\n    \"patientName\": \"Kumar\",\r\n    \"serviceName\": \"Thigh Lift\",\r\n    \"slotDate\": \"23-06-2025\",\r\n    \"slotTime\": \"5:30 PM\",\r\n    \"doctorId\": \"36da0f7d-692f-435d-9f1c-910783121adb\",\r\n    \"patientId\": \"36da0f7d-692f-435d-9f1c-910783121ad5\",\r\n    \"patientMobileNumber\": \"917075960589\",\r\n    \"doctorMobileNumber\": \"917075960589\",\r\n    \"patientEmailId\": \"ampoludileep8@gmail.com\",\r\n    \"doctorEmailId\": \"ampoludileep7@gmail.com\",\r\n    \"slotId\": \"e6abe041-6bd0-4400-a2b1-109c19ef3eb4\",\r\n    \"updatedOn\": \"2025-07-05T10:30:01.720852\",\r\n    \"bookingId\": \"AST-SB-20250624-225522-0001\",\r\n    \"amount\": \"15000\",\r\n    \"clinicName\": \"SkinAesthetics Hub\",\r\n    \"clinicAddress\": \"Hyderabad\",\r\n    \"deviceTokens\": {\r\n        \"doctorDeviceToken\": \"cMMy3mVOQX2gsydvjvvyNS:APA91bEFUUt9xpTBpAVinOZflk9ZC3-uAv8hW_jjb6mpXKg924uG9PpwS-CuC60c4RXjN4BxCwnmLkYic-09TL8ZLhQEKxbVxMC-sf0VTaXhM7iF88QIK1Q\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8093/payment-service/api/payment/update-order-status"
+			},
+			"response": []
+		},
+		{
+			"name": "update-device-token",
+			"id": "07ad8d18-cee5-4888-a454-7009ae035492",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"deviceToken\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/update-device-token"
+			},
+			"response": []
+		},
+		{
+			"name": "update-admin-device-token",
+			"id": "f9b87754-bb53-49ea-823a-2d57a254ee28",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg3NzQ4NTAwMmYwNWJlMDI2N2VmNDU5ZjViNTEzNTMzYjVjNThjMTIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vb3RwZ2VuZXJhdGlvbi0xNzc3ZiIsImF1ZCI6Im90cGdlbmVyYXRpb24tMTc3N2YiLCJhdXRoX3RpbWUiOjE3NTEyOTA0MDksInVzZXJfaWQiOiJNZ3JWbDNxQU0yZnFja01IRnlJWnM1bFU3YkoyIiwic3ViIjoiTWdyVmwzcUFNMmZxY2tNSEZ5SVpzNWxVN2JKMiIsImlhdCI6MTc1MTI5MDQwOSwiZXhwIjoxNzUxMjk0MDA5LCJlbWFpbCI6InByaXR1c2gua2hhZGVAZGltZW5zaW9ubGVhcC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsicHJpdHVzaC5raGFkZUBkaW1lbnNpb25sZWFwLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.eT4B1pxFex8eR5ePGj6hpr2WJgb0QLUYMZvuwMecw15ZJ6WVpOWhOZOS5m9sYocJCgzYyy4gIb-QNexs3_M3hDeF1VDsPSVoaWw9SSfCcIOIJtwk_ymRMlAAwH44ZE9BZLfrf29YNXcMfD4qkgg6aXr_mAKogJnG1noL4wYEvQ9HJvrHF7uAoCiwklWmqp2n30scjmx_ctzu8cRMKBsf7xN7ZFoECY--00RgyfTlYL6jJpiciulQ1MIClO2nM0yLfCl27SKy36Szut2qb5GJ-VEaZjMyc8Bf5tEyq-LgqozQZ6lSrSw0uD0lpJyET1bsDx9Pl6lyhmPCCiRCcay8oQ"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=1DAF567F1BC3DD6CBE77B7DF582A7F4B"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emailId\":\"pritush.khade@dimensionleap.com\",\r\n    \"deviceToken\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/admin/update-admin-device-token"
+			},
+			"response": []
+		},
+		{
+			"name": "get-admin-details-by-email",
+			"id": "0b2beead-1f2a-4375-bd7a-33cf3089459b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/admin/get-admin-details-by-email?email=pritush.khade@dimensionleap.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"admin",
+						"get-admin-details-by-email"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "pritush.khade@dimensionleap.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-doctors-nearby-patient",
+			"id": "52771a8a-d2a5-480c-8994-b4988b2cb964",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=958D030929EE8520B0BB5745AED57A8A"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg3NzQ4NTAwMmYwNWJlMDI2N2VmNDU5ZjViNTEzNTMzYjVjNThjMTIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vb3RwZ2VuZXJhdGlvbi0xNzc3ZiIsImF1ZCI6Im90cGdlbmVyYXRpb24tMTc3N2YiLCJhdXRoX3RpbWUiOjE3NTEzNTU2MzcsInVzZXJfaWQiOiJNZ3JWbDNxQU0yZnFja01IRnlJWnM1bFU3YkoyIiwic3ViIjoiTWdyVmwzcUFNMmZxY2tNSEZ5SVpzNWxVN2JKMiIsImlhdCI6MTc1MTM1NTYzNywiZXhwIjoxNzUxMzU5MjM3LCJlbWFpbCI6InByaXR1c2gua2hhZGVAZGltZW5zaW9ubGVhcC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsicHJpdHVzaC5raGFkZUBkaW1lbnNpb25sZWFwLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.W3WnCGyiwZ26FyYX4sXiccD5ugCDdlSsv6KYUc_8OGZMoOokISqM1ceC41p9_CeGGoWVgxqhPDnutNa_FfEO8D9MWgQnsN4E0NtN2Qq9WXrse1tZssam3lVfPhMsPHFoY9PXBZQuf5KgkhEuC03JYKsCQCXRvRnB2tJHzh3PaQHo5Tj-8jbSSecoFGkDOFJnES56ZuMT69ffqBqhFF7C0ORiaeUqOYsqAQWMyzCj3kOA-nuV6_Fud4ZZsCGdhAOgBUuMOygmN9T5TyHZ2y1W3edRxjCBytpASGLbCR2cF1kgmY_33HrgYFEJNXWfJc91jYejZZ_bDtYQWcVFTymxyw",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\":1,\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"unit\": \"km\",\n    \"specialty\": \"\",\n    \"category\": \"HOSPITAL_VISIT\",\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/booking/get-doctors-nearby-patient",
+				"description": "## Endpoint Description\n\nThis endpoint allows clients to retrieve a list of doctors nearby a patient based on their geographical location. It is particularly useful for patients seeking medical assistance in their vicinity.\n\n### Request\n\n- **Method**: POST\n    \n- **URL**: `localhost:8081/user-service/booking/get-doctors-nearby-patient`\n    \n\n#### Request Body\n\nThe request body should be formatted as JSON and includes the following parameters:\n\n- **searchBy** (string): A search term to filter doctors (optional).\n    \n- **pageNumber** (integer): The page number for pagination (required).\n    \n- **latitude** (float): The geographical latitude of the patient's location (required).\n    \n- **longitude** (float): The geographical longitude of the patient's location (required).\n    \n- **unit** (string): The unit of measurement for distance (e.g., \"km\") (required).\n    \n- **specialty** (string): The medical specialty to filter doctors (optional).\n    \n- **category** (string): The category of service, e.g., \"HOSPITAL_VISIT\" (required).\n    \n- **patientId** (string): The unique identifier for the patient making the request (required).\n    \n\n#### Example Request Body\n\n``` json\n{\n  \"searchBy\": \"\",\n  \"pageNumber\": 1,\n  \"latitude\": 17.4391296,\n  \"longitude\": 78.4367616,\n  \"unit\": \"km\",\n  \"specialty\": \"\",\n  \"category\": \"HOSPITAL_VISIT\",\n  \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28...\"\n}\n\n ```\n\n### Response\n\nThe response will be returned in JSON format with the following structure:\n\n- **status** (string): The status of the response.\n    \n- **message** (string): A message providing additional information about the response.\n    \n- **httpStatus** (integer): The HTTP status code.\n    \n- **data** (object): Contains the following fields:\n    \n    - **content** (array): A list of doctors matching the search criteria, where each doctor object includes:\n        \n        - **id** (string): The unique identifier for the doctor.\n            \n        - **fullName** (string): The full name of the doctor.\n            \n        - **title** (string): The title of the doctor (e.g., Dr.).\n            \n        - **specialty** (string): The medical specialty of the doctor.\n            \n        - **totalExperience** (integer): Total years of experience.\n            \n        - **profileImageUrl** (string): URL of the doctor's profile image.\n            \n        - **noOfServicesDelivered** (string): Number of services delivered by the doctor.\n            \n        - **mobileNumber** (string|null): Doctor's mobile number (if available).\n            \n        - **email** (string|null): Doctor's email address (if available).\n            \n        - **rating** (float): Average rating of the doctor.\n            \n        - **distanceFromUser** (float): Distance from the patient's location.\n            \n        - **clinicDetails** (object): Information about the clinic, including:\n            \n            - **id** (string): Unique identifier for the clinic.\n                \n            - **clinicName** (string): Name of the clinic.\n                \n            - **address** (string): Address of the clinic.\n                \n            - **city** (string): City where the clinic is located.\n                \n            - **state** (string): State where the clinic is located.\n                \n            - **locality** (string): Locality of the clinic.\n                \n            - **pincode** (string): Pincode of the clinic.\n                \n            - **sessionDetails** (array): Details about the clinic's session timings.\n                \n                - **id** (string): Unique identifier for the session.\n                    \n                - **day** (string): Day of the week for the session.\n                    \n                - **sessionTimings** (array): Timings for the session, including:\n                    \n                    - **id** (string): Unique identifier for the timing.\n                        \n                    - **startTime** (string): Start time of the session.\n                        \n                    - **endTime** (string): End time of the session.\n                        \n            - **status** (string): Status of the clinic.\n                \n        - **bookedSlots** (array): List of booked slots for the doctor.\n            \n        - **favorite** (boolean): Indicates if the doctor is marked as a favorite.\n            \n- **timestamp** (string): The timestamp of the response.\n    \n\n### Example Response\n\n``` json\n{\n  \"status\": \"\",\n  \"message\": \"\",\n  \"httpStatus\": 0,\n  \"data\": {\n    \"content\": [\n      {\n        \"id\": \"\",\n        \"fullName\": \"\",\n        \"title\": \"\",\n        \"specialty\": \"\",\n        \"totalExperience\": 0,\n        \"profileImageUrl\": \"\",\n        \"noOfServicesDelivered\": \"\",\n        \"mobileNumber\": null,\n        \"email\": null,\n        \"rating\": 0,\n        \"distanceFromUser\": 0,\n        \"clinicDetails\": {\n          \"id\": \"\",\n          \"clinicName\": \"\",\n          \"address\": \"\",\n          \"city\": \"\",\n          \"state\": \"\",\n          \"locality\": \"\",\n          \"pincode\": \"\",\n          \"sessionDetails\": [\n            {\n              \"id\": \"\",\n              \"day\": \"\",\n              \"sessionTimings\": [\n                {\n                  \"id\": \"\",\n                  \"startTime\": \"\",\n                  \"endTime\": \"\"\n                }\n              ]\n            }\n          ],\n          \"status\": \"\"\n        },\n        \"bookedSlots\": [],\n        \"favorite\": true\n      }\n    ],\n    \"pageNumber\": 0,\n    \"pageSize\": 0,\n    \"totalElements\": 0,\n    \"totalPages\": 0,\n    \"lastPage\": true\n  },\n  \"timestamp\": \"\"\n}\n\n ```"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-patient-bookings-by-doctor",
+			"id": "bde1e482-ed5d-4f79-b983-c74f76283750",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=958D030929EE8520B0BB5745AED57A8A"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"bookingStatus\": \"CONFIRMED\",\n    \"currentDate\": \"2025-07-27\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/get-all-patient-bookings-by-doctor"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-patient-bookings",
+			"id": "39ed181a-f336-488f-be76-6f0ab8f6545f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=958D030929EE8520B0BB5745AED57A8A"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"bookingStatus\": \"CONFIRMED\",\n    \"currentDate\": \"2025-06-03\",\n    \"targetDate\": \"2025-07-11\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/booking/get-all-patient-bookings"
+			},
+			"response": []
+		},
+		{
+			"name": "agora-token",
+			"id": "db7bb47f-ab15-4df5-bb45-69b5bb2e70d0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uid\": \"5574\",\r\n    \"channelName\": \"videoconsultation2025071751885185166\",\r\n    \"consultationId\": \"5b3f1696-e328-40a9-a653-3e8ed12bf987\",\r\n    \"startTime\": \"19:30\",\r\n    \"consultationType\": \"ONLINE_CONSULTATION\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/agora/token"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-lab-reports",
+			"id": "555f2eb3-9f43-476b-9c27-2b17ced031cb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"searchBy\":\"\",\r\n    \"pageNumber\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/get-all-lab-reports"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-inventories",
+			"id": "0026be99-600d-4c3e-b8bc-bbe9c4a7a81a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"searchBy\":\"\",\n    \"pageNumber\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/get-all-inventories"
+			},
+			"response": []
+		},
+		{
+			"name": "assign-patient-prescription",
+			"id": "6402144a-cbe2-4f1f-85aa-3cde57450ef9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"consultationId\": \"d897586c-2dc8-4a26-a8ea-5541bff02f8c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/assign-patient-prescription"
+			},
+			"response": []
+		},
+		{
+			"name": "add-patient-service",
+			"id": "4e51b422-ce1b-4e99-b96d-910d290fa519",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"consultationId\": \"d897586c-2dc8-4a26-a8ea-5541bff02f8c\",\r\n    \r\n    \"prescribedServices\": [\r\n        {\r\n            \"serviceId\": \"b8b04ef2-e285-4579-89e5-7a0c290ba17f\",\r\n            \"serviceName\": \"Health Checkup\",\r\n            \"mainCategory\": \"Healthcare\",\r\n            \"subCategory\": \"Preventive Care\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/add-patient-service"
+			},
+			"response": []
+		},
+		{
+			"name": "add-patient-lab-report",
+			"id": "1b2a8184-1b5c-49b9-8de7-44630605a473",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"consultationId\": \"d897586c-2dc8-4a26-a8ea-5541bff02f8c\",\n    \"labTestDetails\": [\n        {\n            \"labTestId\": \"e0f3e07b-8b88-4b7c-a5f0-0ecdbb7341a6\",\n            \"labTestName\": \"Blood Test\",\n            \"category\": \"Pathology\",\n            \"description\": \"Basic blood work\",\n            \"preInstructions\": \"Fasting required\",\n            \"price\": 150.0\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/add-patient-lab-report"
+			},
+			"response": []
+		},
+		{
+			"name": "add-patient-inventory",
+			"id": "33e90ac6-8ee3-4b2f-b639-e1ffb24c276c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"consultationId\": \"d897586c-2dc8-4a26-a8ea-5541bff02f8c\",\n    \"medicineDetails\": [\n        {\n            \"productId\": \"41308f06-cc66-446a-b090-fcb36dc91337\",\n            \"productName\": \"Ibuprofen\",\n            \"unit\": \"tablet\",\n            \"unitPrice\": 10.0,\n            \"quantity\": 30,\n            \"timeOfDay\": \"Morning\",\n            \"mealTiming\": \"After Meal\",\n            \"note\": \"Take with water\",\n            \"totalPrice\": 300.0,\n            \"noOfDays\": 7,\n            \"frequency\": \"Twice a day\"\n        },\n        {\n            \"productId\": \"20d3114a-e5b9-40b5-a95b-7ae5fc207f94\",\n            \"productName\": \"Vitamin D\",\n            \"unit\": \"capsule\",\n            \"unitPrice\": 5.0,\n            \"quantity\": 15,\n            \"timeOfDay\": \"Evening\",\n            \"mealTiming\": \"Before Meal\",\n            \"note\": \"With milk\",\n            \"totalPrice\": 75.0,\n            \"noOfDays\": 7,\n            \"frequency\": \"Once a day\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/add-patient-inventory"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-assigned-prescriptions",
+			"id": "e216253b-3846-42a0-9c49-753853bbe327",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"consultationId\": \"d897586c-2dc8-4a26-a8ea-5541bff02f8c\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/get-all-assigned-prescriptions"
+			},
+			"response": []
+		},
+		{
+			"name": "delete-patient-prescription",
+			"id": "5cad83ca-cc97-493c-a7e6-9ddd0cbe0050",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"prescriptionId\": \"ffeda343-30dc-46c7-b85d-72cff642fde1\",\n    \"type\": \"INVENTORY\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/delete-patient-prescription"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-prescriptions-by-patient",
+			"id": "c78ae959-99ca-411e-acc2-6c4647573275",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patientId\": \"907974a8-f222-42d2-b49a-a02e7c53f4a0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/user-service/booking/get-all-prescriptions-by-patient"
+			},
+			"response": []
+		}
+	]
+}
