@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "441fa5b8-3733-4486-beaf-1fd7b7e58c06",
+		"name": "ServiceAPI's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/services/",
+			"id": "a366a118-b7c3-47e9-886a-9637402d4745",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"searchBy\": \"\",\r\n    \"status\": \"ACTIVE\",\r\n    \"pageNumber\": 0,\r\n    \"pageSize\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8083/ap-service/api/services/"
+			},
+			"response": []
+		},
+		{
+			"name": "get-service-by-id",
+			"id": "55b9ac12-9298-4c4b-850d-b7ac7290c0c1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8083/ap-service/api/services/get-service-by-id/123f6391-ac1d-4884-a66e-6cb64499cc49"
+			},
+			"response": []
+		},
+		{
+			"name": "categories",
+			"id": "fa6308e4-dceb-4f36-a412-289f2ab0bcf6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8083/ap-service/api/services/categories"
+			},
+			"response": []
+		},
+		{
+			"name": "subcategories",
+			"id": "d88c7fef-3b8d-4901-bb44-09fa11ef97f8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/ap-service/api/services/subcategories?category=Skin",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"ap-service",
+						"api",
+						"services",
+						"subcategories"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "Skin",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "service-type",
+			"id": "c4182a82-7ca3-47c2-8221-14bd222dac61",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8083/ap-service/api/services/service-type"
+			},
+			"response": []
+		},
+		{
+			"name": "delete-service-by-id",
+			"id": "ab32dcae-0455-43ea-8070-58df9bc0be80",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8083/ap-service/api/services/delete-service-by-id/4e57ecb6-315a-43d9-be46-12d76f4ae5d0"
+			},
+			"response": []
+		},
+		{
+			"name": "create-service",
+			"id": "0154c2da-4d8a-4604-8968-a3faa4cccf5f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mainCategory\": \"Beauty\",\r\n  \"subCategory\": \"Hair\",\r\n  \"serviceName\": \"Hair Spa12345678971\",\r\n  \"durationInMinutes\": 60,\r\n  \"serviceType\": \"In-Salon\",\r\n  \"priceStartFrom\": 1200.0,\r\n  \"priceVariable\": \"Based on Hair Length\",\r\n  \"minimumRange\": \"1200 Grafts\",\r\n  \"benefits\": [\r\n    \"Improves hair texture\",\r\n    \"Reduces dandruff\",\r\n    \"Deep conditioning\",\r\n    \"hair texture\"\r\n  ],\r\n  \"images\": [\r\n    {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/mask-logo-full-hd.jpg\"\r\n    }\r\n  ],\r\n  \"emiAvailable\": true,\r\n  \"status\": \"ACTIVE\",\r\n  \"deleted\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8083/ap-service/api/services/create-service"
+			},
+			"response": []
+		},
+		{
+			"name": "create-service-details",
+			"id": "4d06474d-18fa-4ca8-aedb-4bf7c4a31198",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gender\": \"Female\",\r\n    \"numberOfSessions\": \"3\",\r\n    \"serviceDescription\": \"A non-invasive skin rejuvenation treatment\",\r\n    \"downtime\": \"2 days\",\r\n    \"consultationRequired\": \"\",\r\n    \"anesthesiaRequired\": \"None\",\r\n    \"visibleResultTime\": \"1 week\",\r\n    \"longevity\": \"6 months\",\r\n    \"postProceduralCare\": [\r\n        \"Avoid sun exposure\",\r\n        \"Use moisturizer daily\"\r\n    ],\r\n    \"bodyParts\": \"Face\",\r\n    \"multipleConsultations\": false,\r\n    \"idealCandidates\": [\r\n        \"Adults over 30\",\r\n        \"People with mild wrinkles\"\r\n    ],\r\n    \"status\": \"ACTIVE\",\r\n    \"conditionsTreated\": [\r\n        \"Fine lines\",\r\n        \"Dull skin\"\r\n    ],\r\n    \"faqs\": [\r\n        {\r\n            \"sequence\":1,\r\n            \"question\": \"Is the treatment painful?\",\r\n            \"answer\": \"No, it is mostly pain-free.\"\r\n        },\r\n        {\r\n            \"sequence\":2,\r\n            \"question\": \"How long does each session take?\",\r\n            \"answer\": \"Approximately 45 minutes.\"\r\n        }\r\n    ],\r\n    \"beforeAfterImages\": [\r\n        {\r\n            \"beforeImage\": {\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/mask-logo-full-hd.jpg\"\r\n            },\r\n            \"afterImage\": {\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/mask-logo-full-hd.jpg\"\r\n            }\r\n        }\r\n    ],\r\n    \"serviceContents\":[\r\n    {\r\n        \"sequence\":1,\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/mask-logo-full-hd.jpg\"\r\n    },\r\n    {\r\n        \"sequence\":2,\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"video/mask-logo-full-hd.mp4\"\r\n    }\r\n  ],\r\n    \"ipOrOp\": \"OP\",\r\n    \"serviceId\": \"e0f7a64a-66aa-4efb-b263-bae020d80ffc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8083/ap-service/api/serviceDetails/create-service-details"
+			},
+			"response": []
+		},
+		{
+			"name": "get-service-Details-by-id",
+			"id": "d1fbb1d2-22ac-4fe3-abd5-93c7174540fc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/ap-service/api/serviceDetails/get-service-Details-by-id?id=1ab9b53f-4b34-4928-9859-9f22515af023&serviceId=0524bf25-5fe8-4e49-bffe-7889f36d8be5",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"ap-service",
+						"api",
+						"serviceDetails",
+						"get-service-Details-by-id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1ab9b53f-4b34-4928-9859-9f22515af023"
+						},
+						{
+							"key": "serviceId",
+							"value": "0524bf25-5fe8-4e49-bffe-7889f36d8be5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-service",
+			"id": "fc16c6cc-3bd6-4cf1-b996-e6cfaef9cdef",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": \"0524bf25-5fe8-4e49-bffe-7889f36d8be5\",\r\n        \"mainCategory\": \"Bariatic Surgery\",\r\n        \"subCategory\": \"Gastric Sleeve\",\r\n        \"serviceName\": \"Bariatric - Sleeve\",\r\n        \"durationInMinutes\": \"120 Min\",\r\n        \"serviceType\": \"Laproscopic Surgery - Minimally Invasive\",\r\n        \"priceStartFrom\": 450000.0,\r\n        \"priceVariable\": \"General\",\r\n        \"benefits\": [\"b1\",\"b2\",\"b3\"],\r\n        \"emiAvailable\": true,\r\n        \"serviceDetails\": null,\r\n        \"status\": \"ACTIVE\",\r\n        \"deleted\": false,\r\n        \"deletedAt\": null,\r\n        \"serviceDetailsId\": \"1ab9b53f-4b34-4928-9859-9f22515af023\",\r\n        \"minimumRange\": \"Grafts\",\r\n        \"images\": [],\r\n        \"updated\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8083/ap-service/api/services/create-service"
+			},
+			"response": []
+		},
+		{
+			"name": "update-service-details",
+			"id": "13b39d2a-4c00-44ec-9aba-dacd745df1f8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"id\": \"1ab9b53f-4b34-4928-9859-9f22515af023\",\r\n        \"gender\": \"Male and Female\",\r\n        \"numberOfSessions\": \"1\",\r\n        \"serviceDescription\": \"Bariatric sleeve surgery, or gastric sleeve surgery, involves removing a large portion of the stomach to create a smaller, tube-shaped stomach. This reduces the stomach’s capacity and limits food intake, helping with weight loss. The procedure also decreases hunger-producing hormones, which contributes to long-term weight management. It’s an effective option for individuals who are significantly overweight and wish to improve their overall health. The surgery generally has a quicker recovery time than gastric bypass and shows positive long-term results in weight loss.\",\r\n        \"downtime\": \"2 to 3 days\",\r\n        \"consultationRequired\": true,\r\n        \"anesthesiaRequired\": \"IV Sedation / General A\",\r\n        \"visibleResultTime\": \"12 months\",\r\n        \"longevity\": \"Based on lifestyle and maintainance\",\r\n        \"postProceduralCare\": [\r\n            \"Avoid sun exposure\",\r\n            \"Use moisturizer daily\"\r\n        ],\r\n        \"serviceId\": \"0524bf25-5fe8-4e49-bffe-7889f36d8be5\",\r\n        \"bodyParts\": \"Face\",\r\n        \"multipleConsultations\": false,\r\n        \"idealCandidates\": [\r\n            \"Adults over 30\",\r\n            \"People with mild wrinkles\"\r\n        ],\r\n        \"status\": \"ACTIVE\",\r\n        \"conditionsTreated\": [\r\n            \"Fine lines\",\r\n            \"Dull skin\"\r\n        ],\r\n        \"faqs\": [\r\n            {\r\n                \"id\": \"36c3ccf0-4cea-4114-b4a7-dc960e1d55e7\",\r\n                \"sequence\": 1,\r\n                \"question\": \"Is the treatment painful?\",\r\n                \"answer\": \"No, it is mostly pain-free\"\r\n            },\r\n            {\r\n                \"id\": \"658f28c5-f5a3-4ddc-a381-31cb5e8fce9d\",\r\n                \"sequence\": 2,\r\n                \"question\": \"How long does each session take?\",\r\n                \"answer\": \"Approximately 45 minutes.\"\r\n            }\r\n        ],\r\n        \"ipOrOp\": \"OP\",\r\n        \"beforeAfterImages\": [\r\n            {\r\n                \"id\": \"917169ad-ee39-4fb1-9a40-b7a50d2cf344\",\r\n                \"beforeImage\": {\r\n                    \"id\": \"17491dc6-fe81-45c9-a97b-4807f1b03ef9\",\r\n                    \"bucket\": \"aesthetics\",\r\n                    \"object\": \"image/mask-logo-full-hd.jpg\"\r\n                },\r\n                \"afterImage\": {\r\n                    \"id\": \"1ec2b52b-4039-4fbc-80a6-d45d73695c5a\",\r\n                    \"bucket\": \"aesthetics\",\r\n                    \"object\": \"image/mask-logo-full-hd.jpg\"\r\n                }\r\n            }\r\n        ],\r\n        \"serviceContents\": [\r\n            {\r\n                \"id\": \"4ba027f0-b67e-4e0b-bf32-5dcde8e8b8ae\",\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/mask-logo-full-hd.jpg\",\r\n                \"sequence\": 1\r\n            }\r\n        ],\r\n        \"updated\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8083/ap-service/api/serviceDetails/create-service-details"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-services",
+			"id": "500685a9-c5e6-40db-89d3-570493f0a2d3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"searchBy\": \"\",\r\n    \"mainCategory\": \"\",\r\n    \"pageNumber\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8083/ap-service/api/services/get-all-services"
+			},
+			"response": []
+		},
+		{
+			"name": "service-file-upload",
+			"id": "0120a4f9-c861-41e0-a1ea-83f967f01c6f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"uuid": "87a04a6b-0049-41d0-9d45-0429e6393b97",
+							"src": "postman-cloud:///1f03481b-a40a-4670-ae4e-8b763c4cb44c"
+						},
+						{
+							"key": "type",
+							"value": "image",
+							"type": "text",
+							"uuid": "3485b191-2ca2-4c79-ae8c-009d49037f83"
+						}
+					]
+				},
+				"url": "localhost:8083/ap-service/file/upload"
+			},
+			"response": []
+		},
+		{
+			"name": "export-excel",
+			"id": "d213f056-d4e6-49a9-93ba-5840b8f32b07",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8083/ap-service/api/services/export-excel"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-serviceNames-by-category",
+			"id": "117a69b4-137b-42b7-a1ce-37faf22eb1ad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/ap-service/api/services/get-all-serviceNames-by-category/Bariatic Surgery"
+			},
+			"response": []
+		}
+	]
+}
