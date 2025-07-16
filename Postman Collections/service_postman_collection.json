@@ -213,7 +213,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"id\": \"0524bf25-5fe8-4e49-bffe-7889f36d8be5\",\r\n        \"mainCategory\": \"Bariatic Surgery\",\r\n        \"subCategory\": \"Gastric Sleeve\",\r\n        \"serviceName\": \"Bariatric - Sleeve\",\r\n        \"durationInMinutes\": \"120 Min\",\r\n        \"serviceType\": \"Laproscopic Surgery - Minimally Invasive\",\r\n        \"priceStartFrom\": 450000.0,\r\n        \"priceVariable\": \"General\",\r\n        \"benefits\": [\"b1\",\"b2\",\"b3\"],\r\n        \"emiAvailable\": true,\r\n        \"serviceDetails\": null,\r\n        \"status\": \"ACTIVE\",\r\n        \"deleted\": false,\r\n        \"deletedAt\": null,\r\n        \"serviceDetailsId\": \"1ab9b53f-4b34-4928-9859-9f22515af023\",\r\n        \"minimumRange\": \"Grafts\",\r\n        \"images\": [],\r\n        \"updated\": true\r\n    }",
+					"raw": "{\r\n\"id\": \"0524bf25-5fe8-4e49-bffe-7889f36d8be5\",\r\n        \"mainCategory\": \"Bariatic Surgery\",\r\n        \"subCategory\": \"Gastric Sleeve\",\r\n        \"serviceName\": \"Bariatric - Sleeve\",\r\n        \"durationInMinutes\": \"120 Min\",\r\n        \"serviceType\": \"Laproscopic Surgery - Minimally Invasive\",\r\n        \"priceStartFrom\": 450000.0,\r\n        \"priceVariable\": \"General\",\r\n        \"benefits\": [\"b1\",\"b2\",\"b4\"],\r\n        \"emiAvailable\": true,\r\n        \"serviceDetails\": null,\r\n        \"status\": \"ACTIVE\",\r\n        \"deleted\": false,\r\n        \"deletedAt\": null,\r\n        \"serviceDetailsId\": \"1ab9b53f-4b34-4928-9859-9f22515af023\",\r\n        \"minimumRange\": \"Grafts\",\r\n        \"images\": [],\r\n        \"updated\": true\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
