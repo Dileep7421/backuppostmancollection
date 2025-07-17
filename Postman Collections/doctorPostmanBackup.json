@@ -491,7 +491,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"patientId\": \"907974a8-f222-42d2-b49a-a02e7c53f4a0\",\n    \"pageNumber\": 1\n}",
+					"raw": "{\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\",\n    \"pageNumber\": 1,\n    \"currentDate\": \"\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -634,7 +634,13 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "PUT",
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
@@ -643,14 +649,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"userId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"deviceToken\":\"1\"\n}",
+					"raw": "{\n    \"mobileNumber\": \"+919597979188\",\n    \"deviceToken\":\"1\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "localhost:8081/user-service/doctor/onboarding/update-device-token"
+				"url": "localhost:8081/user-service/patient/update-patient-device-token"
 			},
 			"response": []
 		},
