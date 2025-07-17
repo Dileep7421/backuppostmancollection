@@ -640,7 +640,7 @@
 						"token": "{{bearerToken}}"
 					}
 				},
-				"method": "POST",
+				"method": "PUT",
 				"header": [
 					{
 						"key": "Content-Type",
@@ -649,14 +649,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"mobileNumber\": \"+919597979188\",\n    \"deviceToken\":\"1\"\n}",
+					"raw": "{\n    \"userId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"deviceToken\":\"1\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "localhost:8081/user-service/patient/update-patient-device-token"
+				"url": "localhost:8081/user-service/doctor/onboarding/update-device-token"
 			},
 			"response": []
 		},
@@ -688,6 +688,47 @@
 					}
 				},
 				"url": "localhost:8081/user-service/admin/update-admin-device-token"
+			},
+			"response": []
+		},
+		{
+			"name": "update-patient-device-token",
+			"id": "768aef20-d440-41a1-b66a-3ee8ac273db6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImE4ZGY2MmQzYTBhNDRlM2RmY2RjYWZjNmRhMTM4Mzc3NDU5ZjliMDEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vb3RwZ2VuZXJhdGlvbi0xNzc3ZiIsImF1ZCI6Im90cGdlbmVyYXRpb24tMTc3N2YiLCJhdXRoX3RpbWUiOjE3NTI3MzcyMjQsInVzZXJfaWQiOiJNZ3JWbDNxQU0yZnFja01IRnlJWnM1bFU3YkoyIiwic3ViIjoiTWdyVmwzcUFNMmZxY2tNSEZ5SVpzNWxVN2JKMiIsImlhdCI6MTc1MjczNzIyNCwiZXhwIjoxNzUyNzQwODI0LCJlbWFpbCI6InByaXR1c2gua2hhZGVAZGltZW5zaW9ubGVhcC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsicHJpdHVzaC5raGFkZUBkaW1lbnNpb25sZWFwLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.Kin5UioBmJ-uC9arQgFhDag4HRykvZkBOm7pVufZWBZOccWUz94dgX3x6gp9EySe30yUSEQi9iV0O1XoHQU-ioIylxDNE1bm9Ess9KCpClLG05Q3RBFEppVVWSMtWmSR_IRGWtrHmjjPL24fk3k8pVQ-evABVux0geetBDoxmfCwWIIhMaqPcBP-O2c2FsdEZOTcj2rpg2cV6nUMaurYJwt375SISPgoorBIiyMRn4wWKjHyBc1J5jM4ZUuzBRzY5tY0ZP5MhFR8ONaXbmUWyYmihLwb0uDmOEj26PrxRuVHoUqU_L39lQku8RVJY9vLyVqf8SMeYFpWcP8cqHEovA"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=CC5B82E003A3A5CB509DA414A07888EA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mobileNumber\": \"+919597979188\",\n    \"deviceToken\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/patient/update-patient-device-token"
 			},
 			"response": []
 		},
