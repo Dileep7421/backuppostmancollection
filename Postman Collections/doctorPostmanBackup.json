@@ -649,7 +649,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"userId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"deviceToken\":\"1\"\n}",
+					"raw": "{\n    \"userId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"deviceToken\":\"dkb5vLEiQg6ghaLo3fyAeJ:APA91bGI7a11_5Jg8HzpE_AEL-VnwbPY2Ezpv0s8Ss1u3bNi1lN_wpV2Q-rjYuPmE-bO5nFZhTIKDDgoZ1m3-qm1GWVSg8rAMb_89vLeWOsb9HFCPfNrT3o\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
