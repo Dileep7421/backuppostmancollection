@@ -958,7 +958,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"consultationId\": \"d897586c-2dc8-4a26-a8ea-5541bff02f8c\"\r\n}",
+					"raw": "{\r\n    \"consultationId\": \"d897586c-2dc8-4a26-a8ea-5541bff02f8c\",\r\n    \"slotId\": \"801c0895-7171-4a6b-9166-6863594d5f1b\",\r\n    \"updatedAt\": \"2025-07-24T14:00:41.394318\",\r\n    \"type\": \"END_CONSULTATION\",\r\n    \"endTime\": \"20:30\",\r\n    \"status\": \"COMPLETED\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1132,7 +1132,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"slotId\": \"801c0895-7171-4a6b-9166-6863594d5f1b\",\r\n    \"startTime\": \"19:30\", //for START_CONSULTATION flow\r\n    \"endTime\": \"20:30\", //for END_CONSULTATION flow\r\n    \"status\": \"COMPLETED\", //for END_CONSULTATION flow\r\n    \"createdAt\": \"2025-07-24T13:00:41.394318\", //for START_CONSULTATION flow\r\n    \"updatedAt\": \"2025-07-24T14:00:41.394318\", //for END_CONSULTATION flow\r\n    \"type\": \"END_CONSULTATION\"\r\n}",
+					"raw": "{\r\n    \"slotId\": \"801c0895-7171-4a6b-9166-6863594d5f1b\",\r\n    \"startTime\": \"19:30\", \r\n    \"createdAt\": \"2025-07-24T13:00:41.394318\",\r\n    \"type\": \"START_CONSULTATION\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
