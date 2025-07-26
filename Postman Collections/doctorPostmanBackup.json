@@ -68,7 +68,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-id?id=4e4957bb-7934-450b-b8d7-b52d3bc7a09e",
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-id?id=a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea",
 					"host": [
 						"localhost"
 					],
@@ -82,7 +82,7 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "4e4957bb-7934-450b-b8d7-b52d3bc7a09e"
+							"value": "a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea"
 						}
 					]
 				}
