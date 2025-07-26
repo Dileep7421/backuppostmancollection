@@ -1142,6 +1142,50 @@
 				"url": "http://localhost:8081/user-service/doctor/onboarding/update-consultation-timings"
 			},
 			"response": []
+		},
+		{
+			"name": "stop-recording",
+			"id": "fdd58b20-0a13-47d5-92ff-e46e1e2cee83",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"resourceId\": \"bR71-ac0y5D-Y4QCeZldteULRUn0XiIk4PfklbnH446kkcrBihSLHB33YcB8aBT1FFh6jH-ZinKFPU1mvAdRwqgvEHGGrRwlAPk6VT2eQshtYUQygAkJAmHFkm0eJImzihjJXdrUOjiPGfs63hC6RZFbk2-m20SWjvou6pDFwnn_CfE1V5uwPoLJKeXn275yrjPLqr3tWCRZQQs_R2T6P7iUthdrGN3lV8QL8HO4Bho\",\r\n     \"sid\": \"ba22b8d1c64cbbd0af3dc88ba35e7103\",\r\n     \"channelName\": \"videoconsultation2025071751885180004\",\r\n     \"uid\": \"1004\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/agora/stop-recording"
+			},
+			"response": []
+		},
+		{
+			"name": "start-recording",
+			"id": "4fcca29e-cff6-4526-957d-1ec5aa7a824a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"channelName\": \"videoconsultation2025071751885180004\",\r\n    \"uid\": \"1004\",\r\n    \"consultationId\": \"d897586c-2dc8-4a26-a8ea-5541bff02f8c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/agora/start-recording"
+			},
+			"response": []
 		}
 	]
 }
