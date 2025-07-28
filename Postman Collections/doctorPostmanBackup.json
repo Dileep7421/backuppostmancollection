@@ -1192,6 +1192,34 @@
 				"url": "localhost:8081/user-service/agora/start-recording"
 			},
 			"response": []
+		},
+		{
+			"name": "doctor-change-request",
+			"id": "e52db6ed-4f0b-4534-af71-a036405eaad4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"PENDING_REVIEW\",\r\n    \"type\": \"EDUCATION_DETAILS\",\r\n    \"doctorId\": \"6b97673f-faf3-4ea9-b90c-13e29040b016\",\r\n    \"reason\": \"Please check your education details\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/doctor-change-request"
+			},
+			"response": []
 		}
 	]
 }
