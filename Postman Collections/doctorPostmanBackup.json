@@ -1264,6 +1264,50 @@
 				"url": "localhost:8081/user-service/doctor/onboarding/create-doctor-education"
 			},
 			"response": []
+		},
+		{
+			"name": "create-doctor-license",
+			"id": "35fd8ac2-78ca-48ae-9737-d7a58412cc6a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"doctorId\": \"a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea\",\r\n    \"license\": {\r\n        \"hprId\": \"HPR654321\",\r\n        \"licenseNumber\": \"LIC123456\",\r\n        \"registrationCouncil\": \"California Medical Board\",\r\n        \"registrationYear\": 2017,\r\n        \"validTill\": 2032,\r\n        \"licenseCertificates\": [\r\n            {\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/doctor-icon.jpg\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/create-doctor-license"
+			},
+			"response": []
+		},
+		{
+			"name": "create-doctor-clinic",
+			"id": "41a53746-d97c-4e0a-8922-76a39555b500",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"doctorId\": \"a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea\",\r\n    \"clinicDetails\": {\r\n        \"clinicName\": \"SunBorn Clinic\",\r\n        \"address\": \"826, Main Street, HBR Layout\",\r\n        \"city\": \"Bengaluru\",\r\n        \"pincode\": \"578259\",\r\n        \"locality\": \"HBR Layout\",\r\n        \"state\": \"Karnataka\",\r\n        \"services\": [\r\n            \"Cosmetic Surgery\"\r\n        ],\r\n        \"sessionDetails\": [\r\n            {\r\n                \"day\": \"Monday\",\r\n                \"sessionTimings\": [\r\n                    {\r\n                        \"startTime\": \"09:00\",\r\n                        \"endTime\": \"19:00\",\r\n                        \"lunchStartTime\": \"12:00\",\r\n                        \"lunchEndTime\": \"13:00\",\r\n                        \"gapTime\": \"00:10\"\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"day\": \"Wednesday\",\r\n                \"sessionTimings\": [\r\n                    {\r\n                        \"startTime\": \"10:00\",\r\n                        \"endTime\": \"13:00\"\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/create-doctor-clinic"
+			},
+			"response": []
 		}
 	]
 }
