@@ -1220,6 +1220,50 @@
 				"url": "localhost:8081/user-service/doctor/onboarding/doctor-change-request"
 			},
 			"response": []
+		},
+		{
+			"name": "create-doctor-personal-info",
+			"id": "77c92bb8-b911-436b-bbba-b6adf0a91d40",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"Raju\",\r\n    \"title\": \"Dr.\",\r\n    \"gender\": \"Male\",\r\n    \"email\": \"raju@example.com\",\r\n    \"mobileNumber\": \"1234567890\",\r\n    \"city\": \"New York\",\r\n    \"dob\": \"1990-01-01\",\r\n    \"specialty\": \"Aesthetic Gynaecologist\",\r\n    \"mobileVerified\": true,\r\n    \"images\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"identityProofFile\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"deviceToken\": \"device-token-string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/create-doctor-personal-info"
+			},
+			"response": []
+		},
+		{
+			"name": "create-doctor-education",
+			"id": "44dac571-d4bb-48f6-9aa7-d246071164a7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"doctorId\": \"a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea\",\r\n    \"education\": {\r\n        \"id\": \"e020c95a-80da-401c-a426-7e9d8985b76d\",\r\n        \"degree\": \"MBBS\",\r\n        \"university\": \"Stanford University School of Medicine\",\r\n        \"startYear\": 2012,\r\n        \"endYear\": 2017,\r\n        \"specialization\": \"Aesthetic Gynaecologist\",\r\n        \"educationCertificates\": [\r\n            {\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/doctor-icon.jpg\"\r\n            }\r\n        ]\r\n    },\r\n    \"updated\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/create-doctor-education"
+			},
+			"response": []
 		}
 	]
 }
