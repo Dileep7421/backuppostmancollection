@@ -68,7 +68,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-id?id=6b97673f-faf3-4ea9-b90c-13e29040b016",
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-id?id=a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea",
 					"host": [
 						"localhost"
 					],
@@ -82,7 +82,7 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "6b97673f-faf3-4ea9-b90c-13e29040b016"
+							"value": "a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea"
 						}
 					]
 				}
@@ -811,7 +811,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\":1,\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"unit\": \"km\",\n    \"specialty\": \"Aesthetic Gynaecologist\",\n    \"category\": \"\",\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\"\n}",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\":1,\n    \"latitude\": 13.4591,\n    \"longitude\": 80.179521,\n    \"unit\": \"km\",\n    \"specialty\": \"Aesthetic Gynaecologist\",\n    \"category\": \"\",\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
