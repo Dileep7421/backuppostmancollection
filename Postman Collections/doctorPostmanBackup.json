@@ -902,7 +902,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"uid\": \"1001\",\r\n    \"channelName\": \"videoconsultation2025071751885180002\",\r\n    \"consultationId\": \"d897586c-2dc8-4a26-a8ea-5541bff02f8c\",\r\n    \"startTime\": \"19:30\",\r\n    \"consultationType\": \"ONLINE_CONSULTATION\",\r\n    \"patientId\": \"907974a8-f222-42d2-b49a-a02e7c53f4a0\",\r\n    \"doctorName\": \"Dr.Raj Kumar\"\r\n}",
+					"raw": "{\r\n    \"uid\": \"5946\",\r\n    \"pid\": \"3373\",\r\n    \"channelName\": \"videoconsultation2025071752168491700\",\r\n    \"consultationId\": \"d897586c-2dc8-4a26-a8ea-5541bff02f8c\",\r\n    \"startTime\": \"19:30\",\r\n    \"consultationType\": \"ONLINE_CONSULTATION\",\r\n    \"patientId\": \"907974a8-f222-42d2-b49a-a02e7c53f4a0\",\r\n    \"doctorName\": \"Dr.Raj Kumar\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
