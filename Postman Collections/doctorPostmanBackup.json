@@ -843,7 +843,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"bookingStatus\": \"CONFIRMED\",\n    \"currentDate\": \"2025-07-24\" \n}",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"bookingStatus\": \"CONFIRMED\",\n    \"currentDate\": \"\" \n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1241,7 +1241,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"fullName\": \"Raju\",\r\n    \"title\": \"Dr.\",\r\n    \"gender\": \"Male\",\r\n    \"email\": \"raju@example.com\",\r\n    \"mobileNumber\": \"1234567890\",\r\n    \"city\": \"New York\",\r\n    \"dob\": \"1990-01-01\",\r\n    \"specialty\": \"Aesthetic Gynaecologist\",\r\n    \"mobileVerified\": true,\r\n    \"images\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"identityProofFile\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"deviceToken\": \"device-token-string\"\r\n}",
+					"raw": "{\r\n    \"fullName\": \"Raju\",\r\n    \"title\": \"Dr.\",\r\n    \"gender\": \"Male\",\r\n    \"email\": \"raju1@example.com\",\r\n    \"mobileNumber\": \"1234567899\",\r\n    \"city\": \"New York\",\r\n    \"dob\": \"1990-01-01\",\r\n    \"specialty\": \"Aesthetic Gynaecologist\",\r\n    \"mobileVerified\": true,\r\n    \"images\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"identityProofFile\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"deviceToken\": \"device-token-string\",\r\n    \"updated\": false\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
