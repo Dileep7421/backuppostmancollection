@@ -1496,6 +1496,43 @@
 			"response": []
 		},
 		{
+			"name": "update-doctor-details-status-by-id",
+			"id": "4226190f-b8d4-4182-8a7c-834980d22350",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/doctor/onboarding/update-doctor-details-status-by-id?id=d897586c-2dc8-4a26-a8ea-5541bff02f8c&status=PENDING_REVIEW",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"doctor",
+						"onboarding",
+						"update-doctor-details-status-by-id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "d897586c-2dc8-4a26-a8ea-5541bff02f8c",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "PENDING_REVIEW",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "video-agora",
 			"id": "ac015f21-c4b3-4c0d-b883-8ee1861a08c9",
 			"protocolProfileBehavior": {
