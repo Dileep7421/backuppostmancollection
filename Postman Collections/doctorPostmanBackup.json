@@ -1494,6 +1494,97 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "video-agora",
+			"id": "ac015f21-c4b3-4c0d-b883-8ee1861a08c9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk1MWRkZTkzMmViYWNkODhhZmIwMDM3YmZlZDhmNjJiMDdmMDg2NmIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vb3RwZ2VuZXJhdGlvbi0xNzc3ZiIsImF1ZCI6Im90cGdlbmVyYXRpb24tMTc3N2YiLCJhdXRoX3RpbWUiOjE3NTM5NjA5NTgsInVzZXJfaWQiOiIxdVZzdnNYc3AyZEdlcFg5WWhEanQxTjBqdnExIiwic3ViIjoiMXVWc3ZzWHNwMmRHZXBYOVloRGp0MU4wanZxMSIsImlhdCI6MTc1Mzk2MDk1OCwiZXhwIjoxNzUzOTY0NTU4LCJlbWFpbCI6ImRpbGVlcGt1bWFyLmFtcG9sdUBkaW1lbnNpb25sZWFwLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJkaWxlZXBrdW1hci5hbXBvbHVAZGltZW5zaW9ubGVhcC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.kby6XwDifts1nA-gmy0xBB74hssaGsJ5CPE8dHbwwszkl-EwJxMuCAopWlHHpTgGwXN32ZMbmL9TTGcAL7-6z-jaKQZKAB8aCuN5meXPfTsY9qJqKFiXV03EvTxSQvbUdFEuSwsV8NICQhAOhWGEaDN4eQXhWHNdfK9VfE4kud9NLRnrB89EkGbCwp7Bq5nxNGWk5sddq_vWu0MkPoD35RQfOZtPFk9hv39JEfHqj67-xMmSk2qjuEqh8x_aOJ32thScC1PqaHuaG4yLTYAcjEInGS05HdX5rbScM_c9gcT84I7HJ-usi3V3R6nXCORSweN98_RHGN_0KXXSKBK7Fw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uid\": \"7075\",\n    \"pid\": \"9605\",\n    \"bid\": \"7123\",\n    \"channelName\": \"videoconsultation2025071752168497076\",\n    \"consultationId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n    \"startTime\": \"19:30\",\n    \"consultationType\": \"ONLINE_CONSULTATION\",\n    \"patientId\": \"907974a8-f222-42d2-b49a-a02e7c53f4a0\",\n    \"doctorName\": \"Dr.Raj Kumar\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/agora/token"
+			},
+			"response": []
+		},
+		{
+			"name": "video-start-recording",
+			"id": "a97151f2-c595-4f93-84e5-69da938fe2cb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"channelName\": \"videoconsultation2025071752168497076\",\n    \"uid\": \"7123\",\n    \"resourceId\": \"yctPmlP-U-Sb1ZJ03BO8LDnB41Ev9aJAA8Jgon5iITLGu9wXvI1L1Hn9helOzq3T2GEpxbQ5R_So_P_rzrqwGb5DK7sxsGvt3sdnyrXzq_3GFYr4za85qkd0BaBQDK4wvuT5OplMRqcKlhi77an1mSKpPJyOSQ61kK87UmI2H6W9W7wAK802CA546jwU0FTis88xhFRItlUgYbewpXYOVoKl6jodOxt21NgZqE3CZsY\",\n    \"botRtcToken\": \"0064c6d53b73e8a4af186f5b5dd54d54dddIAA7TcocOir+n4oJDtcyOgx6HXGlOjCJImTyRzXwNbZZUbsQ28/EpbE7IgA9O2LWmgCNaAQAAQAqvYtoAgAqvYtoAwAqvYtoBAAqvYto\",\n    \"consultationRecordingId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n    \"timestamp\": \"12:30\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/agora/start-recording"
+			},
+			"response": []
+		},
+		{
+			"name": "video-stop-recording",
+			"id": "6a1e8940-0096-4f1e-bc16-9045d3542099",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"resourceId\": \"yctPmlP-U-Sb1ZJ03BO8LDnB41Ev9aJAA8Jgon5iITLGu9wXvI1L1Hn9helOzq3T2GEpxbQ5R_So_P_rzrqwGb5DK7sxsGvt3sdnyrXzq_3GFYr4za85qkd0BaBQDK4wvuT5OplMRqcKlhi77an1mSKpPJyOSQ61kK87UmI2H6W9W7wAK802CA546jwU0FTis88xhFRItlUgYbewpXYOVoKl6jodOxt21NgZqE3CZsY\",\n    \"sid\": \"162489332d4ea43474005aa8d6ceb20a\",\n    \"channelName\": \"videoconsultation2025071752168497076\",\n    \"uid\": \"7123\",\n    \"consultationRecordingId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n    \"timestamp\": \"01:30\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/agora/stop-recording"
+			},
+			"response": []
 		}
 	]
 }
