@@ -811,7 +811,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\":1,\n    \"latitude\": 13.4591,\n    \"longitude\": 80.179521,\n    \"unit\": \"km\",\n    \"specialty\": \"Aesthetic Gynaecologist\",\n    \"category\": \"\",\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\"\n}",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\":1,\n    \"latitude\": 13.4591,\n    \"longitude\": 80.179521,\n    \"unit\": \"km\",\n    \"specialty\": \"\",\n    \"category\": \"\",\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
