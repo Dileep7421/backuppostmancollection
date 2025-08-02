@@ -1263,7 +1263,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"doctorId\": \"a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea\",\r\n    \"education\": {\r\n        \"id\": \"e020c95a-80da-401c-a426-7e9d8985b76d\",\r\n        \"degree\": \"MBBS\",\r\n        \"university\": \"Stanford University School of Medicine\",\r\n        \"startYear\": 2012,\r\n        \"endYear\": 2017,\r\n        \"specialization\": \"Aesthetic Gynaecologist\",\r\n        \"educationCertificates\": [\r\n            {\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/doctor-icon.jpg\"\r\n            }\r\n        ]\r\n    },\r\n    \"updated\": true\r\n}",
+					"raw": "{\r\n    \"doctorId\": \"a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea\",\r\n    \"education\": {\r\n        \"id\": \"e020c95a-80da-401c-a426-7e9d8985b76d\",\r\n        \"degree\": \"MD\",\r\n        \"university\": \"Stanford University School of Medicine\",\r\n        \"startYear\": 2014,\r\n        \"endYear\": 2019,\r\n        \"specialization\": \"Aesthetic Gynaecologist\",\r\n        \"educationCertificates\": [\r\n            {\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/doctor-icon.jpg\"\r\n            }\r\n        ]\r\n    },\r\n    \"updated\": true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
