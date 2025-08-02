@@ -1585,7 +1585,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"channelName\": \"videoconsultation2025071752168497076\",\n    \"uid\": \"7123\",\n    \"resourceId\": \"yctPmlP-U-Sb1ZJ03BO8LDnB41Ev9aJAA8Jgon5iITLGu9wXvI1L1Hn9helOzq3T2GEpxbQ5R_So_P_rzrqwGb5DK7sxsGvt3sdnyrXzq_3GFYr4za85qkd0BaBQDK4wvuT5OplMRqcKlhi77an1mSKpPJyOSQ61kK87UmI2H6W9W7wAK802CA546jwU0FTis88xhFRItlUgYbewpXYOVoKl6jodOxt21NgZqE3CZsY\",\n    \"botRtcToken\": \"0064c6d53b73e8a4af186f5b5dd54d54dddIAA7TcocOir+n4oJDtcyOgx6HXGlOjCJImTyRzXwNbZZUbsQ28/EpbE7IgA9O2LWmgCNaAQAAQAqvYtoAgAqvYtoAwAqvYtoBAAqvYto\",\n    \"consultationRecordingId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n    \"timestamp\": \"12:30\"\n}",
+					"raw": "{\n    \"channelName\": \"videoconsultation2025071752168497076\",\n    \"uid\": \"7123\",\n    \"resourceId\": \"Wxbs8eJbd5gg1sMgGRhtbHndoWTTlgtQ7_t3xIsYA05mH_54I4xH9gUpMnz6vNttHNJbKOVYeBHpgkM8ggOvr4w5SwoJxJPAxF5wAUet2yuEHnHmLqXO7TCHqGlvgVn5cGPtjI6omzWrRDrDwNvzjTesh6Zao3rcE2DdFvKsF_pT_FylS-9JiSgmNCKTyCdg-55UVAqpQCJE732PC8orD9FB3Uqd_dmiEvBbcaE54OU\",\n    \"botRtcToken\": \"0064c6d53b73e8a4af186f5b5dd54d54dddIACk5+UzkB1zR4PHQcy1OlaRYLgH/LaIn17+Rhizpbt+gbsQ28/EpbE7IgCFSomFrNSNaAQAAQA8kYxoAgA8kYxoAwA8kYxoBAA8kYxo\",\n    \"consultationRecordingId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n    \"timestamp\": \"12:30\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1612,7 +1612,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"resourceId\": \"yctPmlP-U-Sb1ZJ03BO8LDnB41Ev9aJAA8Jgon5iITLGu9wXvI1L1Hn9helOzq3T2GEpxbQ5R_So_P_rzrqwGb5DK7sxsGvt3sdnyrXzq_3GFYr4za85qkd0BaBQDK4wvuT5OplMRqcKlhi77an1mSKpPJyOSQ61kK87UmI2H6W9W7wAK802CA546jwU0FTis88xhFRItlUgYbewpXYOVoKl6jodOxt21NgZqE3CZsY\",\n    \"sid\": \"162489332d4ea43474005aa8d6ceb20a\",\n    \"channelName\": \"videoconsultation2025071752168497076\",\n    \"uid\": \"7123\",\n    \"consultationRecordingId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n    \"timestamp\": \"01:30\"\n}",
+					"raw": "{\n    \"resourceId\": \"Wxbs8eJbd5gg1sMgGRhtbHndoWTTlgtQ7_t3xIsYA05mH_54I4xH9gUpMnz6vNttHNJbKOVYeBHpgkM8ggOvr4w5SwoJxJPAxF5wAUet2yuEHnHmLqXO7TCHqGlvgVn5cGPtjI6omzWrRDrDwNvzjTesh6Zao3rcE2DdFvKsF_pT_FylS-9JiSgmNCKTyCdg-55UVAqpQCJE732PC8orD9FB3Uqd_dmiEvBbcaE54OU\",\n    \"sid\": \"160e8e699549af4c1b8e9d9d384ed7a2\",\n    \"channelName\": \"videoconsultation2025071752168497076\",\n    \"uid\": \"7123\",\n    \"consultationRecordingId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n    \"timestamp\": \"01:30\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
