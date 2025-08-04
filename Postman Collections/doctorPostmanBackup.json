@@ -1159,50 +1159,6 @@
 			"response": []
 		},
 		{
-			"name": "stop-recording",
-			"id": "fdd58b20-0a13-47d5-92ff-e46e1e2cee83",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n     \"resourceId\": \"bR71-ac0y5D-Y4QCeZldteULRUn0XiIk4PfklbnH446kkcrBihSLHB33YcB8aBT1FFh6jH-ZinKFPU1mvAdRwqgvEHGGrRwlAPk6VT2eQshtYUQygAkJAmHFkm0eJImzihjJXdrUOjiPGfs63hC6RZFbk2-m20SWjvou6pDFwnn_CfE1V5uwPoLJKeXn275yrjPLqr3tWCRZQQs_R2T6P7iUthdrGN3lV8QL8HO4Bho\",\r\n     \"sid\": \"ba22b8d1c64cbbd0af3dc88ba35e7103\",\r\n     \"channelName\": \"videoconsultation2025071751885180004\",\r\n     \"uid\": \"1004\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "localhost:8081/user-service/agora/stop-recording"
-			},
-			"response": []
-		},
-		{
-			"name": "start-recording",
-			"id": "4fcca29e-cff6-4526-957d-1ec5aa7a824a",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"channelName\": \"videoconsultation2025071751885180004\",\r\n    \"uid\": \"1004\",\r\n    \"consultationId\": \"d897586c-2dc8-4a26-a8ea-5541bff02f8c\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "localhost:8081/user-service/agora/start-recording"
-			},
-			"response": []
-		},
-		{
 			"name": "doctor-change-request",
 			"id": "e52db6ed-4f0b-4534-af71-a036405eaad4",
 			"protocolProfileBehavior": {
@@ -1263,7 +1219,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"doctorId\": \"a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea\",\r\n    \"education\": {\r\n        \"id\": \"e020c95a-80da-401c-a426-7e9d8985b76d\",\r\n        \"degree\": \"MD\",\r\n        \"university\": \"Stanford University School of Medicine\",\r\n        \"startYear\": 2014,\r\n        \"endYear\": 2019,\r\n        \"specialization\": \"Aesthetic Gynaecologist\",\r\n        \"educationCertificates\": [\r\n            {\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/doctor-icon.jpg\"\r\n            }\r\n        ]\r\n    },\r\n    \"updated\": true\r\n}",
+					"raw": "{\r\n    \"doctorId\": \"a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea\",\r\n    \"education\": {\r\n        \"id\": \"e020c95a-80da-401c-a426-7e9d8985b76d\",\r\n        \"degree\": \"MD\",\r\n        \"university\": \"Stanford University School of Medicine\",\r\n        \"startYear\": 2014,\r\n        \"endYear\": 2018,\r\n        \"specialization\": \"Aesthetic Gynaecologist\",\r\n        \"educationCertificates\": [\r\n            {\r\n                \"id\": \"7e9aabc9-e19a-405d-94a0-782f532960e6\",\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/doctor-icon.jpg\"\r\n            }\r\n        ]\r\n    },\r\n    \"updated\": true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1355,7 +1311,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/doctor/onboarding/delete-doctor-info?id=6408fc53-7ce0-4bfe-b94e-3a191cde041d&type=EDUCATION_DETAILS",
+					"raw": "localhost:8081/user-service/doctor/onboarding/delete-doctor-info?id=d9364a58-b262-4bab-9d0f-c90a7d0c3d66&type=EDUCATION_DETAILS&doctorId=a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea",
 					"host": [
 						"localhost"
 					],
@@ -1369,11 +1325,15 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "6408fc53-7ce0-4bfe-b94e-3a191cde041d"
+							"value": "d9364a58-b262-4bab-9d0f-c90a7d0c3d66"
 						},
 						{
 							"key": "type",
-							"value": "EDUCATION_DETAILS",
+							"value": "EDUCATION_DETAILS"
+						},
+						{
+							"key": "doctorId",
+							"value": "a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea",
 							"type": "text"
 						}
 					]
@@ -1505,10 +1465,16 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/doctor/onboarding/update-doctor-details-status-by-id?id=d897586c-2dc8-4a26-a8ea-5541bff02f8c&status=PENDING_REVIEW",
+					"raw": "localhost:8081/user-service/doctor/onboarding/update-doctor-details-status-by-id?id=a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea&status=PENDING_REVIEW",
 					"host": [
 						"localhost"
 					],
@@ -1522,13 +1488,11 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "d897586c-2dc8-4a26-a8ea-5541bff02f8c",
-							"type": "text"
+							"value": "a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea"
 						},
 						{
 							"key": "status",
-							"value": "PENDING_REVIEW",
-							"type": "text"
+							"value": "PENDING_REVIEW"
 						}
 					]
 				}
