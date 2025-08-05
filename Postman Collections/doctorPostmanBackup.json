@@ -1028,7 +1028,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"consultationId\": \"d897586c-2dc8-4a26-a8ea-5541bff02f8c\",\n    \"labTestDetails\": [\n        {\n            \"labTestId\": \"e0f3e07b-8b88-4b7c-a5f0-0ecdbb7341a6\",\n            \"labTestName\": \"Blood Test\",\n            \"category\": \"Pathology\",\n            \"description\": \"Basic blood work\",\n            \"preInstructions\": \"Fasting required\",\n            \"price\": 150.0\n        }\n    ]\n}",
+					"raw": "// {\n//     \"consultationId\": \"d897586c-2dc8-4a26-a8ea-5541bff02f8c\",\n//     \"labTestDetails\": [\n//         {\n//             \"labTestId\": \"e0f3e07b-8b88-4b7c-a5f0-0ecdbb7341a6\",\n//             \"labTestName\": \"Blood Test\",\n//             \"category\": \"Pathology\",\n//             \"description\": \"Basic blood work\",\n//             \"preInstructions\": \"Fasting required\",\n//             \"price\": 150.0\n//         }\n//     ]\n// }\n\n{\n    \"consultationId\": \"2c3ddf96-7236-4a46-891b-96d1906418b0\",\n    \"labTestDetails\": [\n        {\n            \"labTestId\": \"a748f33a-f255-4a02-8804-cf02eaa90c67\",\n            \"labTestName\": \"X-Ray Chest PA View\",\n            \"category\": \"Imaging\",\n            \"description\": \"Posterior–anterior X-ray of the chest\",\n            \"preInstructions\": \"Remove any metal objects or jewelry around the chest\",\n            \"price\": 700.0\n        }\n    ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
