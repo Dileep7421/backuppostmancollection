@@ -1595,6 +1595,34 @@
 				"url": "localhost:8081/user-service/agora/stop-recording"
 			},
 			"response": []
+		},
+		{
+			"name": "end-call",
+			"id": "a9bff967-047a-431e-a847-362cecd81472",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\",\r\n    \"type\": \"PATIENT\" //PATIENT or DOCTOR\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/agora/end-call"
+			},
+			"response": []
 		}
 	]
 }
