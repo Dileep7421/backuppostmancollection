@@ -1567,7 +1567,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"channelName\": \"test71236\",\n    \"uid\": \"9090\",\n    \"resourceId\": \"wdhRV8xeWHbojjNX94mDzK-8D2bsAWVtdgg7A9lV56ubWdCH4_bVFD2ymEEtMupnK5kUuVt4cRQ-lW2O97CFaiZLnmId6-Slzc1NbzTNVkAQBwIaZBpsMMyCBK68PUQEOtHUfMxZudNEzK-MLbNSuQ6WqyPlGgJl50sCAhBT4LZ5hkTu_818JH3stVhZ7XMUv-ELEwKaE7wYKyHZo9eV9w\",\n    \"botRtcToken\": \"0064c6d53b73e8a4af186f5b5dd54d54dddIACJHH6uei4mq2eZxwkt39KjLGHIxhkDjFm1MVMrQEsQIMyX1tmxMFGgIgAL5+Nt+6ShaAQAAQCLYaBoAgCLYaBoAwCLYaBoBACLYaBo\",\n    \"consultationRecordingId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n    \"timestamp\": \"12:30\",\n    \"consultationType\": \"HOSPITAL_VISIT\"\n}",
+					"raw": "{\n    \"channelName\": \"test71236\",\n    \"uid\": \"9090\",\n    \"resourceId\": \"wdhRV8xeWHbojjNX94mDzK-8D2bsAWVtdgg7A9lV56ubWdCH4_bVFD2ymEEtMupnK5kUuVt4cRQ-lW2O97CFaiZLnmId6-Slzc1NbzTNVkAQBwIaZBpsMMyCBK68PUQEOtHUfMxZudNEzK-MLbNSuQ6WqyPlGgJl50sCAhBT4LZ5hkTu_818JH3stVhZ7XMUv-ELEwKaE7wYKyHZo9eV9w\",\n    \"botRtcToken\": \"0064c6d53b73e8a4af186f5b5dd54d54dddIACJHH6uei4mq2eZxwkt39KjLGHIxhkDjFm1MVMrQEsQIMyX1tmxMFGgIgAL5+Nt+6ShaAQAAQCLYaBoAgCLYaBoAwCLYaBoBACLYaBo\",\n    \"consultationRecordingId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n    \"timestamp\": \"12:30\",\n    \"consultationType\": \"HOSPITAL_VISIT\" //ONLINE_CONSULTATION OR HOSPITAL_VISIT\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1600,7 +1600,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"resourceId\": \"wdhRV8xeWHbojjNX94mDzK-8D2bsAWVtdgg7A9lV56ubWdCH4_bVFD2ymEEtMupnK5kUuVt4cRQ-lW2O97CFaiZLnmId6-Slzc1NbzTNVkAQBwIaZBpsMMyCBK68PUQEOtHUfMxZudNEzK-MLbNSuQ6WqyPlGgJl50sCAhBT4LZ5hkTu_818JH3stVhZ7XMUv-ELEwKaE7wYKyHZo9eV9w\",\n    \"sid\": \"afe3956ac44f927346a32c9405f6ee91\",\n    \"channelName\": \"test71236\",\n    \"uid\": \"9090\",\n    \"consultationRecordingId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n    \"timestamp\": \"01:30\",\n    \"consultationType\": \"HOSPITAL_VISIT\"\n}",
+					"raw": "{\n    \"resourceId\": \"wdhRV8xeWHbojjNX94mDzK-8D2bsAWVtdgg7A9lV56ubWdCH4_bVFD2ymEEtMupnK5kUuVt4cRQ-lW2O97CFaiZLnmId6-Slzc1NbzTNVkAQBwIaZBpsMMyCBK68PUQEOtHUfMxZudNEzK-MLbNSuQ6WqyPlGgJl50sCAhBT4LZ5hkTu_818JH3stVhZ7XMUv-ELEwKaE7wYKyHZo9eV9w\",\n    \"sid\": \"afe3956ac44f927346a32c9405f6ee91\",\n    \"channelName\": \"test71236\",\n    \"uid\": \"9090\",\n    \"consultationRecordingId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n    \"timestamp\": \"01:30\",\n    \"consultationType\": \"HOSPITAL_VISIT\" //ONLINE_CONSULTATION OR HOSPITAL_VISIT\n}",
 					"options": {
 						"raw": {
 							"language": "json"
