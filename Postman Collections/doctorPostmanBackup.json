@@ -1638,6 +1638,50 @@
 				"url": "localhost:8081/user-service/agora/end-call"
 			},
 			"response": []
+		},
+		{
+			"name": "save-user-chat",
+			"id": "69c3a341-d33b-4589-96f9-289e18b7dbb4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"chatId\": \"7777d993-c4dd-4101-bb0d-1f82041f19a7\", //for first time it's not required\r\n    \"patientProfileId\": \"a4ca65c0-9b18-4f92-9099-e44a06d694fd\", // patient and docotor flow\r\n    \"doctorId\": \"0701f00d-af1c-4644-8313-1fc6daaf4801\", // doctor flow\r\n    \"requestMessage\": \"hello\",\r\n    \"role\": \"PATIENT_CONTEXT\" //PATIENT or DOCTOR or PATIENT_CONTEXT\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/user-profile/save-user-chat"
+			},
+			"response": []
+		},
+		{
+			"name": "get-user-chat-by-id",
+			"id": "94a7ab2c-6076-400a-a7ce-37984f241855",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"7777d993-c4dd-4101-bb0d-1f82041f19a7\",\r\n    \"pageNumber\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/user-profile/get-user-chat-by-id"
+			},
+			"response": []
 		}
 	]
 }
