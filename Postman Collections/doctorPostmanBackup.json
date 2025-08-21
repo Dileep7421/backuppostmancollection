@@ -1534,7 +1534,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"uid\": 9130,\n  \"pid\": 9792,\n  \"bid\": 3775,\n  \"channelName\": \"videoconsultation2025081755511077854\",\n  \"consultationId\": \"19e8da37-e278-4f1d-b42a-b76354a459b4\",\n  \"startTime\": \"15:31\",\n  \"consultationType\": \"ONLINE_CONSULTATION\",\n  \"patientId\": \"9de4b150-4af4-4b2b-8968-53fd6fd0f9ea\",\n  \"doctorName\": \"Dr. jagadeesh s\"\n}",
+					"raw": "{\n  \"uid\": 9130,\n  \"pid\": 9792,\n  \"bid\": 3775,\n  \"channelName\": \"videoconsultation2025081755511077854\",\n  \"consultationId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n  \"startTime\": \"15:31\",\n  \"consultationType\": \"ONLINE_CONSULTATION\",\n  \"patientId\": \"9de4b150-4af4-4b2b-8968-53fd6fd0f9ea\",\n  \"doctorName\": \"Dr. jagadeesh s\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
