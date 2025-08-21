@@ -1650,7 +1650,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"chatId\": \"c3a280c6-f654-4e4b-a1d1-e8ca94ca8b81\", //for first time it's not required\r\n    \"patientProfileId\": \"a4ca65c0-9b18-4f92-9099-e44a06d694fd\", // patient and docotor flow\r\n    // \"doctorId\": \"0701f00d-af1c-4644-8313-1fc6daaf4801\", // doctor flow\r\n    \"slotId\": \"3f311e2b-e298-48b0-8048-2707ca6bd2e6\",  //after slot booking for patient\r\n    \"requestMessage\": \"Hi\",\r\n    \"text\": true,\r\n    \"attachment\": false,\r\n    \"role\": \"PATIENT_CONTEXT_EMR\" //PATIENT or DOCTOR or PATIENT_CONTEXT or PATIENT_CONTEXT_EMR\r\n}",
+					"raw": "{\r\n    \"chatId\": \"c3a280c6-f654-4e4b-a1d1-e8ca94ca8b81\", //for first time it's not required\r\n    \"patientProfileId\": \"a4ca65c0-9b18-4f92-9099-e44a06d694fd\", // patient and docotor flow\r\n    \"doctorId\": \"0701f00d-af1c-4644-8313-1fc6daaf4801\", // doctor flow\r\n    \"slotId\": \"3f311e2b-e298-48b0-8048-2707ca6bd2e6\",  //after slot booking for patient\r\n    \"requestMessage\": \"Hi\",\r\n    \"text\": true,\r\n    \"attachment\": false,\r\n    \"role\": \"PATIENT_CONTEXT_EMR\" //PATIENT or DOCTOR or PATIENT_CONTEXT or PATIENT_CONTEXT_EMR\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
