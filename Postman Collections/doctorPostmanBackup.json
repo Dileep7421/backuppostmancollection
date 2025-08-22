@@ -1206,7 +1206,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"fullName\": \"Raju\",\r\n    \"title\": \"Dr.\",\r\n    \"gender\": \"Male\",\r\n    \"email\": \"raju1@example.com\",\r\n    \"mobileNumber\": \"1234567899\",\r\n    \"city\": \"New York\",\r\n    \"dob\": \"1990-01-01\",\r\n    \"specialty\": \"Aesthetic Gynaecologist\",\r\n    \"mobileVerified\": true,\r\n    \"images\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"identityProofFile\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"deviceToken\": \"device-token-string\",\r\n    \"updated\": false\r\n}",
+					"raw": "{\r\n    \"fullName\": \"Dinesh\",\r\n    \"title\": \"Dr.\",\r\n    \"gender\": \"Male\",\r\n    \"email\": \"dileep@example.com\",\r\n    \"mobileNumber\": \"9876363737\",\r\n    \"city\": \"New York\",\r\n    \"dob\": \"1990-01-01\",\r\n    \"specialty\": \"Aesthetic Gynaecologist\",\r\n    \"mobileVerified\": true,\r\n    \"images\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"identityProofFile\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"deviceToken\": \"device-token-string\",\r\n    \"updated\": false\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1272,7 +1272,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"doctorId\": \"a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea\",\r\n    \"clinicDetails\": {\r\n        \"id\": \"03321939-d4ce-478e-bfd6-3d9748e5e9da\",\r\n        \"clinicName\": \"Rejuvenate Wellness\",\r\n        \"address\": \"941, Main Street, Banjara Hills\",\r\n        \"city\": \"Chennai\",\r\n        \"pincode\": \"570047\",\r\n        \"locality\": \"Gopalapuram\",\r\n        \"state\": \"Tamil Nadu\",\r\n        \"services\": [\r\n            \"Hair\"\r\n        ],\r\n        \"sessionDetails\": [\r\n            {\r\n                \"day\": \"Monday\",\r\n                \"sessionTimings\": [\r\n                    {\r\n                        \"startTime\": \"10:00\",\r\n                        \"endTime\": \"20:00\",\r\n                        \"lunchStartTime\": \"13:00\",\r\n                        \"lunchEndTime\": \"14:00\",\r\n                        \"gapTime\": \"00:20\"\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    },\r\n    \"updated\": true\r\n}",
+					"raw": "{\r\n    \"doctorId\": \"605f8888-5626-411b-a60f-1d5b309ba1dc\",\r\n    \"clinicDetails\": {\r\n        // \"id\": \"03321939-d4ce-478e-bfd6-3d9748e5e9da\",\r\n        \"clinicName\": \"Rejuvenate Wellness\",\r\n        \"address\": \"941, Main Street, Banjara Hills\",\r\n        \"city\": \"Chennai\",\r\n        \"pincode\": \"570047\",\r\n        \"locality\": \"Gopalapuram\",\r\n        \"state\": \"Tamil Nadu\",\r\n        \"services\": [\r\n            \"Hair\"\r\n        ],\r\n        \"sessionDetails\": [\r\n            {\r\n                \"day\": \"Monday\",\r\n                \"sessionTimings\": [\r\n                    {\r\n                        \"startTime\": \"10:00\",\r\n                        \"endTime\": \"20:00\",\r\n                        \"lunchStartTime\": \"13:00\",\r\n                        \"lunchEndTime\": \"14:00\",\r\n                        \"gapTime\": \"00:20\"\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    },\r\n    \"updated\": false\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1320,7 +1320,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/doctor/onboarding/delete-doctor-info?id=d9364a58-b262-4bab-9d0f-c90a7d0c3d66&type=EDUCATION_DETAILS&doctorId=a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea",
+					"raw": "localhost:8081/user-service/doctor/onboarding/delete-doctor-info?id=f467826d-ec96-430e-9234-ad69c0b59469&type=CLINIC_DETAILS&doctorId=605f8888-5626-411b-a60f-1d5b309ba1dc",
 					"host": [
 						"localhost"
 					],
@@ -1334,16 +1334,15 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "d9364a58-b262-4bab-9d0f-c90a7d0c3d66"
+							"value": "f467826d-ec96-430e-9234-ad69c0b59469"
 						},
 						{
 							"key": "type",
-							"value": "EDUCATION_DETAILS"
+							"value": "CLINIC_DETAILS"
 						},
 						{
 							"key": "doctorId",
-							"value": "a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea",
-							"type": "text"
+							"value": "605f8888-5626-411b-a60f-1d5b309ba1dc"
 						}
 					]
 				}
