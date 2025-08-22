@@ -1709,33 +1709,6 @@
 				"url": "localhost:8081/user-service/user-profile/get-patient-profiles-by-doctor"
 			},
 			"response": []
-		},
-		{
-			"name": "get-patient-profiles-by-doctor Copy",
-			"id": "b4d6d1f7-2b49-4277-8b20-3a8441498b8b",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"pageNumber\": 1,\n    \"search\": \"D\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "localhost:8081/user-service/user-profile/get-patient-profiles-by-doctor"
-			},
-			"response": []
 		}
 	]
 }
