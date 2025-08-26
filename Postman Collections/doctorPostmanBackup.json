@@ -1708,6 +1708,51 @@
 				"url": "localhost:8081/user-service/user-profile/get-patient-profiles-by-doctor"
 			},
 			"response": []
+		},
+		{
+			"name": "upload-attachment",
+			"id": "e09cefb7-6af5-4e31-80f5-dbcbe065a3f6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjU3YmZiMmExMWRkZmZjMGFkMmU2ODE0YzY4NzYzYjhjNjg3NTgxZDgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vb3RwZ2VuZXJhdGlvbi0xNzc3ZiIsImF1ZCI6Im90cGdlbmVyYXRpb24tMTc3N2YiLCJhdXRoX3RpbWUiOjE3NTUwODQ0MjYsInVzZXJfaWQiOiIxdVZzdnNYc3AyZEdlcFg5WWhEanQxTjBqdnExIiwic3ViIjoiMXVWc3ZzWHNwMmRHZXBYOVloRGp0MU4wanZxMSIsImlhdCI6MTc1NTg2MzAxNCwiZXhwIjoxNzU1ODY2NjE0LCJlbWFpbCI6ImRpbGVlcGt1bWFyLmFtcG9sdUBkaW1lbnNpb25sZWFwLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJkaWxlZXBrdW1hci5hbXBvbHVAZGltZW5zaW9ubGVhcC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.AM9_sM-GvaPb_GKhKJMMYy5mfae_ARO1d3QbLQoX5tPQaob51PT_6tNBNHkqKy6GNLdhqo1M5PFIr8Uagm4FC-ryZmBnwCO_TiSzQUynobEyd2A2-PyqQKBF44ptzGUNWs4qMeHi36mPUbdLGjZ0vShbs97TR-Ug93y-5VBa0NmDeMubg2fIK_9rEWZQeUpHVpuRC4Gt4GtBr7OPPO9eGS5IqvWKd4DJtNs8GUEZFsBJdM7JT66e8ntindZBSVLPAkxeiNFcpx1FxuMvzqOFlg-CqWtMzcKDXFSlli1PW0AMuHoU_ThkQVX-xb-2fEdbETmQHgeNTvSZvJmIWcpr5g"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"type": "file",
+							"key": "file",
+							"src": "postman-cloud:///1f05e29b-f18a-49a0-aa7f-ede7bffab16e"
+						},
+						{
+							"type": "text",
+							"key": "type",
+							"value": "image"
+						},
+						{
+							"key": "id",
+							"value": "9fb0c428-8213-4c4f-b994-35bc28d44cf6",
+							"type": "text",
+							"uuid": "59d02985-9341-4d6c-9779-39019c8a3909"
+						}
+					]
+				},
+				"url": "localhost:8081/user-service/file/upload-attachment"
+			},
+			"response": []
 		}
 	]
 }
