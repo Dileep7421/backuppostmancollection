@@ -1698,7 +1698,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"pageNumber\": 1,\n    \"search\": \"D\"\n}",
+					"raw": "{\n    \"id\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"pageNumber\": 1,\n    \"search\": \"\",\n    \"type\": \"PATIENT_PROFILE_CHATS\" // PATIENT_PROFILEs or PATIENT_PROFILE_CHATS\n}",
 					"options": {
 						"raw": {
 							"language": "json"
