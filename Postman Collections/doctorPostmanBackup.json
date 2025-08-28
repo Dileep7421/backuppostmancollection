@@ -1649,7 +1649,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"chatId\": \"c3a280c6-f654-4e4b-a1d1-e8ca94ca8b81\", //for first time it's not required\r\n    \"patientProfileId\": \"a4ca65c0-9b18-4f92-9099-e44a06d694fd\", // patient and docotor flow\r\n    \"doctorId\": \"0701f00d-af1c-4644-8313-1fc6daaf4801\", // doctor flow\r\n    \"slotId\": \"3f311e2b-e298-48b0-8048-2707ca6bd2e6\",  //after slot booking for patient\r\n    \"requestMessage\": \"Hi\",\r\n    \"text\": true,\r\n    \"attachment\": false,\r\n    \"role\": \"PATIENT_CONTEXT_EMR\" //PATIENT or DOCTOR or PATIENT_CONTEXT or PATIENT_CONTEXT_EMR\r\n}",
+					"raw": "{\r\n    // \"chatId\": \"49389cf1-7e21-4cc8-ae5b-d7b9a4d1b7fa\", //for first time it's not required\r\n    \"patientProfileId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\", // patient and docotor flow\r\n    \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\", // doctor flow\r\n    \"slotId\": \"3f311e2b-e298-48b0-8048-2707ca6bd2e6\",  //after slot booking for patient\r\n    \"requestMessage\": \"I got fever\",\r\n    \"text\": true,\r\n    // \"attachment\": false,\r\n    // \"attachments\": [\r\n    //     {\r\n    //         \"fileUrl\": \"https://nm1ecs.yotta.com:9021/aesthetics/documents/9fb0c428-8213-4c4f-b994-35bc28d44cf6/image/image-1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=rafertechuser%2F20250823%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250823T043312Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9ee5f9d6728f02ad4ac6d948e45b5651c6cd6cfc7945b6a6fba5a416b82b53ed\",\r\n    //         \"bucket\": \"aesthetics\",\r\n    //         \"object\": \"documents/9fb0c428-8213-4c4f-b994-35bc28d44cf6/image/image-1.jpg\"\r\n    //     }\r\n    // ],\r\n    \"role\": \"DOCTOR\" //PATIENT or DOCTOR or PATIENT_CONTEXT or PATIENT_CONTEXT_EMR\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1698,7 +1698,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"pageNumber\": 1,\n    \"search\": \"\",\n    \"type\": \"PATIENT_PROFILEs\" // PATIENT_PROFILEs or PATIENT_PROFILE_CHATS\n}",
+					"raw": "{\n    \"id\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"pageNumber\": 1,\n    \"search\": \"\",\n    \"type\": \"PATIENT_PROFILES\" // PATIENT_PROFILES or PATIENT_PROFILE_CHATS\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1751,6 +1751,60 @@
 					]
 				},
 				"url": "localhost:8081/user-service/file/upload-attachment"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-user-chat-list",
+			"id": "da488b34-9e5c-46f7-a2fb-bc7ad058ae84",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\",\n    \"pageNumber\": 1,\n    \"type\": \"PATIENT\", // PATIENT or DOCTOR\n    \"search\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/user-profile/get-all-user-chat-list"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-doctor-chats",
+			"id": "b1b9c756-11b9-4eb8-8781-f6ffe49eca06",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"pageNumber\": 1, \n    \"search\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/get-all-doctor-chats"
 			},
 			"response": []
 		}
