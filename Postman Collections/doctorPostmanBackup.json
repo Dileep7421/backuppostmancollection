@@ -495,7 +495,10 @@
 			},
 			"request": {
 				"auth": {
-					"type": "noauth"
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
 				},
 				"method": "POST",
 				"header": [
@@ -506,7 +509,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"patientId\": \"907974a8-f222-42d2-b49a-a02e7c53f4a0\",\n    \"pageNumber\": 1,\n    \"currentDate\": \"\"\n}",
+					"raw": "{\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\",\n    \"pageNumber\": 1,\n    \"currentDate\": \"\",\n    \"bookingStatus\": \"COMPLETED\" //COMPLETED or CONFIRMED\n}",
 					"options": {
 						"raw": {
 							"language": "json"
