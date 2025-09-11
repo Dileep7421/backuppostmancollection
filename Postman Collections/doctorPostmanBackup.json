@@ -1652,7 +1652,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"chatId\": \"867a1146-c2f9-4daa-bba3-b6658a03b1ad\", //for first time it's not required\r\n    \"patientProfileId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\", // patient and docotor flow\r\n    \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\", // doctor flow\r\n    \"slotId\": \"3f311e2b-e298-48b0-8048-2707ca6bd2e6\",  //after slot booking for patient\r\n    \"requestMessage\": \"Hello\",\r\n    \"text\": true,\r\n    \"attachment\": true,\r\n    \"attachments\": [\r\n        {\r\n            \"fileUrl\": \"https://nm1ecs.yotta.com:9021/aesthetics/documents/doctor/4e4957bb-7934-450b-b8d7-b52d3bc7a09e/image/image-1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=rafertechuser%2F20250829%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250829T054137Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b4bfbe46af74d0146d06bbb6e1933b2fbf06efcddc8f29e26a6af83d1f5c55d6\",\r\n            \"bucket\": \"aesthetics\",\r\n            \"object\": \"documents/doctor/4e4957bb-7934-450b-b8d7-b52d3bc7a09e/image/image-1.jpg\"\r\n        }\r\n    ],\r\n    \"role\": \"DOCTOR\" //PATIENT or DOCTOR or PATIENT_CONTEXT or PATIENT_CONTEXT_EMR\r\n}",
+					"raw": "{\r\n    // \"chatId\": \"7e458e24-ea90-4124-98e5-3322dbeef09e\", //for first time it's not required\r\n    \"patientProfileId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\", // patient and docotor flow\r\n    \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\", // doctor flow\r\n    \"slotId\": \"3f311e2b-e298-48b0-8048-2707ca6bd2e6\",  //after slot booking for patient\r\n    \"requestMessage\": \"Rhinoplasty\",\r\n    \"text\": true,\r\n    // \"attachment\": false,\r\n    // \"attachments\": [\r\n    //     {\r\n    //         \"fileUrl\": \"https://nm1ecs.yotta.com:9021/aesthetics/documents/doctor/4e4957bb-7934-450b-b8d7-b52d3bc7a09e/image/image-1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=rafertechuser%2F20250829%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250829T054137Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b4bfbe46af74d0146d06bbb6e1933b2fbf06efcddc8f29e26a6af83d1f5c55d6\",\r\n    //         \"bucket\": \"aesthetics\",\r\n    //         \"object\": \"documents/doctor/4e4957bb-7934-450b-b8d7-b52d3bc7a09e/image/fistimage.jpeg\"\r\n    //     }\r\n    // ],\r\n    \"role\": \"DOCTOR\" //PATIENT or DOCTOR or PATIENT_CONTEXT or PATIENT_CONTEXT_EMR\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1707,7 +1707,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"pageNumber\": 1,\n    \"search\": \"\",\n    \"type\": \"PATIENT_PROFILE_CHATS\" // PATIENT_PROFILES or PATIENT_PROFILE_CHATS\n}",
+					"raw": "{\n    \"id\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\n    \"pageNumber\": 1,\n    \"search\": \"\",\n    \"type\": \"PATIENT_PROFILES\" // PATIENT_PROFILES or PATIENT_PROFILE_CHATS\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1744,10 +1744,7 @@
 						{
 							"type": "file",
 							"key": "file",
-							"src": [
-								"postman-cloud:///1f04a86a-fa4e-4da0-930d-9aa9d23e4f71",
-								"postman-cloud:///1f0420ec-12aa-4c20-b807-79aa67b2dc08"
-							]
+							"src": "postman-cloud:///1f04a877-a415-4df0-b058-93e8cf7092fa"
 						},
 						{
 							"type": "text",
