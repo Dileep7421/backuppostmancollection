@@ -1726,10 +1726,7 @@
 			},
 			"request": {
 				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "{{bearerToken}}"
-					}
+					"type": "noauth"
 				},
 				"method": "POST",
 				"header": [
@@ -1744,7 +1741,10 @@
 						{
 							"type": "file",
 							"key": "file",
-							"src": "postman-cloud:///1f04a877-a415-4df0-b058-93e8cf7092fa"
+							"src": [
+								"postman-cloud:///1f04a877-a415-4df0-b058-93e8cf7092fa",
+								"postman-cloud:///1f04a86a-fa4e-4da0-930d-9aa9d23e4f71"
+							]
 						},
 						{
 							"type": "text",
