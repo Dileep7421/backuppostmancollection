@@ -584,7 +584,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"slotTime\": \"09:00\",\r\n  \"slotDate\": \"2025-07-26\",\r\n  \"slotDay\": \"Monday\",\r\n  \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\r\n  \"patientId\": \"907974a8-f222-42d2-b49a-a02e7c53f4a0\",\r\n  \"clinicName\": \"SkinAesthetics Hub\",\r\n  \"serviceId\": \"123f6391-ac1d-4884-a66e-6cb64499cc49\",\r\n  \"serviceName\": \"Thigh Lift\",\r\n  \"createdOn\": \"2025-07-08T22:55:21.720852\",\r\n  \"patientServiceType\": \"CONSULT_DOCTOR\",\r\n  \"consultationType\": \"ONLINE_CONSULTATION\"\r\n}\r\n",
+					"raw": "{\r\n  \"slotTime\": \"09:00\",\r\n  \"slotDate\": \"2025-07-26\",\r\n  \"slotDay\": \"Monday\",\r\n  \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\r\n  \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\r\n  \"clinicName\": \"SkinAesthetics Hub\",\r\n  \"serviceId\": \"123f6391-ac1d-4884-a66e-6cb64499cc49\",\r\n  \"serviceName\": \"Thigh Lift\",\r\n  \"createdOn\": \"2025-09-30T22:55:21.720852\",\r\n  \"patientServiceType\": \"CONSULT_DOCTOR\",\r\n  \"consultationType\": \"ONLINE_CONSULTATION\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1205,6 +1205,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -1231,7 +1237,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"doctorId\": \"a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea\",\r\n    \"education\": {\r\n        \"id\": \"e020c95a-80da-401c-a426-7e9d8985b76d\",\r\n        \"degree\": \"MD\",\r\n        \"university\": \"Stanford University School of Medicine\",\r\n        \"startYear\": 2014,\r\n        \"endYear\": 2018,\r\n        \"specialization\": \"Aesthetic Gynaecologist\",\r\n        \"educationCertificates\": [\r\n            {\r\n                \"id\": \"7e9aabc9-e19a-405d-94a0-782f532960e6\",\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/doctor-icon.jpg\"\r\n            }\r\n        ]\r\n    },\r\n    \"updated\": true\r\n}",
+					"raw": "{\r\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\r\n    \"education\": {\r\n        // \"id\": \"e020c95a-80da-401c-a426-7e9d8985b76d\",\r\n        \"degree\": \"MD\",\r\n        \"university\": \"Stanford University School of Medicine\",\r\n        \"startYear\": 2014,\r\n        \"endYear\": 2018,\r\n        \"specialization\": \"Aesthetic Gynaecologist\",\r\n        \"educationCertificates\": [\r\n            {\r\n                \"id\": \"7e9aabc9-e19a-405d-94a0-782f532960e6\",\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/doctor-icon.jpg\"\r\n            }\r\n        ]\r\n    },\r\n    \"updated\": false\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1674,7 +1680,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"867a1146-c2f9-4daa-bba3-b6658a03b1ad\",\r\n    \"pageNumber\": 1\r\n}",
+					"raw": "{\r\n    \"id\": \"4eb8e854-70ae-44ba-8f50-ee5d6a783765\",\r\n    \"pageNumber\": 1\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
