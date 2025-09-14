@@ -985,7 +985,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"consultationId\": \"9f9337bd-ae02-40df-99b2-5128196fcee0\",\r\n    \"slotId\": \"bbdc80bc-d0da-4929-8edc-8ad881521720\",\r\n    \"updatedAt\": \"2025-09-24T14:00:41.394318\",\r\n    \"type\": \"END_CONSULTATION\",\r\n    \"endTime\": \"20:30\",\r\n    \"status\": \"COMPLETED\"\r\n}",
+					"raw": "{\r\n    \"consultationId\": \"1cb9f800-0e77-4133-91a3-7f4d65a9059e\",\r\n    \"slotId\": \"f7cadfb5-6c69-44a4-8517-7decaeb94226\",\r\n    \"updatedAt\": \"2025-09-29T14:00:41.394318\",\r\n    \"type\": \"END_CONSULTATION\",\r\n    \"endTime\": \"20:30\",\r\n    \"status\": \"COMPLETED\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
