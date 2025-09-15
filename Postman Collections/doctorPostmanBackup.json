@@ -1909,6 +1909,34 @@
 				"url": "localhost:8081/user-service/user-profile/submit-user-chat"
 			},
 			"response": []
+		},
+		{
+			"name": "get-patient-consultation-prescription",
+			"id": "2e8c2102-2664-4eac-9a2e-cf01e96a4086",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobileNumber\": \"7075960589\",\r\n    \"pageNumber\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/user-profile/get-patient-consultation-prescription"
+			},
+			"response": []
 		}
 	]
 }
