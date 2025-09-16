@@ -1259,7 +1259,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"doctorId\": \"a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea\",\r\n    \"license\": {\r\n        \"hprId\": \"HPR654321\",\r\n        \"licenseNumber\": \"LIC123456\",\r\n        \"registrationCouncil\": \"California Medical Board\",\r\n        \"registrationYear\": 2017,\r\n        \"validTill\": 2032,\r\n        \"licenseCertificates\": [\r\n            {\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/doctor-icon.jpg\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"raw": "{\r\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\r\n    \"license\": {\r\n        \"hprId\": \"HPR654321\",\r\n        \"licenseNumber\": \"LIC123456\",\r\n        \"registrationCouncil\": \"California Medical Board\",\r\n        \"registrationYear\": 2017,\r\n        \"validTill\": 2032,\r\n        \"licenseCertificates\": [\r\n            {\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/doctor-icon.jpg\"\r\n            }\r\n        ]\r\n    }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
