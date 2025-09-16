@@ -633,14 +633,14 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg3NzQ4NTAwMmYwNWJlMDI2N2VmNDU5ZjViNTEzNTMzYjVjNThjMTIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vb3RwZ2VuZXJhdGlvbi0xNzc3ZiIsImF1ZCI6Im90cGdlbmVyYXRpb24tMTc3N2YiLCJhdXRoX3RpbWUiOjE3NTE0NTU5NzUsInVzZXJfaWQiOiJNZ3JWbDNxQU0yZnFja01IRnlJWnM1bFU3YkoyIiwic3ViIjoiTWdyVmwzcUFNMmZxY2tNSEZ5SVpzNWxVN2JKMiIsImlhdCI6MTc1MTQ1NTk3NSwiZXhwIjoxNzUxNDU5NTc1LCJlbWFpbCI6InByaXR1c2gua2hhZGVAZGltZW5zaW9ubGVhcC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsicHJpdHVzaC5raGFkZUBkaW1lbnNpb25sZWFwLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.j4SJpbi4GVIXk4D8laDj8QVGwn-iz-7EKBFkSuE5kGQEeHujrw1Q8AZIkaxuURIKJKRi8_sS446J0p7fHfPmuMKTNWNRU3iVN-V3T5cyvAvwy86B2NmeGxGWyFY5bzscQOldLXuT_QF66HCCBmTXzjv_8qil5o5K99cHFx0M_Kr9SvQ2yjAz8wQnRiMSwujjSuiquHZTvn07947K3cLA-TXFrfLGrQ1XMrvtP_gwgT2okvJGWexo_TP8Tr8x_CADGJ2f8lCKrYM5V17zW6a0pgzkXg7dQFQdpwqB3yd7edUPsUDyUJQiaZsq2VvoUbwkBSNzdk0QyFXsC4n4x8Me-g"
+						"token": "{{bearerToken}}"
 					}
 				},
 				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"orderId\": \"order_QjjFJbLT1a1ifY\",\r\n    \"status\": \"SUCCESSFUL\",\r\n    \"paymentId\": \"pay_QjjFJbLT1a1ifY\",\r\n    \"doctorName\": \"Ravi\",\r\n    \"patientName\": \"Kumar\",\r\n    \"serviceName\": \"Thigh Lift\",\r\n    \"slotDate\": \"23-06-2025\",\r\n    \"slotTime\": \"5:30 PM\",\r\n    \"doctorId\": \"36da0f7d-692f-435d-9f1c-910783121adb\",\r\n    \"patientId\": \"36da0f7d-692f-435d-9f1c-910783121ad5\",\r\n    \"patientMobileNumber\": \"917075960589\",\r\n    \"doctorMobileNumber\": \"917075960589\",\r\n    \"patientEmailId\": \"ampoludileep8@gmail.com\",\r\n    \"doctorEmailId\": \"ampoludileep7@gmail.com\",\r\n    \"slotId\": \"e6abe041-6bd0-4400-a2b1-109c19ef3eb4\",\r\n    \"updatedOn\": \"2025-07-23T10:30:01.720852\",\r\n    \"bookingId\": \"AST-SB-20250701-175902-0017\",\r\n    \"amount\": \"15000\",\r\n    \"clinicName\": \"SkinAesthetics Hub\",\r\n    \"clinicAddress\": \"Hyderabad\",\r\n    \"deviceTokens\": {\r\n        \"doctorDeviceToken\": \"cMMy3mVOQX2gsydvjvvyNS:APA91bEFUUt9xpTBpAVinOZflk9ZC3-uAv8hW_jjb6mpXKg924uG9PpwS-CuC60c4RXjN4BxCwnmLkYic-09TL8ZLhQEKxbVxMC-sf0VTaXhM7iF88QIK1Q\"\r\n    },\r\n    \"patientServiceType\": \"CONSULT_DOCTOR\"\r\n}",
+					"raw": "{\r\n    \"orderId\": \"order_RIChhUxVBCF3KH\",\r\n    \"status\": \"SUCCESSFUL\",\r\n    \"paymentId\": \"pay_QjjFJbLT1a1ifY\",\r\n    \"doctorName\": \"Ravi\",\r\n    \"patientName\": \"Kumar\",\r\n    \"serviceName\": \"Thigh Lift\",\r\n    \"slotDate\": \"23-06-2025\",\r\n    \"slotTime\": \"5:30 PM\",\r\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\r\n    \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\r\n    \"patientMobileNumber\": \"917075960589\",\r\n    \"doctorMobileNumber\": \"917075960589\",\r\n    \"patientEmailId\": \"ampoludileep8@gmail.com\",\r\n    \"doctorEmailId\": \"ampoludileep7@gmail.com\",\r\n    \"slotId\": \"bbdc80bc-d0da-4929-8edc-8ad881521720\",\r\n    \"updatedOn\": \"2025-09-23T10:30:01.720852\",\r\n    \"bookingId\": \"AST-SB-20250701-175902-0017\",\r\n    \"amount\": \"15000\",\r\n    \"clinicName\": \"SkinAesthetics Hub\",\r\n    \"clinicAddress\": \"Hyderabad\",\r\n    \"deviceTokens\": {\r\n        \"doctorDeviceToken\": \"cMMy3mVOQX2gsydvjvvyNS:APA91bEFUUt9xpTBpAVinOZflk9ZC3-uAv8hW_jjb6mpXKg924uG9PpwS-CuC60c4RXjN4BxCwnmLkYic-09TL8ZLhQEKxbVxMC-sf0VTaXhM7iF88QIK1Q\"\r\n    },\r\n    \"patientServiceType\": \"CONSULT_DOCTOR\" // BOOK_SERVICE or CONSULT_DOCTOR\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1680,7 +1680,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"12631050-ee43-44a6-a5ba-a344fae865df\",\r\n    \"pageNumber\": 1\r\n}",
+					"raw": "{\r\n    \"id\": \"74601ffc-6820-48fb-935b-848cb6ce5a0e\",\r\n    \"pageNumber\": 1\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
