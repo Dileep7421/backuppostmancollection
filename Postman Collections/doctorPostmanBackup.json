@@ -1845,13 +1845,15 @@
 							"key": "files",
 							"type": "file",
 							"uuid": "810442f1-6493-45e9-b584-90918d68d53e",
-							"src": "postman-cloud:///1f090c3e-e778-4c80-8a81-ce738c96d701"
+							"src": "postman-cloud:///1f090c3e-e778-4c80-8a81-ce738c96d701",
+							"disabled": true
 						},
 						{
 							"key": "type",
 							"value": "image",
 							"type": "text",
-							"uuid": "b4b25046-c88c-49f2-b192-71e2ad9fa7cf"
+							"uuid": "b4b25046-c88c-49f2-b192-71e2ad9fa7cf",
+							"disabled": true
 						},
 						{
 							"key": "chatId",
@@ -1877,30 +1879,29 @@
 							"key": "slotId",
 							"value": "bbdc80bc-d0da-4929-8edc-8ad881521720",
 							"type": "text",
-							"uuid": "fb5711da-1c32-4924-9a45-9ed78b515f7c",
-							"disabled": true
+							"uuid": "fb5711da-1c32-4924-9a45-9ed78b515f7c"
 						},
 						{
 							"key": "role",
-							"value": "PATIENT",
+							"value": "PATIENT_CONTEXT_EMR",
 							"type": "text",
 							"uuid": "01f8ac80-a029-49bd-a412-244b2fe62b8a"
 						},
 						{
 							"key": "requestMessage",
-							"value": "",
+							"value": "Thigh Lift",
 							"type": "text",
 							"uuid": "4048969d-d9e4-483c-bb26-cf00e823ce36"
 						},
 						{
 							"key": "isText",
-							"value": "false",
+							"value": "true",
 							"type": "text",
 							"uuid": "ca63d5a3-c5d5-4e0b-9e01-36225897d96e"
 						},
 						{
 							"key": "isAttachment",
-							"value": "true",
+							"value": "false",
 							"type": "text",
 							"uuid": "7a99092e-9a4b-444a-b19f-20453d8b12b2"
 						}
@@ -1935,6 +1936,37 @@
 					}
 				},
 				"url": "localhost:8081/user-service/user-profile/get-patient-consultation-prescription"
+			},
+			"response": []
+		},
+		{
+			"name": "get-consultation-prescription-by-id",
+			"id": "8f0aa789-3611-4b3f-891c-e60a7ccd275a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/user-profile/get-consultation-prescription-by-id?recordId=bbdc80bc-d0da-4929-8edc-8ad881521720",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"user-profile",
+						"get-consultation-prescription-by-id"
+					],
+					"query": [
+						{
+							"key": "recordId",
+							"value": "bbdc80bc-d0da-4929-8edc-8ad881521720",
+							"type": "text"
+						}
+					]
+				}
 			},
 			"response": []
 		}
