@@ -1007,7 +1007,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"consultationId\": \"1cb9f800-0e77-4133-91a3-7f4d65a9059e\",\r\n    \r\n    \"prescribedServices\": [\r\n        {\r\n            \"serviceId\": \"b8b04ef2-e285-4579-89e5-7a0c290ba17f\",\r\n            \"serviceName\": \"Health Checkup\",\r\n            \"mainCategory\": \"Healthcare\",\r\n            \"subCategory\": \"Preventive Care\"\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"consultationId\": \"6cd4ac44-588e-4d31-af61-ac337f1be231\",\r\n    \r\n    \"prescribedServices\": [\r\n        {\r\n            \"serviceId\": \"b8b04ef2-e285-4579-89e5-7a0c290ba17f\",\r\n            \"serviceName\": \"Health Checkup\",\r\n            \"mainCategory\": \"Healthcare\",\r\n            \"subCategory\": \"Preventive Care\"\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
