@@ -16,7 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"searchBy\": \"\",\r\n    \"status\": \"ACTIVE\",\r\n    \"pageNumber\": 0,\r\n    \"pageSize\": 10\r\n}",
+					"raw": "{\r\n    \"searchBy\": \"\",\r\n    \"status\": \"DRAFT\",\r\n    \"pageNumber\": 0,\r\n    \"pageSize\": 10\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -134,7 +134,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"mainCategory\": \"Beauty\",\r\n  \"subCategory\": \"Hair\",\r\n  \"serviceName\": \"Hair Spa12345678971\",\r\n  \"durationInMinutes\": 60,\r\n  \"serviceType\": \"In-Salon\",\r\n  \"priceStartFrom\": 1200.0,\r\n  \"priceVariable\": \"Based on Hair Length\",\r\n  \"minimumRange\": \"1200 Grafts\",\r\n  \"benefits\": [\r\n    \"Improves hair texture\",\r\n    \"Reduces dandruff\",\r\n    \"Deep conditioning\",\r\n    \"hair texture\"\r\n  ],\r\n  \"images\": [\r\n    {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/mask-logo-full-hd.jpg\"\r\n    }\r\n  ],\r\n  \"emiAvailable\": true,\r\n  \"status\": \"ACTIVE\",\r\n  \"deleted\": false\r\n}\r\n",
+					"raw": "{\r\n    \"id\": \"cd3b90d8-e83f-4bd6-85a1-b318f8fd74b1\",\r\n  \"mainCategory\": \"Beauty\",\r\n  \"subCategory\": \"Hair\",\r\n  \"serviceName\": \"Hair Spa12345678972\",\r\n  \"durationInMinutes\": 60,\r\n  \"serviceType\": \"In-Salon\",\r\n  \"priceStartFrom\": 1200.0,\r\n  \"priceVariable\": \"Based on Hair Length\",\r\n  \"minimumRange\": \"1200 Grafts\",\r\n  \"benefits\": [\r\n    \"Improves hair texture\",\r\n    \"Reduces dandruff\",\r\n    \"Deep conditioning\",\r\n    \"hair texture\"\r\n  ],\r\n  \"images\": [\r\n    {\r\n        \"bucket\": \"aesthetic-dev-750669546170\",\r\n        \"object\": \"image/photo-1.jpeg\"\r\n    }\r\n  ],\r\n  \"emiAvailable\": true,\r\n  \"status\": \"IN_PROGRESS\",\r\n  \"deleted\": false,\r\n  \"updated\": true\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
