@@ -1542,7 +1542,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"uid\": 9130,\n  \"pid\": 9792,\n  \"bid\": 3775,\n  \"channelName\": \"videoconsultation2025081755511077854\",\n  \"consultationId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n  \"startTime\": \"15:31\",\n  \"consultationType\": \"ONLINE_CONSULTATION\",\n  \"patientId\": \"9de4b150-4af4-4b2b-8968-53fd6fd0f9ea\",\n  \"doctorName\": \"Dr. jagadeesh s\"\n}",
+					"raw": "{\n  \"uid\": 3873,\n  \"pid\": 7315,\n  \"bid\": 2689,\n  \"channelName\": \"videoconsultation2025091758012157742\",\n  \"consultationId\": \"dc6b0d31-ea7e-427a-ab95-e54b97e51100\",\n  \"startTime\": \"15:31\",\n  \"consultationType\": \"ONLINE_CONSULTATION\",\n  \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\n  \"doctorName\": \"Dr. jagadeesh s\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1575,7 +1575,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"channelName\": \"test71236\",\n    \"uid\": \"9090\",\n    \"resourceId\": \"wdhRV8xeWHbojjNX94mDzK-8D2bsAWVtdgg7A9lV56ubWdCH4_bVFD2ymEEtMupnK5kUuVt4cRQ-lW2O97CFaiZLnmId6-Slzc1NbzTNVkAQBwIaZBpsMMyCBK68PUQEOtHUfMxZudNEzK-MLbNSuQ6WqyPlGgJl50sCAhBT4LZ5hkTu_818JH3stVhZ7XMUv-ELEwKaE7wYKyHZo9eV9w\",\n    \"botRtcToken\": \"0064c6d53b73e8a4af186f5b5dd54d54dddIACJHH6uei4mq2eZxwkt39KjLGHIxhkDjFm1MVMrQEsQIMyX1tmxMFGgIgAL5+Nt+6ShaAQAAQCLYaBoAgCLYaBoAwCLYaBoBACLYaBo\",\n    \"consultationRecordingId\": \"0d1c8d83-f5a4-4a12-9a87-90dad3b9f587\",\n    \"timestamp\": \"12:30\",\n    \"consultationType\": \"HOSPITAL_VISIT\" //ONLINE_CONSULTATION OR HOSPITAL_VISIT\n}",
+					"raw": "{\n    \"channelName\": \"videoconsultation2025091758012157742\",\n    \"uid\": \"2689\",\n    \"resourceId\": \"ngSnOfmaJ_hVwnsmbd-IzWf734hB0OaxZHl8_TItjqV-FWYh_UBNZepTdKwHEkMkfzJbg5bGrcgMvEFbuFC2p9yg_vwdLeHwuWQdVc6EB-zhwBzHT9narZjBYP16o5Jt6QUWAucuLUoNL0tRA0l3ZY2zuggbvWLx-HqWMXDqSYsEBPOPSVai1Vl5JTyASdNJVJs7D16p5_-TdBlM19X8ygpR2Uwtjh__NWJHuAaVdgw\",\n    \"botRtcToken\": \"0064c6d53b73e8a4af186f5b5dd54d54dddIACSpvXd4OvpS5ka/axCTo5/nBIa8yxMRcH6vIIKsLR2yAtqnhbnQhoTIgCWuw5/oNjUaAQAAQAwldNoAgAwldNoAwAwldNoBAAwldNo\",\n    \"consultationRecordingId\": \"dc6b0d31-ea7e-427a-ab95-e54b97e51100\",\n    \"timestamp\": \"12:30\",\n    \"consultationType\": \"ONLINE_CONSULTATION\" //ONLINE_CONSULTATION OR HOSPITAL_VISIT\n}",
 					"options": {
 						"raw": {
 							"language": "json"
