@@ -39,7 +39,7 @@
 				},
 				"method": "GET",
 				"header": [],
-				"url": "localhost:8083/ap-service/api/services/get-service-by-id/123f6391-ac1d-4884-a66e-6cb64499cc49"
+				"url": "localhost:8083/ap-service/api/services/get-service-by-id/cd3b90d8-e83f-4bd6-85a1-b318f8fd74b1"
 			},
 			"response": []
 		},
@@ -287,7 +287,7 @@
 							"key": "file",
 							"type": "file",
 							"uuid": "87a04a6b-0049-41d0-9d45-0429e6393b97",
-							"src": "postman-cloud:///1f03481b-a40a-4670-ae4e-8b763c4cb44c"
+							"src": "postman-cloud:///1f04a86a-fa4e-4da0-930d-9aa9d23e4f71"
 						},
 						{
 							"key": "type",
