@@ -1845,7 +1845,7 @@
 							"key": "files",
 							"type": "file",
 							"uuid": "810442f1-6493-45e9-b584-90918d68d53e",
-							"src": "postman-cloud:///1f09167f-6c65-4f20-805c-0d24cdf18934"
+							"src": "/C:/Users/Admin/Downloads/Prescription Format English Rx.png"
 						},
 						{
 							"key": "type",
@@ -1887,7 +1887,7 @@
 						},
 						{
 							"key": "requestMessage",
-							"value": "Thigh Lift",
+							"value": "",
 							"type": "text",
 							"uuid": "4048969d-d9e4-483c-bb26-cf00e823ce36"
 						},
