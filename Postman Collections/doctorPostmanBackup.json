@@ -1967,6 +1967,106 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-doctors-by-clinic-name",
+			"id": "eccbb2f7-bf86-403d-b6dd-d95b5f81c485",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctors-by-clinic-name?clinicName=SkinAesthetics Hub&pageNumber=1&pageSize=10&searchBy=Aes",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"doctor",
+						"onboarding",
+						"get-doctors-by-clinic-name"
+					],
+					"query": [
+						{
+							"key": "clinicName",
+							"value": "SkinAesthetics Hub",
+							"type": "text"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "searchBy",
+							"value": "Aes",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-patients-by-clinic-name",
+			"id": "fd5a6ed9-0037-4a00-a565-d40158fe7759",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/user-profile/get-patients-by-clinic-name?clinicName=SkinAesthetics Hub&pageNumber=1&pageSize=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"user-profile",
+						"get-patients-by-clinic-name"
+					],
+					"query": [
+						{
+							"key": "clinicName",
+							"value": "SkinAesthetics Hub",
+							"type": "text"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "bookingId",
+							"value": "COMPLETED",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "searchBy",
+							"value": "test",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
