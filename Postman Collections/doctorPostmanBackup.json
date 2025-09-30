@@ -584,7 +584,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"slotTime\": \"09:00\",\r\n  \"slotDate\": \"2025-10-26\",\r\n  \"slotDay\": \"Monday\",\r\n  \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\r\n  \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\r\n  \"clinicName\": \"SkinAesthetics Hub\",\r\n  \"serviceId\": \"123f6391-ac1d-4884-a66e-6cb64499cc49\",\r\n  \"serviceName\": \"Thigh Lift\",\r\n  \"createdOn\": \"2025-09-29T22:55:21.720852\",\r\n  \"patientServiceType\": \"CONSULT_DOCTOR\",\r\n  \"consultationType\": \"ONLINE_CONSULTATION\"\r\n}\r\n",
+					"raw": "{\r\n  \"slotTime\": \"09:00\",\r\n  \"slotDate\": \"2025-10-26\",\r\n  \"slotDay\": \"Monday\",\r\n  \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\r\n  \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\r\n  \"clinicName\": \"SkinAesthetics Hub\",\r\n  \"serviceId\": \"123f6391-ac1d-4884-a66e-6cb64499cc49\",\r\n  \"serviceName\": \"Thigh Lift\",\r\n  \"createdOn\": \"2025-09-29T22:55:21.720852\",\r\n  \"patientServiceType\": \"CONSULT_DOCTOR\",\r\n  \"consultationType\": \"ONLINE_CONSULTATION\",\r\n  \"slotBookedByClinic\": false\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
