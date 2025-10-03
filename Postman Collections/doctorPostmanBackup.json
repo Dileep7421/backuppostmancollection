@@ -1308,7 +1308,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"doctorId\": \"605f8888-5626-411b-a60f-1d5b309ba1dc\",\n    \"experience\":\n        {\n            \"clinicOrHospitalName\": \"Sunshine Clinic\",\n            \"position\": \"Consultant Dermatologist\",\n            \"startDate\": \"03/2018\",\n            \"endDate\": \"Present\",\n            \"location\": \"Los Angeles, CA\",\n            \"experienceCertificates\": [\n                {\n                    \"bucket\": \"aesthetics\",\n                    \"object\": \"image/doctor-icon.jpg\"\n                }\n            ],\n            \"workingHere\": false\n        }\n}",
+					"raw": "{\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\n    \"experience\":\n        {\n            \"clinicOrHospitalName\": \"Sunshine Clinic1\",\n            \"position\": \"Consultant Dermatologist\",\n            \"startDate\": \"03/2013\",\n            \"endDate\": \"03/2017\",\n            \"location\": \"Los Angeles, CA\",\n            \"experienceCertificates\": [\n                {\n                    \"bucket\": \"aesthetics\",\n                    \"object\": \"image/doctor-icon.jpg\"\n                }\n            ],\n            \"workingHere\": false\n        }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
