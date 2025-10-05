@@ -398,7 +398,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"category\": \"Cosmetic Surgery\",\n    \"unit\": \"km\",\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\"\n}",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"category\": \"Cosmetic Surgery\",\n    \"unit\": \"km\",\n    \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -417,7 +417,10 @@
 			},
 			"request": {
 				"auth": {
-					"type": "noauth"
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
 				},
 				"method": "POST",
 				"header": [
@@ -432,7 +435,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"unit\": \"km\",\n    \"doctorId\": \"09b95a97-bdac-42f4-b95d-8acf5f0ca73e\",\n    \"clinicName\": \"The Hair & Laser Studio\",\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\"\n}",
+					"raw": "{\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"unit\": \"km\",\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\n    \"clinicName\": \"The Hair & Laser Studio\",\n    \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -450,11 +453,17 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\",\r\n    \"doctorId\": \"e93b848d-7e5e-4fe7-baa3-14005d03f2b2\",\r\n    \"clinicName\": \"SkinAesthetics Hub\",\r\n    \"favorite\": true\r\n}",
+					"raw": "{\r\n    \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\r\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\r\n    \"clinicName\": \"SkinAesthetics Hub\",\r\n    \"favorite\": true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -555,11 +564,17 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\r\n    \"clinicName\": \"SkinAesthetics Hub\"\r\n}",
+					"raw": "{\r\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\r\n    \"clinicName\": \"SkinAesthetics Hub\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -823,7 +838,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\":1,\n    \"latitude\": 13.4591,\n    \"longitude\": 80.179521,\n    \"unit\": \"km\",\n    \"specialty\": \"\",\n    \"category\": \"Skin\",\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\"\n}",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"unit\": \"km\",\n    \"specialty\": \"\",\n    \"category\": \"Skin\",\n    \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
