@@ -1220,16 +1220,13 @@
 			},
 			"request": {
 				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "{{bearerToken}}"
-					}
+					"type": "noauth"
 				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"fullName\": \"Dinesh\",\r\n    \"title\": \"Dr.\",\r\n    \"gender\": \"Male\",\r\n    \"email\": \"dileep@example.com\",\r\n    \"mobileNumber\": \"9876363737\",\r\n    \"city\": \"New York\",\r\n    \"dob\": \"1990-01-01\",\r\n    \"specialty\": \"Aesthetic Gynaecologist\",\r\n    \"mobileVerified\": true,\r\n    \"images\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"identityProofFile\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"deviceToken\": \"device-token-string\",\r\n    \"updated\": false\r\n}",
+					"raw": "{\r\n    \"fullName\": \"Ramu\",\r\n    \"title\": \"Dr.\",\r\n    \"gender\": \"Male\",\r\n    \"email\": \"ramu@gmail.com\",\r\n    \"mobileNumber\": \"9876363737\",\r\n    \"city\": \"New York\",\r\n    \"dob\": \"1990-01-01\",\r\n    \"specialty\": \"Aesthetic Gynaecologist\",\r\n    \"mobileVerified\": true,\r\n    \"images\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"identityProofFile\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"deviceToken\": \"device-token-string\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
