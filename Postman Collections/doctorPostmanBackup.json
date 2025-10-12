@@ -859,6 +859,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
 				"method": "POST",
 				"header": [
 					{
@@ -872,7 +878,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\n    \"bookingStatus\": \"CONFIRMED\",\n    \"currentDate\": \"\" \n}",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\n    \"bookingStatus\": \"CONFIRMED\",\n    \"currentDate\": \"\",\n    \"clinicName\": \"SkinAesthetics Hub\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
