@@ -2087,6 +2087,43 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-monthly-patient-bookings-by-doctor",
+			"id": "df2b4f34-9b61-45c1-9b7e-3285eba5e108",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=958D030929EE8520B0BB5745AED57A8A"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\n    \"bookingStatus\": \"CONFIRMED\",\n    \"currentDate\": \"\",\n    \"clinicName\": \"SkinAesthetics Hub\",\n    \"currentMonth\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/get-monthly-patient-bookings-by-doctor"
+			},
+			"response": []
 		}
 	]
 }
