@@ -63,12 +63,15 @@
 			},
 			"request": {
 				"auth": {
-					"type": "noauth"
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
 				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-id?id=b62a808f-e76b-4f07-99ae-b2a4da200985",
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-id?id=74d48d5c-2ad3-41f9-8dc3-79b679a4c039",
 					"host": [
 						"localhost"
 					],
@@ -82,7 +85,7 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "b62a808f-e76b-4f07-99ae-b2a4da200985"
+							"value": "74d48d5c-2ad3-41f9-8dc3-79b679a4c039"
 						}
 					]
 				}
