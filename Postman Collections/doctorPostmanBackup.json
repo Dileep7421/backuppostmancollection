@@ -1859,6 +1859,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -1868,11 +1874,11 @@
 							"key": "files",
 							"type": "file",
 							"uuid": "810442f1-6493-45e9-b584-90918d68d53e",
-							"src": "/C:/Users/Admin/Downloads/Prescription Format English Rx.png"
+							"src": "postman-cloud:///1f0af173-02e6-41a0-9465-da0ebfa2fcd7"
 						},
 						{
 							"key": "type",
-							"value": "image",
+							"value": "pdf",
 							"type": "text",
 							"uuid": "b4b25046-c88c-49f2-b192-71e2ad9fa7cf"
 						},
@@ -1880,7 +1886,8 @@
 							"key": "chatId",
 							"value": "74601ffc-6820-48fb-935b-848cb6ce5a0e",
 							"type": "text",
-							"uuid": "bb960ef5-aa7a-4477-8307-0f2172619648"
+							"uuid": "bb960ef5-aa7a-4477-8307-0f2172619648",
+							"disabled": true
 						},
 						{
 							"key": "doctorId",
@@ -1891,7 +1898,7 @@
 						},
 						{
 							"key": "patientProfileId",
-							"value": "bbd1a9c8-b103-401b-b33b-01b1a103e41a",
+							"value": "9de4b150-4af4-4b2b-8968-53fd6fd0f9ea",
 							"type": "text",
 							"uuid": "3f81c2f1-1913-42b5-b5e1-9d356ff3723e"
 						},
@@ -1928,7 +1935,7 @@
 						}
 					]
 				},
-				"url": "localhost:8081/user-service/user-profile/submit-user-chat"
+				"url": "{{baseUrl}}/user-service/user-profile/submit-user-chat"
 			},
 			"response": []
 		},
