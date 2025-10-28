@@ -1007,11 +1007,17 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"consultationId\": \"6cd4ac44-588e-4d31-af61-ac337f1be231\",\r\n    \"slotId\": \"bbdc80bc-d0da-4929-8edc-8ad881521720\",\r\n    \"updatedAt\": \"2025-09-30T14:00:41.394318\",\r\n    \"type\": \"END_CONSULTATION\",\r\n    \"endTime\": \"20:30\",\r\n    \"status\": \"COMPLETED\"\r\n}",
+					"raw": "{\r\n    \"consultationId\": \"f45b3ade-f0e7-4a2f-a40b-f4ce469c0f7c\",\r\n    \"slotId\": \"a61dce94-2648-4d5c-a52a-c3b17699f988\",\r\n    \"updatedAt\": \"2025-10-28T18:00:41.394318\",\r\n    \"type\": \"END_CONSULTATION\",\r\n    \"endTime\": \"20:30\",\r\n    \"status\": \"COMPLETED\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
