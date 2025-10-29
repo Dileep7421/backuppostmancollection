@@ -2180,6 +2180,59 @@
 				"url": "localhost:8081/user-service/agora/generate-screen-share-token"
 			},
 			"response": []
+		},
+		{
+			"name": "get-pre-consultation-prescribed-info",
+			"id": "2c97c32b-a92d-4acb-b45b-d65029d9ed43",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-pre-consultation-prescribed-info?patientId=bbd1a9c8-b103-401b-b33b-01b1a103e41a&doctorId=b62a808f-e76b-4f07-99ae-b2a4da200985&slotId=bbdc80bc-d0da-4929-8edc-8ad881521720&pageNumber=1&pageSize=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"doctor",
+						"onboarding",
+						"get-pre-consultation-prescribed-info"
+					],
+					"query": [
+						{
+							"key": "patientId",
+							"value": "bbd1a9c8-b103-401b-b33b-01b1a103e41a"
+						},
+						{
+							"key": "doctorId",
+							"value": "b62a808f-e76b-4f07-99ae-b2a4da200985"
+						},
+						{
+							"key": "slotId",
+							"value": "bbdc80bc-d0da-4929-8edc-8ad881521720"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
