@@ -2233,6 +2233,55 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-pre-consultation-emr-info",
+			"id": "5169f121-d04e-4a49-8604-16bd2a93c77d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-pre-consultation-emr-info?patientId=bbd1a9c8-b103-401b-b33b-01b1a103e41a&slotId=bbdc80bc-d0da-4929-8edc-8ad881521720&pageNumber=1&pageSize=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"doctor",
+						"onboarding",
+						"get-pre-consultation-emr-info"
+					],
+					"query": [
+						{
+							"key": "patientId",
+							"value": "bbd1a9c8-b103-401b-b33b-01b1a103e41a"
+						},
+						{
+							"key": "slotId",
+							"value": "bbdc80bc-d0da-4929-8edc-8ad881521720"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
