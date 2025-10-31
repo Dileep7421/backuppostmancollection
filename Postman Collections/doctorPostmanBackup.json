@@ -2142,7 +2142,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"searchBy\": \"\",\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\n    \"bookingStatus\": \"CONFIRMED\",\n    \"currentDate\": \"\",\n    \"clinicName\": \"SkinAesthetics Hub\",\n    \"currentMonth\": 1\n}",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\n    \"bookingStatus\": \"CONFIRMED\",\n    \"currentDate\": \"\",\n    \"clinicName\": \"SkinAesthetics Hub\",\n    \"currentMonth\": 8,\n    \"startWeekDate\": \"2025-07-25\",\n    \"endWeekDate\": \"2025-11-28\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
