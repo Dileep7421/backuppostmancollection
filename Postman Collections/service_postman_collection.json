@@ -351,6 +351,19 @@
 				"url": "localhost:8083/ap-service/api/services/save"
 			},
 			"response": []
+		},
+		{
+			"name": "get-service-onboarding",
+			"id": "80de4570-da15-41ca-bff5-f21d1b5a6691",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8083/ap-service/api/services/get-service-onboarding/dde08144-0362-4a8b-8f92-a66013a3297d"
+			},
+			"response": []
 		}
 	]
 }
