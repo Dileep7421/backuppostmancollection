@@ -364,6 +364,19 @@
 				"url": "localhost:8083/ap-service/api/services/get-service-onboarding/dde08144-0362-4a8b-8f92-a66013a3297d"
 			},
 			"response": []
+		},
+		{
+			"name": "delete-service-onboarding",
+			"id": "ddf4c891-aab3-4975-8a8c-848d530f17af",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8083/ap-service/api/services/delete-service-onboarding/dde08144-0362-4a8b-8f92-a66013a3297d"
+			},
+			"response": []
 		}
 	]
 }
