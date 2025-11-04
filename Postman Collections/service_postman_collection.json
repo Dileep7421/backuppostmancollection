@@ -393,6 +393,40 @@
 				"url": "localhost:8083/ap-service/api/services/get-service-categories"
 			},
 			"response": []
+		},
+		{
+			"name": "get-service-subcategories",
+			"id": "a9ab8db5-5aa4-461c-8b85-35005c60a159",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/ap-service/api/services/get-service-subcategories?category=Skin",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"ap-service",
+						"api",
+						"services",
+						"get-service-subcategories"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "Skin"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
