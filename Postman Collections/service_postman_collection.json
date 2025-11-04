@@ -427,6 +427,22 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-service-types",
+			"id": "c1db15a0-8da1-4a90-b30b-01b9cf08069a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8083/ap-service/api/services/get-service-types"
+			},
+			"response": []
 		}
 	]
 }
