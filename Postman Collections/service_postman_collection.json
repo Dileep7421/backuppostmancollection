@@ -377,6 +377,22 @@
 				"url": "localhost:8083/ap-service/api/services/delete-service-onboarding/dde08144-0362-4a8b-8f92-a66013a3297d"
 			},
 			"response": []
+		},
+		{
+			"name": "get-service-categories",
+			"id": "8c5e4504-e330-4f65-bdb5-567c36fc0c9e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8083/ap-service/api/services/get-service-categories"
+			},
+			"response": []
 		}
 	]
 }
