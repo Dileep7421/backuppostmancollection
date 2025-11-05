@@ -465,6 +465,28 @@
 				"url": "localhost:8083/ap-service/api/services/get-all-services-for-admin"
 			},
 			"response": []
+		},
+		{
+			"name": "get-all-services-list",
+			"id": "ef029850-1a2f-4896-be4e-f65eb9546804",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"searchBy\": \"\",\r\n    \"mainCategory\": \"\",\r\n    \"pageNumber\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8083/ap-service/api/services/get-all-services-list"
+			},
+			"response": []
 		}
 	]
 }
