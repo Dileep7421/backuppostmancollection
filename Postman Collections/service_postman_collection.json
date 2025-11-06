@@ -500,6 +500,28 @@
 				"url": "localhost:8083/ap-service/api/services/get-all-onboard-serviceNames-by-category/Dermatology1"
 			},
 			"response": []
+		},
+		{
+			"name": "get-all-services-for-treatment-plan",
+			"id": "6bd13ea8-6b9f-4f96-ac02-857a98f0ca1e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"searchBy\": \"\",\r\n    \"mainCategory\": \"\",\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8083/ap-service/api/services/get-all-services-for-treatment-plan"
+			},
+			"response": []
 		}
 	]
 }
