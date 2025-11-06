@@ -487,6 +487,19 @@
 				"url": "localhost:8083/ap-service/api/services/get-all-services-list"
 			},
 			"response": []
+		},
+		{
+			"name": "get-all-onboard-serviceNames-by-category",
+			"id": "2e267c76-c3c6-475c-a4de-f2fbfb30c30e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8083/ap-service/api/services/get-all-onboard-serviceNames-by-category/Dermatology1"
+			},
+			"response": []
 		}
 	]
 }
