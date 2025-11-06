@@ -455,7 +455,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"searchBy\": \"\",\r\n    \"status\": \"DRAFT\",\r\n    \"pageNumber\": 0,\r\n    \"pageSize\": 10\r\n}",
+					"raw": "{\r\n    \"searchBy\": \"\",\r\n    \"status\": \"DRAFT\",\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
