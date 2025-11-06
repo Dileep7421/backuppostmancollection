@@ -2070,6 +2070,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -2086,18 +2092,15 @@
 					"query": [
 						{
 							"key": "clinicName",
-							"value": "SkinAesthetics Hub",
-							"type": "text"
+							"value": "SkinAesthetics Hub"
 						},
 						{
 							"key": "pageNumber",
-							"value": "1",
-							"type": "text"
+							"value": "1"
 						},
 						{
 							"key": "pageSize",
-							"value": "10",
-							"type": "text"
+							"value": "10"
 						},
 						{
 							"key": "bookingId",
