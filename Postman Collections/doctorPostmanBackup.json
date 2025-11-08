@@ -1203,7 +1203,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"slotId\": \"801c0895-7171-4a6b-9166-6863594d5f1b\",\r\n    \"startTime\": \"19:30\", \r\n    \"createdAt\": \"2025-07-24T13:00:41.394318\",\r\n    \"type\": \"START_CONSULTATION\"\r\n}",
+					"raw": "{\r\n    \"slotId\": \"801c0895-7171-4a6b-9166-6863594d5f1b\",\r\n    \"startTime\": \"19:30\",\r\n    \"endTime\": \"20:30\",\r\n    \"createdAt\": \"2025-07-24T13:00:41.394318\",\r\n    \"updatedAt\": \"2025-10-28T18:00:41.394318\",\r\n    \"status\": \"COMPLETED\",\r\n    \"type\": \"END_CONSULTATION\" // END_CONSULTATION or START_CONSULTATION\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
