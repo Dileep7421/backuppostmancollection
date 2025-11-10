@@ -522,6 +522,52 @@
 				"url": "localhost:8083/ap-service/api/services/get-all-services-for-treatment-plan"
 			},
 			"response": []
+		},
+		{
+			"name": "update-service-status",
+			"id": "d2dc595c-3272-42fe-8cdc-40ebd0f07439",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8083/ap-service/api/services/update-service-status?serviceId=0babca52-cddf-40c8-8a10-1dc0cfa81e78&isActive=true",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"ap-service",
+						"api",
+						"services",
+						"update-service-status"
+					],
+					"query": [
+						{
+							"key": "serviceId",
+							"value": "0babca52-cddf-40c8-8a10-1dc0cfa81e78",
+							"type": "text"
+						},
+						{
+							"key": "isActive",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
