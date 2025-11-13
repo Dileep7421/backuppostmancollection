@@ -2291,6 +2291,34 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-all-doctor-consultation-prescription",
+			"id": "11529b70-dd57-4ca1-a897-ec4eb465c598",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\r\n    \"pageNumber\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/user-profile/get-all-doctor-consultation-prescription"
+			},
+			"response": []
 		}
 	]
 }
