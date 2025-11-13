@@ -2321,73 +2321,8 @@
 			"response": []
 		},
 		{
-			"name": "get-all-doctor-consultation-prescription Copy",
-			"id": "7d49890a-84cf-40d6-92c8-7288a786e9d7",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "{{bearerToken}}"
-					}
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\r\n    \"pageNumber\": 1\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "localhost:8081/user-service/user-profile/get-all-doctor-consultation-prescription"
-			},
-			"response": []
-		},
-		{
 			"name": "get-doctor-consultation-prescription-by-slot-id",
 			"id": "a24a2987-2dbe-4e3c-b967-52b769b27287",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "{{bearerToken}}"
-					}
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8081/user-service/user-profile/get-doctor-consultation-prescription-by-slot-id?slotId=1736ac83-d18a-4134-bf08-ba9fad3816c3",
-					"host": [
-						"localhost"
-					],
-					"port": "8081",
-					"path": [
-						"user-service",
-						"user-profile",
-						"get-doctor-consultation-prescription-by-slot-id"
-					],
-					"query": [
-						{
-							"key": "slotId",
-							"value": "1736ac83-d18a-4134-bf08-ba9fad3816c3",
-							"type": "text"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "get-doctor-consultation-prescription-by-slot-id Copy",
-			"id": "fc538ec0-92e3-4287-9f21-86620d303f87",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
