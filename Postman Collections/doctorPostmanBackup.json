@@ -2319,6 +2319,43 @@
 				"url": "localhost:8081/user-service/user-profile/get-all-doctor-consultation-prescription"
 			},
 			"response": []
+		},
+		{
+			"name": "get-doctor-consultation-prescription-by-slot-id",
+			"id": "a24a2987-2dbe-4e3c-b967-52b769b27287",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/user-profile/get-doctor-consultation-prescription-by-slot-id?slotId=1736ac83-d18a-4134-bf08-ba9fad3816c3",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"user-profile",
+						"get-doctor-consultation-prescription-by-slot-id"
+					],
+					"query": [
+						{
+							"key": "slotId",
+							"value": "1736ac83-d18a-4134-bf08-ba9fad3816c3",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
