@@ -2300,10 +2300,7 @@
 			},
 			"request": {
 				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "{{bearerToken}}"
-					}
+					"type": "noauth"
 				},
 				"method": "POST",
 				"header": [],
