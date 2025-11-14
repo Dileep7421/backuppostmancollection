@@ -2396,6 +2396,51 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "selected-treatment-plan-by-patient",
+			"id": "5775ef66-c316-4df7-8415-173e13dd6738",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/user-service/user-profile/selected-treatment-plan-by-patient?planId=1c1dd0f4-a3bc-4104-9fba-6f1ce80b9db5",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"user-profile",
+						"selected-treatment-plan-by-patient"
+					],
+					"query": [
+						{
+							"key": "planId",
+							"value": "1c1dd0f4-a3bc-4104-9fba-6f1ce80b9db5"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
