@@ -2356,6 +2356,46 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-treatment-plan-prescription-by-plan-id",
+			"id": "faf86dfc-8bc9-44cb-9009-faa64cda03c5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/user-profile/get-treatment-plan-prescription-by-plan-id?planId=4487a056-a84d-4fec-9c22-c3abefd88769&slotId=1736ac83-d18a-4134-bf08-ba9fad3816c3",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"user-profile",
+						"get-treatment-plan-prescription-by-plan-id"
+					],
+					"query": [
+						{
+							"key": "planId",
+							"value": "4487a056-a84d-4fec-9c22-c3abefd88769"
+						},
+						{
+							"key": "slotId",
+							"value": "1736ac83-d18a-4134-bf08-ba9fad3816c3"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
