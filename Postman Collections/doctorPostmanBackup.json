@@ -2441,6 +2441,31 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "view-consultation",
+			"id": "a461a993-0431-45f1-9a1a-43b0ce22c4e7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\r\n    \"pageNumber\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/user-profile/view-consultation"
+			},
+			"response": []
 		}
 	]
 }
