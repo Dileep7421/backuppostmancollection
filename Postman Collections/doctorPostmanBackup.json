@@ -632,7 +632,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"amount\": 1500,\r\n  \"currency\": \"INR\",\r\n  \"createdAt\": \"2025-09-22T10:30:23.720852\",\r\n  \"serviceId\": \"bbdc80bc-d0da-4929-8edc-8ad881521720\",\r\n  \"serviceName\": \"Thigh Lift\",\r\n  \"clinicId\": \"6ae72bdf-8ebd-4ef0-a547-9c46410e5b04\",\r\n  \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\r\n  \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\r\n  \"patientServiceType\": \"BOOK_SERVICE\"\r\n}\r\n",
+					"raw": "{\r\n  \"amount\": 1500,\r\n  \"currency\": \"INR\",\r\n  \"createdAt\": \"2025-09-22T10:30:23.720852\",\r\n  \"serviceId\": \"bbdc80bc-d0da-4929-8edc-8ad881521720\", //only service booking\r\n  \"serviceName\": \"Thigh Lift\", //only service booking\r\n  \"clinicId\": \"6ae72bdf-8ebd-4ef0-a547-9c46410e5b04\", //only doctor consultation\r\n  \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\r\n  \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\r\n  \"patientServiceType\": \"BOOK_SERVICE\" //CONSULT_DOCTOR, BOOK_SERVICE, ORDER_MEDICINE, BOOK_LAB_TEST\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
