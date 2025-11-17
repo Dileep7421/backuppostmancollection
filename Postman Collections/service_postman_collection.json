@@ -497,7 +497,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "localhost:8083/ap-service/api/services/get-all-onboard-serviceNames-by-category/Dermatology1"
+				"url": "localhost:8083/ap-service/api/services/get-all-onboard-serviceNames-by-category/Dermatology"
 			},
 			"response": []
 		},
