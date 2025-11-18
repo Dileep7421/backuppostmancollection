@@ -348,7 +348,7 @@
 						}
 					}
 				},
-				"url": "{{baseUrl}}/ap-service/api/services/save"
+				"url": "localhost:8083/ap-service/api/services/save"
 			},
 			"response": []
 		},
