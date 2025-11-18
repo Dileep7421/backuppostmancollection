@@ -366,6 +366,19 @@
 			"response": []
 		},
 		{
+			"name": "get-service-onboarding Copy",
+			"id": "cb57b435-1df0-495d-8161-3f2e3281b3f3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8083/ap-service/api/services/get-service-onboarding/2629f5fc-9b7a-4406-83fa-459156c65423"
+			},
+			"response": []
+		},
+		{
 			"name": "delete-service-onboarding",
 			"id": "ddf4c891-aab3-4975-8a8c-848d530f17af",
 			"protocolProfileBehavior": {
@@ -379,8 +392,37 @@
 			"response": []
 		},
 		{
+			"name": "delete-service-onboarding Copy",
+			"id": "476471c3-324f-4b8e-bf3d-eb1a5e7cf24e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8083/ap-service/api/services/delete-service-onboarding/dde08144-0362-4a8b-8f92-a66013a3297d"
+			},
+			"response": []
+		},
+		{
 			"name": "get-service-categories",
 			"id": "8c5e4504-e330-4f65-bdb5-567c36fc0c9e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8083/ap-service/api/services/get-service-categories"
+			},
+			"response": []
+		},
+		{
+			"name": "get-service-categories Copy",
+			"id": "f06a7226-b77c-43d6-996a-8a7c335cac5d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -429,8 +471,58 @@
 			"response": []
 		},
 		{
+			"name": "get-service-subcategories Copy",
+			"id": "98af6597-4097-43c4-a5a9-7e74d629c83b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/ap-service/api/services/get-service-subcategories?category=Skin",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"ap-service",
+						"api",
+						"services",
+						"get-service-subcategories"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "Skin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "get-service-types",
 			"id": "c1db15a0-8da1-4a90-b30b-01b9cf08069a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/ap-service/api/services/get-service-types"
+			},
+			"response": []
+		},
+		{
+			"name": "get-service-types Copy",
+			"id": "e0ae8ddd-d8b7-4223-8f02-6c89d365a94b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
