@@ -2370,7 +2370,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/user-profile/get-treatment-plan-prescription-by-plan-id?planId=4487a056-a84d-4fec-9c22-c3abefd88769&slotId=1736ac83-d18a-4134-bf08-ba9fad3816c3",
+					"raw": "localhost:8081/user-service/user-profile/get-treatment-plan-prescription-by-plan-id?planId=cb8101fd-bbdf-4255-81bc-9b609fba5646&slotId=1736ac83-d18a-4134-bf08-ba9fad3816c3",
 					"host": [
 						"localhost"
 					],
@@ -2383,7 +2383,7 @@
 					"query": [
 						{
 							"key": "planId",
-							"value": "4487a056-a84d-4fec-9c22-c3abefd88769"
+							"value": "cb8101fd-bbdf-4255-81bc-9b609fba5646"
 						},
 						{
 							"key": "slotId",
