@@ -484,7 +484,7 @@
 						}
 					}
 				},
-				"url": "localhost:8083/ap-service/api/services/get-all-services-list"
+				"url": "{{baseUrl}}/ap-service/api/services/get-all-services-list"
 			},
 			"response": []
 		},
