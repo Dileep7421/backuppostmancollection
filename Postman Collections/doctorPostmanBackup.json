@@ -2531,13 +2531,11 @@
 					"query": [
 						{
 							"key": "slotDate",
-							"value": "2025-11-20",
-							"type": "text"
+							"value": "2025-11-20"
 						},
 						{
 							"key": "doctorId",
-							"value": "b62a808f-e76b-4f07-99ae-b2a4da200985",
-							"type": "text"
+							"value": "b62a808f-e76b-4f07-99ae-b2a4da200985"
 						}
 					]
 				}
