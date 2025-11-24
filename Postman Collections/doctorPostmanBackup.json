@@ -2507,6 +2507,42 @@
 				"url": "localhost:8081/user-service/labs/webhook"
 			},
 			"response": []
+		},
+		{
+			"name": "get-booked-doctor-slots-by-date",
+			"id": "babcce22-be31-4433-8bfc-b3ced93415b3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/booking/get-booked-doctor-slots-by-date?slotDate=2025-11-20&doctorId=b62a808f-e76b-4f07-99ae-b2a4da200985",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"booking",
+						"get-booked-doctor-slots-by-date"
+					],
+					"query": [
+						{
+							"key": "slotDate",
+							"value": "2025-11-20",
+							"type": "text"
+						},
+						{
+							"key": "doctorId",
+							"value": "b62a808f-e76b-4f07-99ae-b2a4da200985",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
