@@ -2493,6 +2493,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -2504,7 +2510,7 @@
 						}
 					}
 				},
-				"url": "localhost:8081/user-service/labs/webhook"
+				"url": "{{baseUrl}}/user-service/labs/webhook"
 			},
 			"response": []
 		},
