@@ -297,7 +297,7 @@
 						}
 					]
 				},
-				"url": "localhost:8083/ap-service/file/upload"
+				"url": "{{baseUrl}}/ap-service/file/upload"
 			},
 			"response": []
 		},
