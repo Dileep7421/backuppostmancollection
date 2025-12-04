@@ -520,7 +520,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\",\n    \"pageNumber\": 1,\n    \"currentDate\": \"\",\n    \"bookingStatus\": \"COMPLETED\" //COMPLETED or CONFIRMED\n}",
+					"raw": "{\n    \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\n    \"pageNumber\": 1,\n    \"currentDate\": \"\",\n    \"bookingStatus\": \"COMPLETED\" //COMPLETED or CONFIRMED\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1898,20 +1898,21 @@
 							"key": "files",
 							"type": "file",
 							"uuid": "810442f1-6493-45e9-b584-90918d68d53e",
-							"src": "postman-cloud:///1f0af173-02e6-41a0-9465-da0ebfa2fcd7"
+							"src": "postman-cloud:///1f0af173-02e6-41a0-9465-da0ebfa2fcd7",
+							"disabled": true
 						},
 						{
 							"key": "type",
 							"value": "pdf",
 							"type": "text",
-							"uuid": "b4b25046-c88c-49f2-b192-71e2ad9fa7cf"
+							"uuid": "b4b25046-c88c-49f2-b192-71e2ad9fa7cf",
+							"disabled": true
 						},
 						{
 							"key": "chatId",
-							"value": "74601ffc-6820-48fb-935b-848cb6ce5a0e",
+							"value": "45012e44-a538-4b6d-9e46-c532ee56b2c2",
 							"type": "text",
-							"uuid": "bb960ef5-aa7a-4477-8307-0f2172619648",
-							"disabled": true
+							"uuid": "bb960ef5-aa7a-4477-8307-0f2172619648"
 						},
 						{
 							"key": "doctorId",
@@ -1922,44 +1923,43 @@
 						},
 						{
 							"key": "patientProfileId",
-							"value": "9de4b150-4af4-4b2b-8968-53fd6fd0f9ea",
+							"value": "7e3a48e4-c550-44ae-872d-0e4c3c8d3f9f",
 							"type": "text",
 							"uuid": "3f81c2f1-1913-42b5-b5e1-9d356ff3723e"
 						},
 						{
 							"key": "slotId",
-							"value": "bbdc80bc-d0da-4929-8edc-8ad881521720",
+							"value": "97552d93-497d-44c2-81e2-3ec4e98b8f61",
 							"type": "text",
-							"uuid": "fb5711da-1c32-4924-9a45-9ed78b515f7c",
-							"disabled": true
+							"uuid": "fb5711da-1c32-4924-9a45-9ed78b515f7c"
 						},
 						{
 							"key": "role",
-							"value": "PATIENT",
+							"value": "PATIENT_CONTEXT_EMR",
 							"type": "text",
 							"uuid": "01f8ac80-a029-49bd-a412-244b2fe62b8a"
 						},
 						{
 							"key": "requestMessage",
-							"value": "",
+							"value": "no",
 							"type": "text",
 							"uuid": "4048969d-d9e4-483c-bb26-cf00e823ce36"
 						},
 						{
 							"key": "isText",
-							"value": "false",
+							"value": "true",
 							"type": "text",
 							"uuid": "ca63d5a3-c5d5-4e0b-9e01-36225897d96e"
 						},
 						{
 							"key": "isAttachment",
-							"value": "true",
+							"value": "false",
 							"type": "text",
 							"uuid": "7a99092e-9a4b-444a-b19f-20453d8b12b2"
 						}
 					]
 				},
-				"url": "{{baseUrl}}/user-service/user-profile/submit-user-chat"
+				"url": "localhost:8081/user-service/user-profile/submit-user-chat"
 			},
 			"response": []
 		},
