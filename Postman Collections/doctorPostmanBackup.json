@@ -2547,6 +2547,70 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "book-session",
+			"id": "81c95d24-5bf3-4577-a3a5-f2688b3f7b97",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"parentAppointmentId\": \"4be0ad13-bec2-425e-9ec6-9db460ebcccf\",\r\n  \"sessionDate\": \"2025-12-22\",\r\n  \"sessionTime\": \"14:00\",\r\n  \"sessionDay\": \"Monday\",\r\n  \"sessionNumber\": 2,\r\n  \"appointmentBookedBy\": \"PATIENT\" //PATIENT, SUPER_ADMIN, CLINIC_ADMIN\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/booking/book-session"
+			},
+			"response": []
+		},
+		{
+			"name": "get-session-bookings",
+			"id": "ddedac4c-45d1-4d85-bd5a-815c89b22432",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/booking/get-session-bookings?parentAppointmentId=4be0ad13-bec2-425e-9ec6-9db460ebcccf",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"booking",
+						"get-session-bookings"
+					],
+					"query": [
+						{
+							"key": "parentAppointmentId",
+							"value": "4be0ad13-bec2-425e-9ec6-9db460ebcccf"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
