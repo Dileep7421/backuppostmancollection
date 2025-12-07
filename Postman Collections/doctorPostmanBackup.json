@@ -2370,7 +2370,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/user-profile/get-treatment-plan-prescription-by-plan-id?planId=548d5e55-af11-4be4-b319-87191c93a564&slotId=1736ac83-d18a-4134-bf08-ba9fad3816c3",
+					"raw": "localhost:8081/user-service/user-profile/get-treatment-plan-prescription-by-plan-id?planId=900601aa-259b-4308-bad1-9b877308e54e&slotId=34477ab7-ac94-4d20-8271-bf0fb7e06867",
 					"host": [
 						"localhost"
 					],
@@ -2383,11 +2383,11 @@
 					"query": [
 						{
 							"key": "planId",
-							"value": "548d5e55-af11-4be4-b319-87191c93a564"
+							"value": "900601aa-259b-4308-bad1-9b877308e54e"
 						},
 						{
 							"key": "slotId",
-							"value": "1736ac83-d18a-4134-bf08-ba9fad3816c3"
+							"value": "34477ab7-ac94-4d20-8271-bf0fb7e06867"
 						}
 					]
 				}
@@ -2571,7 +2571,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"parentAppointmentId\": \"e1ca0424-9faa-43d5-ba0e-691e48cffcb3\",\r\n  \"sessionDate\": \"2025-12-22\",\r\n  \"sessionTime\": \"14:00\",\r\n  \"sessionDay\": \"Monday\",\r\n  \"sessionNumber\": 2,\r\n  \"appointmentBookedBy\": \"PATIENT\" //PATIENT, SUPER_ADMIN, CLINIC_ADMIN\r\n}",
+					"raw": "{\r\n  \"parentAppointmentId\": \"e1ca0424-9faa-43d5-ba0e-691e48cffcb3\",\r\n  \"sessionDate\": \"2025-12-22\",\r\n  \"sessionTime\": \"14:00\",\r\n  \"sessionDay\": \"Monday\",\r\n  \"sessionNumber\": 3,\r\n  \"appointmentBookedBy\": \"PATIENT\" //PATIENT, SUPER_ADMIN, CLINIC_ADMIN\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
