@@ -2471,11 +2471,17 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"appointmentDate\": \"2025-11-27\",\r\n    \"appointmentTime\": \"10:30\",\r\n    \"appointmentDay\": \"Sunday\",\r\n    \"planId\": \"1c1dd0f4-a3bc-4104-9fba-6f1ce80b9db5\",\r\n    \"consultationSlotId\": \"3c9b89a2-2cac-4878-9b9d-343f6476ce0c\",\r\n    \"doctorId\": \"DOC123\",\r\n    \"doctorName\": \"Dr. John Smith\",\r\n    \"patientId\": \"PAT456\",\r\n    \"bookingType\": \"CONSULTATION_BOOK_SERVICE\", // CONSULTATION_BOOK_SERVICE or BOOK_LAB_TEST\r\n    \"visitType\": \"WALK_IN\", //WALK_IN, HOME_VISIT, HOSPITAL_VISIT, ONLINE_VISIT\r\n    \"branchId\": \"199\", // required for BOOK_LAB_TEST\r\n    \"cityId\": \"16553\", // required for BOOK_LAB_TEST\r\n    \"areaId\": \"2484\", // required for BOOK_LAB_TEST\r\n    \"patientAddress\": \"Hyderabed\",\r\n    \"appointmentBookedBy\": \"PATIENT\", //PATIENT, SUPER_ADMIN, CLINIC_ADMIN\r\n    \"items\": [\r\n        {\r\n            \"itemCode\": \"123f6391-ac1d-4884-a66e-6cb64499cc49\",\r\n            \"itemName\": \"Thigh Lift\"\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"appointmentDate\": \"2025-11-27\",\r\n    \"appointmentTime\": \"10:30\",\r\n    \"appointmentDay\": \"Sunday\",\r\n    \"planId\": \"900601aa-259b-4308-bad1-9b877308e54e\",\r\n    \"consultationSlotId\": \"34477ab7-ac94-4d20-8271-bf0fb7e06867\",\r\n    \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\r\n    \"doctorName\": \"Dr. Riya\",\r\n    \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\r\n    \"bookingType\": \"CONSULTATION_BOOK_SERVICE\", // CONSULTATION_BOOK_SERVICE or BOOK_LAB_TEST\r\n    \"visitType\": \"WALK_IN\", //WALK_IN, HOME_VISIT, HOSPITAL_VISIT, ONLINE_VISIT\r\n    \"branchId\": \"199\", // required for BOOK_LAB_TEST\r\n    \"cityId\": \"16553\", // required for BOOK_LAB_TEST\r\n    \"areaId\": \"2484\", // required for BOOK_LAB_TEST\r\n    \"patientAddress\": \"Hyderabed\",\r\n    \"appointmentBookedBy\": \"PATIENT\", //PATIENT, SUPER_ADMIN, CLINIC_ADMIN\r\n    \"items\": [\r\n        {\r\n            \"itemCode\": \"0f6c92a3-abed-475a-8905-4cc3922ac2b5\",\r\n            \"itemName\": \"Skin Brightening  Glow IV Drip\"\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
