@@ -2651,7 +2651,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:8081/user-service/booking/get-selected-treatment-plans"
+				"url": "{{baseUrl}}/user-service/booking/get-selected-treatment-plans"
 			},
 			"response": []
 		}
