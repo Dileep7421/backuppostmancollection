@@ -2481,7 +2481,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"appointmentDate\": \"2025-11-27\",\r\n    \"appointmentTime\": \"10:30\",\r\n    \"appointmentDay\": \"Sunday\",\r\n    \"planId\": \"900601aa-259b-4308-bad1-9b877308e54e\",\r\n    \"consultationSlotId\": \"34477ab7-ac94-4d20-8271-bf0fb7e06867\",\r\n    \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\r\n    \"doctorName\": \"Dr. Riya\",\r\n    \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\r\n    \"bookingType\": \"CONSULTATION_BOOK_SERVICE\", // CONSULTATION_BOOK_SERVICE or BOOK_LAB_TEST\r\n    \"visitType\": \"WALK_IN\", //WALK_IN, HOME_VISIT, HOSPITAL_VISIT, ONLINE_VISIT\r\n    \"branchId\": \"199\", // required for BOOK_LAB_TEST\r\n    \"cityId\": \"16553\", // required for BOOK_LAB_TEST\r\n    \"areaId\": \"2484\", // required for BOOK_LAB_TEST\r\n    \"patientAddress\": \"Hyderabed\",\r\n    \"appointmentBookedBy\": \"PATIENT\", //PATIENT, SUPER_ADMIN, CLINIC_ADMIN\r\n    \"items\": [\r\n        {\r\n            \"itemCode\": \"0f6c92a3-abed-475a-8905-4cc3922ac2b5\",\r\n            \"itemName\": \"Skin Brightening  Glow IV Drip\"\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"appointmentDate\": \"2025-11-27\",\r\n    \"appointmentTime\": \"10:30\",\r\n    \"appointmentDay\": \"Sunday\",\r\n    \"planId\": \"900601aa-259b-4308-bad1-9b877308e54e\",\r\n    \"consultationSlotId\": \"34477ab7-ac94-4d20-8271-bf0fb7e06867\",\r\n    \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\r\n    \"doctorName\": \"Dr. Riya\",\r\n    \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\r\n    \"bookingType\": \"BOOK_LAB_TEST\", // CONSULTATION_BOOK_SERVICE or BOOK_LAB_TEST\r\n    \"visitType\": \"WALK_IN\", //WALK_IN, HOME_VISIT, HOSPITAL_VISIT, ONLINE_VISIT\r\n    \"branchId\": \"199\", // required for BOOK_LAB_TEST\r\n    \"cityId\": \"16553\", // required for BOOK_LAB_TEST\r\n    \"areaId\": \"2484\", // required for BOOK_LAB_TEST\r\n    \"patientAddress\": \"Hyderabed\",\r\n    \"appointmentBookedBy\": \"PATIENT\", //PATIENT, SUPER_ADMIN, CLINIC_ADMIN\r\n    \"items\": [\r\n        {\r\n            \"itemCode\": \"288\",\r\n            \"itemName\": \"Haemoglobin\"\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2571,7 +2571,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"parentAppointmentId\": \"e1ca0424-9faa-43d5-ba0e-691e48cffcb3\",\r\n  \"sessionDate\": \"2025-12-22\",\r\n  \"sessionTime\": \"14:00\",\r\n  \"sessionDay\": \"Monday\",\r\n  \"sessionNumber\": 3,\r\n  \"appointmentBookedBy\": \"PATIENT\" //PATIENT, SUPER_ADMIN, CLINIC_ADMIN\r\n}",
+					"raw": "{\r\n  \"parentAppointmentId\": \"e1ca0424-9faa-43d5-ba0e-691e48cffcb3\",\r\n  \"sessionDate\": \"2025-12-27\",\r\n  \"sessionTime\": \"09:00\",\r\n  \"sessionDay\": \"Tuesday\",\r\n  \"sessionNumber\": 2,\r\n  \"appointmentBookedBy\": \"PATIENT\" //PATIENT, SUPER_ADMIN, CLINIC_ADMIN\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2644,7 +2644,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"userType\": \"ADMIN\", //CLINIC or ADMIN\r\n    \"clinicName\": \"SkinAesthetics Hub\",\r\n    \"searchBy\": \"\",\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10\r\n}",
+					"raw": "{\r\n    \"userType\": \"ADMIN\", //CLINIC or ADMIN\r\n    // \"clinicName\": \"SkinAesthetics Hub\", \r\n    \"searchBy\": \"\",\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
