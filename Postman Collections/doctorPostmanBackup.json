@@ -2617,6 +2617,43 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-selected-treatment-plans",
+			"id": "8be424f2-4d90-4f4f-b694-7a3b135adca4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer TOKEN"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userType\": \"ADMIN\", //CLINIC or ADMIN\r\n    \"clinicName\": \"SkinAesthetics Hub\",\r\n    \"searchBy\": \"\",\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/user-service/booking/get-selected-treatment-plans"
+			},
+			"response": []
 		}
 	]
 }
