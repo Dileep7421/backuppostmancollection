@@ -2655,6 +2655,43 @@
 				"url": "{{baseUrl}}/user-service/booking/get-selected-treatment-plans"
 			},
 			"response": []
+		},
+		{
+			"name": "get-selected-treatment-plans Copy",
+			"id": "224df72a-8b82-4db3-a1d7-57e19dab64b8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer TOKEN"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userType\": \"ADMIN\", //CLINIC or ADMIN\r\n    // \"clinicName\": \"SkinAesthetics Hub\", \r\n    \"searchBy\": \"\",\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/user-service/booking/get-selected-treatment-plans"
+			},
+			"response": []
 		}
 	]
 }
