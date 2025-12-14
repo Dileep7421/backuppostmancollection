@@ -2572,7 +2572,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"parentAppointmentId\": \"e1ca0424-9faa-43d5-ba0e-691e48cffcb3\",\r\n  \"sessionDate\": \"2025-12-27\",\r\n  \"sessionTime\": \"09:00\",\r\n  \"sessionDay\": \"Tuesday\",\r\n  \"sessionNumber\": 2,\r\n  \"appointmentBookedBy\": \"PATIENT\" //PATIENT, SUPER_ADMIN, CLINIC_ADMIN\r\n}",
+					"raw": "{\r\n  \"parentAppointmentId\": \"af192cd3-5d36-4cae-bb7a-36c2eed0c799\",\r\n  \"sessionDate\": \"2025-12-27\",\r\n  \"sessionTime\": \"09:00\",\r\n  \"sessionDay\": \"Tuesday\",\r\n  \"sessionNumber\": 3,\r\n  \"appointmentBookedBy\": \"SUPER_ADMIN\" //PATIENT, SUPER_ADMIN, CLINIC_ADMIN\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
