@@ -520,7 +520,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\n    \"pageNumber\": 1,\n    \"currentDate\": \"\",\n    \"bookingStatus\": \"COMPLETED\" //COMPLETED or CONFIRMED\n}",
+					"raw": "{\n    \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\n    \"pageNumber\": 1,\n    \"currentDate\": \"\",\n    \"patientServiceType\": \"CONSULT_DOCTOR\" //CONSULT_DOCTOR, BOOK_SERVICE, ORDER_MEDICINE, BOOK_LAB_TEST, CONSULTATION_BOOK_SERVICE, CONSULT_SESSION_BOOKING\n    // \"bookingStatus\": \"COMPLETED\" //COMPLETED or CONFIRMED\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2152,7 +2152,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"searchBy\": \"\",\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\n    \"bookingStatus\": \"CONFIRMED\",\n    \"currentDate\": \"\",\n    \"clinicName\": \"SkinAesthetics Hub\",\n    \"currentMonth\": 8,\n    \"startWeekDate\": \"2025-07-25\",\n    \"endWeekDate\": \"2025-11-28\"\n}",
+					"raw": "{\n    // \"searchBy\": \"s\",\n    \"doctorId\": \"603cf778-be40-4055-9e03-c3274b508097\",\n    \"bookingStatus\": \"COMPLETED\",\n    \"currentDate\": \"2025-12-06\",\n    \"clinicName\": \"SkinAesthetics Hub\",\n    \"currentMonth\": 12,\n    \"startWeekDate\": \"2025-07-25\",\n    \"endWeekDate\": \"2025-11-29\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2622,43 +2622,6 @@
 		{
 			"name": "get-selected-treatment-plans",
 			"id": "8be424f2-4d90-4f4f-b694-7a3b135adca4",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "{{bearerToken}}"
-					}
-				},
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer TOKEN"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"userType\": \"ADMIN\", //CLINIC or ADMIN\r\n    // \"clinicName\": \"SkinAesthetics Hub\", \r\n    \"searchBy\": \"\",\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{baseUrl}}/user-service/booking/get-selected-treatment-plans"
-			},
-			"response": []
-		},
-		{
-			"name": "get-selected-treatment-plans Copy",
-			"id": "224df72a-8b82-4db3-a1d7-57e19dab64b8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
