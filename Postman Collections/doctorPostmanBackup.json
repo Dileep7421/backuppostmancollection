@@ -520,7 +520,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\n    \"pageNumber\": 1,\n    \"currentDate\": \"\",\n    \"patientServiceType\": \"CONSULT_DOCTOR\" //CONSULT_DOCTOR, BOOK_SERVICE, ORDER_MEDICINE, BOOK_LAB_TEST, CONSULTATION_BOOK_SERVICE, CONSULT_SESSION_BOOKING\n    // \"bookingStatus\": \"COMPLETED\" //COMPLETED or CONFIRMED\n}",
+					"raw": "{\n    \"patientId\": \"92564303-1ed5-4e95-bdc8-0cb5c3eccdff\",\n    \"pageNumber\": 1,\n    \"currentDate\": \"\",\n    \"patientServiceType\": \"BOOK_SERVICE\" //CONSULT_DOCTOR, BOOK_SERVICE, ORDER_MEDICINE, BOOK_LAB_TEST, CONSULTATION_BOOK_SERVICE, CONSULT_SESSION_BOOKING\n    // \"bookingStatus\": \"COMPLETED\" //COMPLETED or CONFIRMED\n}",
 					"options": {
 						"raw": {
 							"language": "json"
