@@ -2528,10 +2528,16 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/booking/get-booked-doctor-slots-by-date?slotDate=2025-11-20&doctorId=b62a808f-e76b-4f07-99ae-b2a4da200985",
+					"raw": "localhost:8081/user-service/booking/get-booked-doctor-slots-by-date?slotDate=2025-12-28&doctorId=ac5780ce-6816-4342-b011-9fe7dcde2571&bookedFor=BOOK_SERVICE&serviceDurationInMins=15&clinicName=SkinAesthetics Hub",
 					"host": [
 						"localhost"
 					],
@@ -2544,11 +2550,23 @@
 					"query": [
 						{
 							"key": "slotDate",
-							"value": "2025-11-20"
+							"value": "2025-12-28"
 						},
 						{
 							"key": "doctorId",
-							"value": "b62a808f-e76b-4f07-99ae-b2a4da200985"
+							"value": "ac5780ce-6816-4342-b011-9fe7dcde2571"
+						},
+						{
+							"key": "bookedFor",
+							"value": "BOOK_SERVICE"
+						},
+						{
+							"key": "serviceDurationInMins",
+							"value": "15"
+						},
+						{
+							"key": "clinicName",
+							"value": "SkinAesthetics Hub"
 						}
 					]
 				}
