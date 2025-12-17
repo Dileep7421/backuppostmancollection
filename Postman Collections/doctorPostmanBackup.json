@@ -2510,7 +2510,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"appointmentOrderId\": \"AST-LTB-20251121-171447-0001\",\r\n    \"status\": \"COMPLETED\", //PENDING or COMPLETED\r\n    \"receiptUrl\": \"https://lab.com/results/abc.pdf\", // Optional final receipt URL\r\n    \"reportUrl\": \"https://lab.com/results/abc.pdf\", // Combined report url (optional)\r\n    \"tests\": [\r\n        {\r\n            \"testServiceId\": 288,\r\n            \"status\": \"COMPLETED\",\r\n            \"resultFileUrl\": \"https://lab.com/results/abcd.pdf\"\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"appointmentOrderId\": \"AST-LTB-20251121-171447-0001\",\r\n    \"status\": \"COMPLETED\", //PENDING or COMPLETED\r\n    \"receiptUrl\": \"https://lab.com/results/abc.pdf\", // Optional final receipt URL\r\n    // \"reportUrl\": \"https://lab.com/results/abc.pdf\", // Combined report url (optional)\r\n    \"tests\": [\r\n        {\r\n            \"testServiceId\": 288,\r\n            \"status\": \"COMPLETED\",\r\n            \"resultFileUrl\": \"https://lab.com/results/abcd.pdf\"\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
