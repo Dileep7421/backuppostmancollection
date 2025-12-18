@@ -71,7 +71,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-id?id=74d48d5c-2ad3-41f9-8dc3-79b679a4c039",
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-id?id=ac5780ce-6816-4342-b011-9fe7dcde2571",
 					"host": [
 						"localhost"
 					],
@@ -85,7 +85,7 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "74d48d5c-2ad3-41f9-8dc3-79b679a4c039"
+							"value": "ac5780ce-6816-4342-b011-9fe7dcde2571"
 						}
 					]
 				}
@@ -2207,7 +2207,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/doctor/onboarding/get-pre-consultation-prescribed-info?patientId=bbd1a9c8-b103-401b-b33b-01b1a103e41a&doctorId=b62a808f-e76b-4f07-99ae-b2a4da200985&slotId=bbdc80bc-d0da-4929-8edc-8ad881521720&pageNumber=1&pageSize=10",
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-pre-consultation-prescribed-info?patientId=5050339d-a398-4245-ab04-37c1b7706c8e&doctorId=ac5780ce-6816-4342-b011-9fe7dcde2571&slotId=34477ab7-ac94-4d20-8271-bf0fb7e06867&pageNumber=1&pageSize=10",
 					"host": [
 						"localhost"
 					],
@@ -2221,15 +2221,15 @@
 					"query": [
 						{
 							"key": "patientId",
-							"value": "bbd1a9c8-b103-401b-b33b-01b1a103e41a"
+							"value": "5050339d-a398-4245-ab04-37c1b7706c8e"
 						},
 						{
 							"key": "doctorId",
-							"value": "b62a808f-e76b-4f07-99ae-b2a4da200985"
+							"value": "ac5780ce-6816-4342-b011-9fe7dcde2571"
 						},
 						{
 							"key": "slotId",
-							"value": "bbdc80bc-d0da-4929-8edc-8ad881521720"
+							"value": "34477ab7-ac94-4d20-8271-bf0fb7e06867"
 						},
 						{
 							"key": "pageNumber",
@@ -2301,13 +2301,16 @@
 			},
 			"request": {
 				"auth": {
-					"type": "noauth"
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
 				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\r\n    \"pageNumber\": 1\r\n}",
+					"raw": "{\r\n    \"id\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\r\n    \"pageNumber\": 1\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
