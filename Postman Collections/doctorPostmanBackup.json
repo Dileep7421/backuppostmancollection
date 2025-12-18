@@ -2673,7 +2673,7 @@
 						}
 					}
 				},
-				"url": "{{baseUrl}}/user-service/booking/get-selected-treatment-plans"
+				"url": "localhost:8081/user-service/booking/get-selected-treatment-plans"
 			},
 			"response": []
 		}
