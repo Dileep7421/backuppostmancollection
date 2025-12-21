@@ -526,7 +526,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"patientId\": \"92564303-1ed5-4e95-bdc8-0cb5c3eccdff\",\n    \"pageNumber\": 1,\n    \"currentDate\": \"\",\n    \"patientServiceType\": \"BOOK_SERVICE\" //CONSULT_DOCTOR, BOOK_SERVICE, ORDER_MEDICINE, BOOK_LAB_TEST, CONSULTATION_BOOK_SERVICE, CONSULT_SESSION_BOOKING\n    // \"bookingStatus\": \"COMPLETED\" //COMPLETED or CONFIRMED\n}",
+					"raw": "{\n    \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\n    \"pageNumber\": 2,\n    \"currentDate\": \"\",\n    \"patientServiceType\": \"CONSULT_DOCTOR\", //CONSULT_DOCTOR, BOOK_SERVICE, ORDER_MEDICINE, BOOK_LAB_TEST, CONSULTATION_BOOK_SERVICE, CONSULT_SESSION_BOOKING\n    \"bookingStatus\": \"CONFIRMED\" //COMPLETED or CONFIRMED or CANCELLED\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1271,7 +1271,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"fullName\": \"Ramu\",\r\n    \"title\": \"Dr.\",\r\n    \"gender\": \"Male\",\r\n    \"email\": \"ramu@gmail.com\",\r\n    \"mobileNumber\": \"9876363737\",\r\n    \"city\": \"New York\",\r\n    \"dob\": \"1990-01-01\",\r\n    \"specialty\": \"Aesthetic Gynaecologist\",\r\n    \"mobileVerified\": true,\r\n    \"images\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"identityProofFile\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"deviceToken\": \"device-token-string\"\r\n}",
+					"raw": "{\r\n    \"fullName\": \"Ramu\",\r\n    \"title\": \"Dr.\",\r\n    \"gender\": \"Male\",\r\n    \"email\": \"ramu1@gmail.com\",\r\n    \"mobileNumber\": \"9876363736\",\r\n    \"city\": \"New York\",\r\n    \"dob\": \"1990-01-01\",\r\n    \"specialty\": \"Aesthetic Gynaecologist\",\r\n    \"mobileVerified\": true,\r\n    \"images\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"identityProofFile\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"deviceToken\": \"device-token-string\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1343,7 +1343,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"doctorId\": \"dd99c47c-aea6-4eeb-96d1-fcf3a69966f0\",\r\n    \"clinicDetails\": {\r\n        \"id\": \"ee0a02bd-c448-49a0-82ce-5ae4f632a3a6\",\r\n        \"clinicName\": \"SkinAesthetics Hub\",\r\n        \"clinicOnboardingId\": \"ee0a02bd-c448-49a0-82ce-5ae4f632a3a6\",\r\n        \"address\": \"941, Main Street, Banjara Hills\",\r\n        \"city\": \"Chennai\",\r\n        \"pincode\": \"570047\",\r\n        \"locality\": \"Gopalapuram\",\r\n        \"state\": \"Tamil Nadu\",\r\n        \"services\": [\r\n            \"Hair\"\r\n        ],\r\n        \"sessionDetails\": [\r\n            {\r\n                \"day\": \"Monday\",\r\n                \"sessionTimings\": [\r\n                    {\r\n                        \"startTime\": \"10:00\",\r\n                        \"endTime\": \"20:00\",\r\n                        \"lunchStartTime\": \"13:00\",\r\n                        \"lunchEndTime\": \"14:00\",\r\n                        \"gapTime\": \"00:20\"\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"day\": \"TUESDAY\",\r\n                \"sessionTimings\": [\r\n                    {\r\n                        \"startTime\": \"10:00\",\r\n                        \"endTime\": \"20:00\",\r\n                        \"lunchStartTime\": \"13:00\",\r\n                        \"lunchEndTime\": \"14:00\",\r\n                        \"gapTime\": \"00:20\"\r\n                    }\r\n                ]\r\n            }\r\n\r\n        ]\r\n    },\r\n    \"updated\": false\r\n}",
+					"raw": "{\r\n    \"doctorId\": \"5a41c4a3-2617-4e65-8e02-b8c26073c7c2\",\r\n    \"clinicDetails\": {\r\n        // \"id\": \"ee0a02bd-c448-49a0-82ce-5ae4f632a3a6\",\r\n        \"clinicName\": \"SkinAesthetics Hub\",\r\n        \"clinicOnboardingId\": \"ee0a02bd-c448-49a0-82ce-5ae4f632a3a6\",\r\n        \"address\": \"941, Main Street, Banjara Hills\",\r\n        \"city\": \"Chennai\",\r\n        \"pincode\": \"570047\",\r\n        \"locality\": \"Gopalapuram\",\r\n        \"state\": \"Tamil Nadu\",\r\n        \"services\": [\r\n            \"Hair\"\r\n        ],\r\n        \"sessionDetails\": [\r\n            {\r\n                \"day\": \"Monday\",\r\n                \"sessionTimings\": [\r\n                    {\r\n                        \"startTime\": \"10:00\",\r\n                        \"endTime\": \"20:00\",\r\n                        \"lunchStartTime\": \"13:00\",\r\n                        \"lunchEndTime\": \"14:00\",\r\n                        \"gapTime\": \"00:20\"\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"day\": \"TUESDAY\",\r\n                \"sessionTimings\": [\r\n                    {\r\n                        \"startTime\": \"10:00\",\r\n                        \"endTime\": \"20:00\",\r\n                        \"lunchStartTime\": \"13:00\",\r\n                        \"lunchEndTime\": \"14:00\",\r\n                        \"gapTime\": \"00:20\"\r\n                    }\r\n                ]\r\n            }\r\n\r\n        ]\r\n    },\r\n    \"updated\": false\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1428,12 +1428,15 @@
 			},
 			"request": {
 				"auth": {
-					"type": "noauth"
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
 				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-info-by-id?id=a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea&type=PERSONAL_DETAILS",
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-info-by-id?id=9ff46beb-f2d4-445e-ab70-5cbfff7f46a6&type=CLINIC_DETAILS",
 					"host": [
 						"localhost"
 					],
@@ -1447,11 +1450,11 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "a6fbdd8e-5f9e-4213-9d9d-245b9e3e8aea"
+							"value": "9ff46beb-f2d4-445e-ab70-5cbfff7f46a6"
 						},
 						{
 							"key": "type",
-							"value": "PERSONAL_DETAILS"
+							"value": "CLINIC_DETAILS"
 						}
 					]
 				}
