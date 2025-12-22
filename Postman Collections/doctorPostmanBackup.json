@@ -2693,6 +2693,85 @@
 				"url": "localhost:8081/user-service/booking/get-selected-treatment-plans"
 			},
 			"response": []
+		},
+		{
+			"name": "start-service",
+			"id": "e457be87-149c-4154-bbd3-0fbaa035689d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/user-service/booking/start-service?appointmentId=205226f3-bedb-4bf3-a38a-056a5a223d0e&doctorId=603cf778-be40-4055-9e03-c3274b508097",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"booking",
+						"start-service"
+					],
+					"query": [
+						{
+							"key": "appointmentId",
+							"value": "205226f3-bedb-4bf3-a38a-056a5a223d0e",
+							"type": "text"
+						},
+						{
+							"key": "doctorId",
+							"value": "603cf778-be40-4055-9e03-c3274b508097",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "end-service",
+			"id": "f19e7048-2a94-4e16-b666-079474d1d53f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appointmentId\": \"205226f3-bedb-4bf3-a38a-056a5a223d0e\",\r\n    \"doctorId\": \"603cf778-be40-4055-9e03-c3274b508097\",\r\n    // \"endedOn\": \"\",\r\n    \"followUpPlans\": [\r\n        {\r\n            \"status\": \"ASSIGNED\",\r\n            \"planName\": \"Treatment Plan A\",\r\n            \"items\": [\r\n                {\r\n                    \"itemId\": \"0f6c92a3-abed-475a-8905-4cc3922ac2b5\",\r\n                    \"name\": \"Skin Brightening  Glow IV Drip\",\r\n                    \"description\": \"A specialized IV infusion designed to enhance skin radiance, reduce dullness, and support overall skin health. This drip delivers antioxidants, vitamins, and hydration directly into the bloodstream to promote a brighter, more glowing complexion. Ideal for individuals experiencing pigmentation, tired-looking skin, or uneven tone.\",\r\n                    \"variable\": null,\r\n                    \"unit\": null,\r\n                    \"weight\": null,\r\n                    \"gender\": null,\r\n                    \"bodyPart\": \"Arms\",\r\n                    \"location\": null,\r\n                    \"prescribedFrom\": \"SERVICE\",\r\n                    \"status\": \"ASSIGNED\"\r\n                }\r\n                // {\r\n                //     \"itemId\": \"8b2120bb-aa40-4806-b0ef-bc3a74e9fffa\",\r\n                //     \"testCode\": \"T5677\",\r\n                //     \"testServiceId\": 288,\r\n                //     \"name\": \"25 OH Cholecalciferol (D2+D3)\",\r\n                //     \"description\": \"Complete Blood Count\",\r\n                //     \"prescribedFrom\": \"INVESTIGATION\",\r\n                //     \"status\": \"ASSIGNED\",\r\n                //     \"price\": 490\r\n                // }\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/booking/end-service"
+			},
+			"response": []
 		}
 	]
 }
