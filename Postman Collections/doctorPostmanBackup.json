@@ -2673,7 +2673,7 @@
 						"token": "{{bearerToken}}"
 					}
 				},
-				"method": "POST",
+				"method": "GET",
 				"header": [
 					{
 						"key": "Authorization",
@@ -2686,14 +2686,47 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"userType\": \"ADMIN\", //CLINIC or ADMIN\r\n    // \"clinicName\": \"SkinAesthetics Hub\", \r\n    \"searchBy\": \"\",\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "localhost:8081/user-service/booking/get-selected-treatment-plans"
+				"url": {
+					"raw": "localhost:8081/user-service/booking/get-selected-treatment-plans?userType=ADMIN&clinicName=SkinAesthetics Hub&searchBy&pageNumber=1&pageSize=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"booking",
+						"get-selected-treatment-plans"
+					],
+					"query": [
+						{
+							"key": "userType",
+							"value": "ADMIN"
+						},
+						{
+							"key": "clinicName",
+							"value": "SkinAesthetics Hub"
+						},
+						{
+							"key": "searchBy",
+							"value": null
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
 			},
 			"response": []
 		},
