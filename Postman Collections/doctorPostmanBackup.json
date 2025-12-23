@@ -2355,7 +2355,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/user-profile/get-doctor-consultation-prescription-by-slot-id?slotId=1736ac83-d18a-4134-bf08-ba9fad3816c3",
+					"raw": "localhost:8081/user-service/user-profile/get-doctor-consultation-prescription-by-slot-id?slotId=205226f3-bedb-4bf3-a38a-056a5a223d0e",
 					"host": [
 						"localhost"
 					],
@@ -2368,8 +2368,7 @@
 					"query": [
 						{
 							"key": "slotId",
-							"value": "1736ac83-d18a-4134-bf08-ba9fad3816c3",
-							"type": "text"
+							"value": "205226f3-bedb-4bf3-a38a-056a5a223d0e"
 						}
 					]
 				}
@@ -2392,10 +2391,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/user-service/user-profile/get-treatment-plan-prescription-by-plan-id?planId=a50e09b2-7200-4598-9e77-a3b0c13b33c2&slotId=4e00a4d2-338c-4063-9730-0780dd0a4c02",
+					"raw": "localhost:8081/user-service/user-profile/get-treatment-plan-prescription-by-plan-id?planId=1b6051ba-4198-49a4-b0b2-eebbe055c43c&slotId=205226f3-bedb-4bf3-a38a-056a5a223d0e",
 					"host": [
-						"{{baseUrl}}"
+						"localhost"
 					],
+					"port": "8081",
 					"path": [
 						"user-service",
 						"user-profile",
@@ -2404,11 +2404,11 @@
 					"query": [
 						{
 							"key": "planId",
-							"value": "a50e09b2-7200-4598-9e77-a3b0c13b33c2"
+							"value": "1b6051ba-4198-49a4-b0b2-eebbe055c43c"
 						},
 						{
 							"key": "slotId",
-							"value": "4e00a4d2-338c-4063-9730-0780dd0a4c02"
+							"value": "205226f3-bedb-4bf3-a38a-056a5a223d0e"
 						}
 					]
 				}
