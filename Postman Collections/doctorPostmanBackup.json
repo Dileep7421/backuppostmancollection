@@ -2694,7 +2694,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8081/user-service/booking/get-selected-treatment-plans?userType=ADMIN&clinicName=SkinAesthetics Hub&searchBy=s&pageNumber=1&pageSize=10",
+					"raw": "localhost:8081/user-service/booking/get-selected-treatment-plans?userType=CLINIC&clinicName=SkinAesthetics Hub&pageNumber=1&pageSize=5",
 					"host": [
 						"localhost"
 					],
@@ -2707,7 +2707,7 @@
 					"query": [
 						{
 							"key": "userType",
-							"value": "ADMIN"
+							"value": "CLINIC"
 						},
 						{
 							"key": "clinicName",
@@ -2715,7 +2715,8 @@
 						},
 						{
 							"key": "searchBy",
-							"value": "s"
+							"value": "",
+							"disabled": true
 						},
 						{
 							"key": "pageNumber",
@@ -2723,7 +2724,7 @@
 						},
 						{
 							"key": "pageSize",
-							"value": "10"
+							"value": "5"
 						}
 					]
 				}
