@@ -2694,7 +2694,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8081/user-service/booking/get-selected-treatment-plans?userType=ADMIN&clinicName=SkinAesthetics Hub&searchBy&pageNumber=1&pageSize=10",
+					"raw": "localhost:8081/user-service/booking/get-selected-treatment-plans?userType=ADMIN&clinicName=SkinAesthetics Hub&searchBy=s&pageNumber=1&pageSize=10",
 					"host": [
 						"localhost"
 					],
@@ -2715,7 +2715,7 @@
 						},
 						{
 							"key": "searchBy",
-							"value": null
+							"value": "s"
 						},
 						{
 							"key": "pageNumber",
@@ -2747,37 +2747,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\r\n    \"appointmentId\": \"205226f3-bedb-4bf3-a38a-056a5a223d0e\",\r\n    \"doctorId\": \"603cf778-be40-4055-9e03-c3274b508097\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "localhost:8081/user-service/booking/start-service?appointmentId=205226f3-bedb-4bf3-a38a-056a5a223d0e&doctorId=603cf778-be40-4055-9e03-c3274b508097",
-					"host": [
-						"localhost"
-					],
-					"port": "8081",
-					"path": [
-						"user-service",
-						"booking",
-						"start-service"
-					],
-					"query": [
-						{
-							"key": "appointmentId",
-							"value": "205226f3-bedb-4bf3-a38a-056a5a223d0e",
-							"type": "text"
-						},
-						{
-							"key": "doctorId",
-							"value": "603cf778-be40-4055-9e03-c3274b508097",
-							"type": "text"
-						}
-					]
-				}
+				"url": "localhost:8081/user-service/booking/start-service"
 			},
 			"response": []
 		},
