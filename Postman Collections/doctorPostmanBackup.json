@@ -2440,7 +2440,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8081/user-service/user-profile/selected-treatment-plan-by-patient?planId=900601aa-259b-4308-bad1-9b877308e54e",
+					"raw": "localhost:8081/user-service/user-profile/selected-treatment-plan-by-patient?planId=98ad27b3-938d-419a-88be-29cb2b349b39",
 					"host": [
 						"localhost"
 					],
@@ -2453,7 +2453,7 @@
 					"query": [
 						{
 							"key": "planId",
-							"value": "900601aa-259b-4308-bad1-9b877308e54e"
+							"value": "98ad27b3-938d-419a-88be-29cb2b349b39"
 						}
 					]
 				}
