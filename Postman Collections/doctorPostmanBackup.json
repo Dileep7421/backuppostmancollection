@@ -2533,14 +2533,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"appointmentOrderId\": \"AST-LTB-20251226-095118-0006\",\r\n    \"status\": \"Approved\", //PENDING or COMPLETED\r\n    // \"receiptUrl\": \"https://narllims.neubergdiagnostics.com/SLIMS.API/api/public/DownloadReport?labId=51222802771&password=5U07C723S\", // Optional final receipt URL\r\n    \"reportUrl\": \"https://narllims.neubergdiagnostics.com/SLIMS.API/api/public/DownloadReport?labId=51222802771&password=5U07C723S\", // Combined report url (optional)\r\n    \"tests\": [\r\n        {\r\n            \"ServiceId\": 288,\r\n            \"Status\": \"Approved\"\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"appointmentOrderId\": \"AST-LTB-20251215-221346-0002\",\r\n    \"status\": \"Approved\", //PENDING or COMPLETED\r\n    // \"receiptUrl\": \"https://narllims.neubergdiagnostics.com/SLIMS.API/api/public/DownloadReport?labId=51222802771&password=5U07C723S\", // Optional final receipt URL\r\n    \"reportUrl\": \"https://narllims.neubergdiagnostics.com/SLIMS.API/api/public/DownloadReport?labId=51222802771&password=5U07C723S\", // Combined report url (optional)\r\n    \"tests\": [\r\n        {\r\n            \"ServiceId\": 398,\r\n            \"Status\": \"Approved\"\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{baseUrl}}/user-service/labs/webhook"
+				"url": "localhost:8081/user-service/labs/webhook"
 			},
 			"response": []
 		},
