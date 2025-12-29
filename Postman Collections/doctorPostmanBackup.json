@@ -2790,6 +2790,48 @@
 				"url": "localhost:8081/user-service/booking/end-service"
 			},
 			"response": []
+		},
+		{
+			"name": "get-patient-slot-images",
+			"id": "261cdee9-b623-4e07-ba06-2438d4936161",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/user-profile/get-patient-slot-images?slotBookingId=34477ab7-ac94-4d20-8271-bf0fb7e06867&patientId=5050339d-a398-4245-ab04-37c1b7706c8e",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"user-profile",
+						"get-patient-slot-images"
+					],
+					"query": [
+						{
+							"key": "slotBookingId",
+							"value": "34477ab7-ac94-4d20-8271-bf0fb7e06867",
+							"type": "text"
+						},
+						{
+							"key": "patientId",
+							"value": "5050339d-a398-4245-ab04-37c1b7706c8e",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
