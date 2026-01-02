@@ -108,7 +108,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/doctor/onboarding/delete-doctor-details-by-id?id=d24219c4-2396-476d-b631-470a07e4c514",
+					"raw": "localhost:8081/user-service/doctor/onboarding/delete-doctor-details-by-id?id=ac5780ce-6816-4342-b011-9fe7dcde2571",
 					"host": [
 						"localhost"
 					],
@@ -122,7 +122,7 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "d24219c4-2396-476d-b631-470a07e4c514"
+							"value": "ac5780ce-6816-4342-b011-9fe7dcde2571"
 						}
 					]
 				}
