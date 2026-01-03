@@ -530,6 +530,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
 				"method": "PUT",
 				"header": [],
 				"body": {
@@ -556,13 +562,11 @@
 					"query": [
 						{
 							"key": "serviceId",
-							"value": "0babca52-cddf-40c8-8a10-1dc0cfa81e78",
-							"type": "text"
+							"value": "0babca52-cddf-40c8-8a10-1dc0cfa81e78"
 						},
 						{
 							"key": "isActive",
-							"value": "true",
-							"type": "text"
+							"value": "true"
 						}
 					]
 				}
