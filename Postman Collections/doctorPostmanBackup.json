@@ -2832,6 +2832,48 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "verify-otp",
+			"id": "99175448-9a58-49b8-8244-efb639dae082",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/doctor/onboarding/verify?sessionInfo=AD8T5IvMI4fdTeLF3xKP6cjxTTrpazzCedsnRDOD6rcvlk55CQ-s32iR6Iv7iogPoYqfOJiISdOYNYY2pKqK7BEOiIJq6vYOQMOxIOiZNkuNH-Z4dxNb4c_UzzkdNjyE73bDvY0bgrMhmsYw5QXmApbf3UHUoRUYzw&otpCode=123456&phoneNumber=9444246473",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"doctor",
+						"onboarding",
+						"verify"
+					],
+					"query": [
+						{
+							"key": "sessionInfo",
+							"value": "AD8T5IvMI4fdTeLF3xKP6cjxTTrpazzCedsnRDOD6rcvlk55CQ-s32iR6Iv7iogPoYqfOJiISdOYNYY2pKqK7BEOiIJq6vYOQMOxIOiZNkuNH-Z4dxNb4c_UzzkdNjyE73bDvY0bgrMhmsYw5QXmApbf3UHUoRUYzw"
+						},
+						{
+							"key": "otpCode",
+							"value": "123456"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "9444246473"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
