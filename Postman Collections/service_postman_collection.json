@@ -572,6 +572,55 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-services-for-patient",
+			"id": "a9bcbd98-70bb-440e-8654-d76e74e042f7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/ap-service/api/services/get-services-for-patient?searchBy=Removal-full&mainCategory=&pageNumber=1&pageSize=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"ap-service",
+						"api",
+						"services",
+						"get-services-for-patient"
+					],
+					"query": [
+						{
+							"key": "searchBy",
+							"value": "Removal-full"
+						},
+						{
+							"key": "mainCategory",
+							"value": ""
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
