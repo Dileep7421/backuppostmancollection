@@ -189,7 +189,7 @@
 						}
 					]
 				},
-				"url": "localhost:8081/user-service/file/upload"
+				"url": "{{baseUrlAesUAT}}/user-service/file/upload"
 			},
 			"response": []
 		},
