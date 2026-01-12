@@ -2228,7 +2228,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/doctor/onboarding/get-pre-consultation-prescribed-info?patientId=5050339d-a398-4245-ab04-37c1b7706c8e&doctorId=ac5780ce-6816-4342-b011-9fe7dcde2571&slotId=a8344a73-5680-46c8-849b-644fc4b43de4&pageNumber=1&pageSize=10",
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-pre-consultation-prescribed-info?patientId=212acbf6-e05d-4afd-8665-3f9555200cf1&doctorId=ac5780ce-6816-4342-b011-9fe7dcde2571&slotId=0a95bf93-fd23-497c-be09-2c80d6f13c2b&pageNumber=1&pageSize=10",
 					"host": [
 						"localhost"
 					],
@@ -2242,7 +2242,7 @@
 					"query": [
 						{
 							"key": "patientId",
-							"value": "5050339d-a398-4245-ab04-37c1b7706c8e"
+							"value": "212acbf6-e05d-4afd-8665-3f9555200cf1"
 						},
 						{
 							"key": "doctorId",
@@ -2250,7 +2250,7 @@
 						},
 						{
 							"key": "slotId",
-							"value": "a8344a73-5680-46c8-849b-644fc4b43de4"
+							"value": "0a95bf93-fd23-497c-be09-2c80d6f13c2b"
 						},
 						{
 							"key": "pageNumber",
