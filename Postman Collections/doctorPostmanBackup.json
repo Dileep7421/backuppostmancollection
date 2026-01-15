@@ -446,7 +446,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"unit\": \"km\",\n    \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\n    \"clinicName\": \"SkinAesthetics Hub\",\n    \"patientId\": \"0932774f-e93a-4a08-9668-f6bef9b2155f\"\n}",
+					"raw": "{\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"unit\": \"km\",\n    \"doctorId\": \"a4120147-7af2-4e0a-afb3-537537a03158\",\n    \"clinicName\": \"The Hair & Laser Studio\",\n    \"patientId\": \"0932774f-e93a-4a08-9668-f6bef9b2155f\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
