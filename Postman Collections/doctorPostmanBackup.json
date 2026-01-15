@@ -2175,7 +2175,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    // \"searchBy\": \"s\",\n    \"doctorId\": \"603cf778-be40-4055-9e03-c3274b508097\",\n    \"bookingStatus\": \"COMPLETED\",\n    \"currentDate\": \"2025-12-06\",\n    \"clinicName\": \"SkinAesthetics Hub\",\n    \"currentMonth\": 12,\n    \"startWeekDate\": \"2025-07-25\",\n    \"endWeekDate\": \"2025-11-29\"\n}",
+					"raw": "{\n    // \"searchBy\": \"s\",\n    \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\n    // \"bookingStatus\": \"COMPLETED\",\n    // \"currentDate\": \"2025-12-06\",\n    \"clinicName\": \"SkinAesthetics Hub\",\n    \"currentMonth\": 1\n    // \"startWeekDate\": \"2025-07-25\",\n    // \"endWeekDate\": \"2025-11-29\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
