@@ -852,7 +852,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"unit\": \"km\",\n    \"specialty\": \"\",\n    \"category\": \"Skin\",\n    \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\"\n}",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"unit\": \"km\",\n    \"specialty\": \"\",\n    \"category\": \"ONLINE_CONSULTATION\", //ONLINE_CONSULTATION or HOSPITAL_VISIT\n    \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
