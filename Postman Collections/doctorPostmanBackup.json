@@ -852,7 +852,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"unit\": \"km\",\n    \"specialty\": \"\",\n    \"category\": \"ONLINE_CONSULTATION\", //ONLINE_CONSULTATION or HOSPITAL_VISIT\n    \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\"\n}",
+					"raw": "{\n    \"searchBy\": \"\",\n    \"pageNumber\": 1,\n    \"latitude\": 17.4391296,\n    \"longitude\": 78.4367616,\n    \"unit\": \"km\",\n    \"specialty\": \"\",\n    \"category\": \"HOSPITAL_VISIT\", //ONLINE_CONSULTATION or HOSPITAL_VISIT\n    \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
