@@ -1292,11 +1292,17 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"doctorId\": \"b62a808f-e76b-4f07-99ae-b2a4da200985\",\r\n    \"education\": {\r\n        // \"id\": \"e020c95a-80da-401c-a426-7e9d8985b76d\",\r\n        \"degree\": \"MD\",\r\n        \"university\": \"Stanford University School of Medicine\",\r\n        \"startYear\": 2014,\r\n        \"endYear\": 2018,\r\n        \"specialization\": \"Aesthetic Gynaecologist\",\r\n        \"educationCertificates\": [\r\n            {\r\n                \"id\": \"7e9aabc9-e19a-405d-94a0-782f532960e6\",\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/doctor-icon.jpg\"\r\n            }\r\n        ]\r\n    },\r\n    \"updated\": false\r\n}",
+					"raw": "{\r\n    \"doctorId\": \"45b76175-7935-4873-bef4-589d423db5d0\",\r\n    \"education\": {\r\n        \"id\": \"7361c377-046e-4700-8a1c-6e6b66ff57ef\",\r\n        \"degree\": \"MD\",\r\n        \"university\": \"Stanford University School of Medicine1\",\r\n        \"startYear\": 2014,\r\n        \"endYear\": 2018,\r\n        \"specialization\": \"Aesthetic Gynaecologist\",\r\n        \"educationCertificates\": [\r\n            {\r\n                 \"id\": \"c01fe64a-2655-4f07-9cd9-9392a44e1536\",\r\n                \"bucket\": \"aesthetics\",\r\n                \"object\": \"image/doctor-icon.jpg\"\r\n            }\r\n        ]\r\n    },\r\n    \"updated\": true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
