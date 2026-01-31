@@ -71,7 +71,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-id?id=ac5780ce-6816-4342-b011-9fe7dcde2571",
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-id?id=45b76175-7935-4873-bef4-589d423db5d0",
 					"host": [
 						"localhost"
 					],
@@ -85,7 +85,7 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "ac5780ce-6816-4342-b011-9fe7dcde2571"
+							"value": "45b76175-7935-4873-bef4-589d423db5d0"
 						}
 					]
 				}
@@ -1346,7 +1346,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"doctorId\": \"5a41c4a3-2617-4e65-8e02-b8c26073c7c2\",\r\n    \"clinicDetails\": {\r\n        // \"id\": \"ee0a02bd-c448-49a0-82ce-5ae4f632a3a6\",\r\n        \"clinicName\": \"SkinAesthetics Hub\",\r\n        \"clinicOnboardingId\": \"ee0a02bd-c448-49a0-82ce-5ae4f632a3a6\",\r\n        \"address\": \"941, Main Street, Banjara Hills\",\r\n        \"city\": \"Chennai\",\r\n        \"pincode\": \"570047\",\r\n        \"locality\": \"Gopalapuram\",\r\n        \"state\": \"Tamil Nadu\",\r\n        \"services\": [\r\n            \"Hair\"\r\n        ],\r\n        \"sessionDetails\": [\r\n            {\r\n                \"day\": \"Monday\",\r\n                \"sessionTimings\": [\r\n                    {\r\n                        \"startTime\": \"10:00\",\r\n                        \"endTime\": \"20:00\",\r\n                        \"lunchStartTime\": \"13:00\",\r\n                        \"lunchEndTime\": \"14:00\",\r\n                        \"gapTime\": \"00:20\"\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"day\": \"TUESDAY\",\r\n                \"sessionTimings\": [\r\n                    {\r\n                        \"startTime\": \"10:00\",\r\n                        \"endTime\": \"20:00\",\r\n                        \"lunchStartTime\": \"13:00\",\r\n                        \"lunchEndTime\": \"14:00\",\r\n                        \"gapTime\": \"00:20\"\r\n                    }\r\n                ]\r\n            }\r\n\r\n        ]\r\n    },\r\n    \"updated\": false\r\n}",
+					"raw": "{\r\n    \"doctorId\": \"45b76175-7935-4873-bef4-589d423db5d0\",\r\n    \"clinicDetails\": {\r\n            \"id\": \"ae707d8c-78e6-4658-8180-82a88a461207\",\r\n            \"clinicName\": \"SunBorn Clinic\",\r\n            \"clinicOnboardingId\": \"0b6e430b-29f0-4423-9922-4c72b55e3c09\",\r\n            \"address\": \"826, Main Street, HBR Layout3\",\r\n            \"city\": \"Bengaluru\",\r\n            \"state\": \"Karnataka\",\r\n            \"locality\": \"HBR Layout\",\r\n            \"pincode\": \"578259\",\r\n            \"sessionDetails\": [\r\n                {\r\n                    \"id\": \"9b719994-2a50-4fab-89ee-d5c03422cee8\",\r\n                    \"day\": \"Monday\",\r\n                    \"sessionTimings\": [\r\n                        {\r\n                            \"id\": \"39df6ae0-d17d-40be-8e79-78dfa5c4b286\",\r\n                            \"startTime\": \"09:00\",\r\n                            \"endTime\": \"19:00\",\r\n                            \"lunchStartTime\": \"12:00\",\r\n                            \"lunchEndTime\": \"13:00\",\r\n                            \"gapTime\": \"00:10\"\r\n                        }\r\n                    ]\r\n                },\r\n                {\r\n                    \"id\": \"7a715694-ddf8-41f9-846c-3de1376ce0f9\",\r\n                    \"day\": \"Wednesday\",\r\n                    \"sessionTimings\": [\r\n                        {\r\n                            \"id\": \"197712b5-b50f-4f58-94f0-e14a79ebe6ef\",\r\n                            \"startTime\": \"10:00\",\r\n                            \"endTime\": \"13:00\",\r\n                            \"lunchStartTime\": \"\",\r\n                            \"lunchEndTime\": \"\",\r\n                            \"gapTime\": \"\"\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \"services\": [\r\n                \"Cosmetic Surgery\"\r\n            ]\r\n        },\r\n    \"updated\":true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
