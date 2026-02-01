@@ -1987,7 +1987,7 @@
 						}
 					]
 				},
-				"url": "{{baseUrl}}/user-service/user-profile/submit-user-chat"
+				"url": "localhost:8081/user-service/user-profile/submit-user-chat"
 			},
 			"response": []
 		},
