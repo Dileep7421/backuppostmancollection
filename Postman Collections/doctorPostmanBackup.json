@@ -1445,7 +1445,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-info-by-id?id=9ff46beb-f2d4-445e-ab70-5cbfff7f46a6&type=CLINIC_DETAILS",
+					"raw": "localhost:8081/user-service/doctor/onboarding/get-doctor-info-by-id?id=0103f2d2-b70b-4dc0-b6a7-b71c2d93c538&type=CLINIC_DETAILS",
 					"host": [
 						"localhost"
 					],
@@ -1459,7 +1459,7 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "9ff46beb-f2d4-445e-ab70-5cbfff7f46a6"
+							"value": "0103f2d2-b70b-4dc0-b6a7-b71c2d93c538"
 						},
 						{
 							"key": "type",
