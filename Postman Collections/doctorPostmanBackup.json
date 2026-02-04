@@ -613,7 +613,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"slotTime\": \"12:00\",\r\n  \"slotDate\": \"2026-01-31\",\r\n  \"slotDay\": \"Monday\",\r\n  \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\r\n  \"doctorName\": \"Dr. Rama rao\",\r\n  \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\r\n  \"clinicName\": \"SkinAesthetics Hub\",\r\n  \"serviceId\": \"123f6391-ac1d-4884-a66e-6cb64499cc49\",  // this field for only service booking flow\r\n  \"serviceName\": \"Thigh Lift\",  // this field for only service booking flow\r\n  \"createdOn\": \"2026-01-31T23:55:29.720852\",\r\n  \"patientServiceType\": \"CONSULT_DOCTOR\",\r\n  \"consultationType\": \"CLINIC_VISIT\",\r\n  \"slotBookedBy\": \"CLINIC\" //PATIENT, DOCTOR, CLINIC, ADMIN\r\n}\r\n",
+					"raw": "{\r\n  \"slotTime\": \"11:00\",\r\n  \"slotDate\": \"2026-02-28\",\r\n  \"slotDay\": \"Monday\",\r\n  \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\r\n  \"doctorName\": \"Dr. Rama rao\",\r\n  \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\r\n  \"clinicName\": \"SkinAesthetics Hub\",\r\n  \"serviceId\": \"123f6391-ac1d-4884-a66e-6cb64499cc49\",  // this field for only service booking flow\r\n  \"serviceName\": \"Thigh Lift\",  // this field for only service booking flow\r\n  \"createdOn\": \"2026-02-28T23:55:28.720852\",\r\n  \"patientServiceType\": \"CONSULT_DOCTOR\",\r\n  \"consultationType\": \"CLINIC_VISIT\",\r\n  \"slotBookedBy\": \"CLINIC\" //PATIENT, DOCTOR, CLINIC, ADMIN\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2366,7 +2366,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/user-profile/get-doctor-consultation-prescription-by-slot-id?slotId=ebba12de-aafe-4421-8458-9a5833bf2f1b",
+					"raw": "localhost:8081/user-service/user-profile/get-doctor-consultation-prescription-by-slot-id?slotId=f76e3f3c-5904-469b-a5bc-ad0b30f64de3",
 					"host": [
 						"localhost"
 					],
@@ -2379,7 +2379,7 @@
 					"query": [
 						{
 							"key": "slotId",
-							"value": "ebba12de-aafe-4421-8458-9a5833bf2f1b"
+							"value": "f76e3f3c-5904-469b-a5bc-ad0b30f64de3"
 						}
 					]
 				}
@@ -2402,7 +2402,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/user-profile/get-treatment-plan-prescription-by-plan-id?planId=8fa3aa67-2e22-434a-be8b-e6561491fcff&slotId=ebba12de-aafe-4421-8458-9a5833bf2f1b",
+					"raw": "localhost:8081/user-service/user-profile/get-treatment-plan-prescription-by-plan-id?planId=cf47fe62-1a31-4488-84ca-fa0029a8f395&slotId=f76e3f3c-5904-469b-a5bc-ad0b30f64de3",
 					"host": [
 						"localhost"
 					],
@@ -2415,11 +2415,11 @@
 					"query": [
 						{
 							"key": "planId",
-							"value": "8fa3aa67-2e22-434a-be8b-e6561491fcff"
+							"value": "cf47fe62-1a31-4488-84ca-fa0029a8f395"
 						},
 						{
 							"key": "slotId",
-							"value": "ebba12de-aafe-4421-8458-9a5833bf2f1b"
+							"value": "f76e3f3c-5904-469b-a5bc-ad0b30f64de3"
 						}
 					]
 				}
