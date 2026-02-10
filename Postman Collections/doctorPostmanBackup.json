@@ -641,7 +641,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"amount\": 1500,\r\n  \"currency\": \"INR\",\r\n  \"createdAt\": \"2025-12-28T10:30:23.720852\",\r\n  \"slotId\": \"be44de57-199f-4869-b986-809e4ff1b35f\",\r\n//   \"serviceId\": \"bbdc80bc-d0da-4929-8edc-8ad881521720\", //only service booking\r\n//   \"serviceName\": \"Thigh Lift\", //only service booking\r\n//   \"clinicId\": \"6ae72bdf-8ebd-4ef0-a547-9c46410e5b04\", //only doctor consultation\r\n//   \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\r\n  \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\r\n  \"orderFrom\": \"DIRECT_DIAGNOSTIC_BOOKING\",\r\n  \"patientServiceType\": \"BOOK_LAB_TEST\" //CONSULT_DOCTOR, BOOK_SERVICE, ORDER_MEDICINE, BOOK_LAB_TEST\r\n}\r\n",
+					"raw": "{\r\n  \"amount\": 1500,\r\n  \"currency\": \"INR\",\r\n  \"createdAt\": \"2026-02-28T10:30:23.720852\",\r\n  \"slotId\": \"be44de57-199f-4869-b986-809e4ff1b35f\",\r\n//   \"serviceId\": \"bbdc80bc-d0da-4929-8edc-8ad881521720\", //only service booking\r\n//   \"serviceName\": \"Thigh Lift\", //only service booking\r\n//   \"clinicId\": \"6ae72bdf-8ebd-4ef0-a547-9c46410e5b04\", //only doctor consultation\r\n//   \"doctorId\": \"4e4957bb-7934-450b-b8d7-b52d3bc7a09e\",\r\n  \"patientId\": \"bbd1a9c8-b103-401b-b33b-01b1a103e41a\",\r\n  \"orderFrom\": \"DIRECT_DIAGNOSTIC_BOOKING\",\r\n  \"patientServiceType\": \"BOOK_LAB_TEST\" //CONSULT_DOCTOR, BOOK_SERVICE, ORDER_MEDICINE, BOOK_LAB_TEST\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2877,6 +2877,71 @@
 						{
 							"key": "phoneNumber",
 							"value": "9444246473"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-payment-link",
+			"id": "5d1e9c95-d4dd-4528-a828-c3df00c7c47f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amount\": 500.00,\r\n  \"currency\": \"INR\",\r\n  \"patientId\": \"123e4567-e89b-12d3-a456-426614174000\",\r\n  \"patientName\": \"John Doe\",\r\n  \"patientEmail\": \"john.doe@example.com\",\r\n  \"patientPhone\": \"+919876543210\",\r\n  \"slotId\": \"174cd7b4-c256-43ac-951c-a8dbbc19e805\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8093/payment-service/api/payment/create-payment-link"
+			},
+			"response": []
+		},
+		{
+			"name": "get-booked-slot-by-id",
+			"id": "0db51d0c-cf52-4be8-a758-ec326a45c67c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/booking/get-booked-slot-by-id?slotId=0959d7d6-671a-4fe8-913b-9d8984457e6b",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"booking",
+						"get-booked-slot-by-id"
+					],
+					"query": [
+						{
+							"key": "slotId",
+							"value": "0959d7d6-671a-4fe8-913b-9d8984457e6b",
+							"type": "text"
 						}
 					]
 				}
