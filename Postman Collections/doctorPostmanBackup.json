@@ -613,7 +613,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"slotTime\": \"18:00\",\r\n  \"slotDate\": \"2026-02-28\",\r\n  \"slotDay\": \"Monday\",\r\n  \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\r\n  \"doctorName\": \"Dr. Rama rao\",\r\n  \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\r\n  \"clinicName\": \"SkinAesthetics Hub\",\r\n  \"serviceId\": \"123f6391-ac1d-4884-a66e-6cb64499cc49\",  // this field for only service booking flow\r\n  \"serviceName\": \"Thigh Lift\",  // this field for only service booking flow\r\n  \"createdOn\": \"2026-02-28T23:49:29.720852\",\r\n  \"patientServiceType\": \"CONSULT_DOCTOR\",\r\n  \"consultationType\": \"CLINIC_VISIT\",\r\n  \"slotBookedBy\": \"PATIENT\" //PATIENT, DOCTOR, CLINIC, ADMIN\r\n}\r\n",
+					"raw": "{\r\n  \"slotTime\": \"19:00\",\r\n  \"slotDate\": \"2026-02-28\",\r\n  \"slotDay\": \"Monday\",\r\n  \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\r\n  \"doctorName\": \"Dr. Rama rao\",\r\n  \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\r\n  \"clinicName\": \"SkinAesthetics Hub\",\r\n  \"serviceId\": \"123f6391-ac1d-4884-a66e-6cb64499cc49\",  // this field for only service booking flow\r\n  \"serviceName\": \"Thigh Lift\",  // this field for only service booking flow\r\n  \"createdOn\": \"2026-02-28T23:44:29.720852\",\r\n  \"patientServiceType\": \"CONSULT_DOCTOR\",\r\n  \"consultationType\": \"CLINIC_VISIT\",\r\n  \"slotBookedBy\": \"PATIENT\" //PATIENT, DOCTOR, CLINIC, ADMIN\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2907,7 +2907,7 @@
 						}
 					}
 				},
-				"url": "localhost:8093/payment-service/api/payment/create-payment-link"
+				"url": "{{baseUrl}}/payment-service/api/payment/create-payment-link"
 			},
 			"response": []
 		},
