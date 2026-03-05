@@ -2952,6 +2952,42 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-slot-details-by-slot-id",
+			"id": "94cbfc59-ded0-42d8-a8f5-d22bb3baba88",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/user-service/booking/get-slot-details-by-slot-id?slotId=000f2a43-a81e-4868-84d4-615cde1e291d",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user-service",
+						"booking",
+						"get-slot-details-by-slot-id"
+					],
+					"query": [
+						{
+							"key": "slotId",
+							"value": "000f2a43-a81e-4868-84d4-615cde1e291d",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
