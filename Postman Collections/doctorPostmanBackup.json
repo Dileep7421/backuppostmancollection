@@ -2705,7 +2705,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8081/user-service/booking/get-selected-treatment-plans?userType=ADMIN&pageNumber=1&pageSize=10",
+					"raw": "localhost:8081/user-service/booking/get-selected-treatment-plans?userType=ADMIN&pageNumber=1&pageSize=10&planStatus=CONFIRMED",
 					"host": [
 						"localhost"
 					],
@@ -2737,6 +2737,11 @@
 						{
 							"key": "pageSize",
 							"value": "10"
+						},
+						{
+							"key": "planStatus",
+							"value": "CONFIRMED",
+							"type": "text"
 						}
 					]
 				}
