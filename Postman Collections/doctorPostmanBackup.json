@@ -2705,7 +2705,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8081/user-service/booking/get-selected-treatment-plans?userType=ADMIN&pageNumber=1&pageSize=10&planStatus=CONFIRMED",
+					"raw": "localhost:8081/user-service/booking/get-selected-treatment-plans?userType=ADMIN&clinicName=SkinAesthetics Hub&pageNumber=1&pageSize=10&planStatus=CONFIRMED",
 					"host": [
 						"localhost"
 					],
@@ -2722,8 +2722,7 @@
 						},
 						{
 							"key": "clinicName",
-							"value": "SkinAesthetics Hub",
-							"disabled": true
+							"value": "SkinAesthetics Hub"
 						},
 						{
 							"key": "searchBy",
@@ -2740,8 +2739,7 @@
 						},
 						{
 							"key": "planStatus",
-							"value": "CONFIRMED",
-							"type": "text"
+							"value": "CONFIRMED"
 						}
 					]
 				}
