@@ -2967,7 +2967,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/user-service/booking/get-slot-details-by-slot-id?slotId=000f2a43-a81e-4868-84d4-615cde1e291d",
+					"raw": "{{baseUrl}}/user-service/booking/get-slot-details-by-slot-id?slotId=000f2a43-a81e-4868-84d4-615cde1e291d&orderFrom=INVENTORY_MEDICINE_ORDER",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -2979,7 +2979,11 @@
 					"query": [
 						{
 							"key": "slotId",
-							"value": "000f2a43-a81e-4868-84d4-615cde1e291d",
+							"value": "000f2a43-a81e-4868-84d4-615cde1e291d"
+						},
+						{
+							"key": "orderFrom",
+							"value": "INVENTORY_MEDICINE_ORDER",
 							"type": "text"
 						}
 					]
