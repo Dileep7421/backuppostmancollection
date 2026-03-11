@@ -1274,7 +1274,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"fullName\": \"Riya\",\r\n    \"title\": \"Dr.\",\r\n    \"gender\": \"Female\",\r\n    \"email\": \"riyamahadik74@gmail.com\",\r\n    \"mobileNumber\": \"9876363732\",\r\n    \"city\": \"New York\",\r\n    \"dob\": \"1990-01-01\",\r\n    \"specialty\": \"Aesthetic Gynaecologist\",\r\n    \"mobileVerified\": true,\r\n    \"images\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"identityProofFile\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"deviceToken\": \"device-token-string\"\r\n}",
+					"raw": "{\r\n    // \"doctorId\": \"45b76175-7935-4873-bef4-589d423db5d0\", // update flow\r\n    \"fullName\": \"Riya\",\r\n    \"title\": \"Dr.\",\r\n    \"gender\": \"Female\",\r\n    \"email\": \"riyamahadik74@gmail.com\",\r\n    \"mobileNumber\": \"9876363732\",\r\n    \"city\": \"New York\",\r\n    \"dob\": \"1990-01-01\",\r\n    \"specialty\": \"Aesthetic Gynaecologist\",\r\n    \"mobileVerified\": true,\r\n    \"images\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    \"identityProofFile\": {\r\n        \"bucket\": \"aesthetics\",\r\n        \"object\": \"image/doctor-icon.jpg\"\r\n    },\r\n    // \"updated\": true, // update flow\r\n    \"deviceToken\": \"device-token-string\"\r\n    \r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
