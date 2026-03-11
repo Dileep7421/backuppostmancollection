@@ -2990,6 +2990,62 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "create-payment-order ---->payu",
+			"id": "e01ad007-2ec6-4c1c-948b-242ee1547f65",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amount\": 1500,\r\n  \"currency\": \"INR\",\r\n  \"createdAt\": \"2026-04-28T10:30:23.720852\",\r\n  \"slotId\": \"99fcfe62-1948-436f-837e-6bbe57d072f8\",\r\n//   \"serviceId\": \"bbdc80bc-d0da-4929-8edc-8ad881521720\", //only service booking\r\n//   \"serviceName\": \"Thigh Lift\", //only service booking\r\n  \"clinicId\": \"eef8a555-ecc2-400a-b67b-6ae80816591f\", //only doctor consultation\r\n  \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\r\n  \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\r\n//   \"orderFrom\": \"DIRECT_DIAGNOSTIC_BOOKING\",\r\n  \"patientServiceType\": \"CONSULT_DOCTOR\" //CONSULT_DOCTOR, BOOK_SERVICE, ORDER_MEDICINE, BOOK_LAB_TEST\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8093/payment-service/api/payment/create-payment-order"
+			},
+			"response": []
+		},
+		{
+			"name": "update-payment-order-status ---> payu",
+			"id": "c2ef6787-4f43-4427-8f8f-bb729fa76144",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"AST-CB-20260210-235008-0001\",\r\n    \"status\": \"SUCCESSFUL\",\r\n    \"slotId\": \"0959d7d6-671a-4fe8-913b-9d8984457e6b\",\r\n    \"updatedOn\": \"2025-12-28T10:30:01.720852\",\r\n    \"patientServiceType\": \"CONSULT_DOCTOR\" //CONSULT_DOCTOR, BOOK_SERVICE, ORDER_MEDICINE, BOOK_LAB_TEST\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8093/payment-service/api/payment/update-payment-order-status"
+			},
+			"response": []
 		}
 	]
 }
