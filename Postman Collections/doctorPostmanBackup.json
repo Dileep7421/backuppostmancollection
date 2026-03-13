@@ -557,7 +557,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"slotId\": \"96564a39-00c6-4638-ab44-a4018eb2f8dc\",\r\n    \"status\": \"CONFIRMED\",\r\n    \"updatedOn\": \"2026-12-30T18:00:41.394318\",\r\n    \"endTime\": \"02:25\",\r\n    \"orderId\": \"order_QjjFJbLT1a1ifY\",\r\n    \"bookingType\": \"BOOK_LAB_TEST\",\r\n    \"notificationRequest\": {\r\n        \"patientName\": \"John Doe\",\r\n        \"doctorName\": \"Dr. Smith\",\r\n        \"bookingId\": \"BK123456\",\r\n        \"serviceName\": \"General Consultation\",\r\n        \"slotDate\": \"2025-07-01\",\r\n        \"slotTime\": \"10:30 AM\",\r\n        \"cancellationReason\": \"Patient not available\",\r\n        \"clinicName\": \"HealthCare Clinic\",\r\n        \"clinicAddress\": \"123 Main Street, Springfield\",\r\n        \"patientMobileNumber\": \"917075960589\",\r\n        \"patientEmailId\": \"ampoludileep7@gmail.com\",\r\n        \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\",\r\n        \"amount\": \"15000\"\r\n        // \"deviceTokens\": {\r\n        //     \"patientDeviceToken\": \"fM1dwls_TmOLnjdpz2ubsn:APA91bGgJNm-ufAz3uGQIXpMtXVdDoTtkRWcH1OGfav1tiNkGpNjoDrZ5LNv3QQ3UE5TL0RPmOx4-8sXHGQymAW24Bvs1tcvitBiKUSZvlC3ifnstqMj9Zs\"\r\n        // }\r\n    }\r\n}",
+					"raw": "{\r\n    \"slotId\": \"0959d7d6-671a-4fe8-913b-9d8984457e6b\",\r\n    \"status\": \"CONFIRMED\",\r\n    \"updatedOn\": \"2026-12-30T18:00:41.394318\",\r\n    \"endTime\": \"02:25\",\r\n    \"orderId\": \"AST-CB-20260210-235008-0001\",\r\n    \"bookingType\": \"CONSULT_DOCTOR\"\r\n    // \"notificationRequest\": {\r\n    //     \"patientName\": \"John Doe\",\r\n    //     \"doctorName\": \"Dr. Smith\",\r\n    //     \"bookingId\": \"BK123456\",\r\n    //     \"serviceName\": \"General Consultation\",\r\n    //     \"slotDate\": \"2025-07-01\",\r\n    //     \"slotTime\": \"10:30 AM\",\r\n    //     \"cancellationReason\": \"Patient not available\",\r\n    //     \"clinicName\": \"HealthCare Clinic\",\r\n    //     \"clinicAddress\": \"123 Main Street, Springfield\",\r\n    //     \"patientMobileNumber\": \"917075960589\",\r\n    //     \"patientEmailId\": \"ampoludileep7@gmail.com\",\r\n    //     \"patientId\": \"9fb0c428-8213-4c4f-b994-35bc28d44cf6\",\r\n    //     \"amount\": \"15000\"\r\n    //     // \"deviceTokens\": {\r\n    //     //     \"patientDeviceToken\": \"fM1dwls_TmOLnjdpz2ubsn:APA91bGgJNm-ufAz3uGQIXpMtXVdDoTtkRWcH1OGfav1tiNkGpNjoDrZ5LNv3QQ3UE5TL0RPmOx4-8sXHGQymAW24Bvs1tcvitBiKUSZvlC3ifnstqMj9Zs\"\r\n    //     // }\r\n    // }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -3008,7 +3008,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"amount\": 1500,\r\n  \"currency\": \"INR\",\r\n  \"createdAt\": \"2026-04-28T10:30:23.720852\",\r\n  \"slotId\": \"99fcfe62-1948-436f-837e-6bbe57d072f8\",\r\n//   \"serviceId\": \"bbdc80bc-d0da-4929-8edc-8ad881521720\", //only service booking\r\n//   \"serviceName\": \"Thigh Lift\", //only service booking\r\n  \"clinicId\": \"eef8a555-ecc2-400a-b67b-6ae80816591f\", //only doctor consultation\r\n  \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\r\n  \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\r\n//   \"orderFrom\": \"DIRECT_DIAGNOSTIC_BOOKING\",\r\n  \"patientServiceType\": \"CONSULT_DOCTOR\" //CONSULT_DOCTOR, BOOK_SERVICE, ORDER_MEDICINE, BOOK_LAB_TEST\r\n}\r\n",
+					"raw": "{\r\n  \"amount\": 1500,\r\n  \"currency\": \"INR\",\r\n  \"createdAt\": \"2026-04-28T10:30:23.720852\",\r\n  \"slotId\": \"f5f8b74b-b3a7-4add-9347-f8dff9f7308c\",\r\n//   \"serviceId\": \"bbdc80bc-d0da-4929-8edc-8ad881521720\", //only service booking\r\n//   \"serviceName\": \"Thigh Lift\", //only service booking\r\n//   \"clinicId\": \"eef8a555-ecc2-400a-b67b-6ae80816591f\", //only doctor consultation\r\n  \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\r\n  \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\r\n  \"orderFrom\": \"DIRECT_DIAGNOSTIC_BOOKING\",\r\n  \"patientServiceType\": \"BOOK_LAB_TEST\" //CONSULT_DOCTOR, BOOK_SERVICE, ORDER_MEDICINE, BOOK_LAB_TEST\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -3044,6 +3044,25 @@
 					}
 				},
 				"url": "localhost:8093/payment-service/api/payment/update-payment-order-status"
+			},
+			"response": []
+		},
+		{
+			"name": "payu/start",
+			"id": "a512c976-32a5-49dd-ba8c-899b87c961d5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8093/payment-service/payu/start"
 			},
 			"response": []
 		}
