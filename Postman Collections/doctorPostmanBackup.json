@@ -3065,6 +3065,34 @@
 				"url": "localhost:8093/payment-service/payu/start"
 			},
 			"response": []
+		},
+		{
+			"name": "get-doctor-details-by-email --> for google signIn",
+			"id": "8f738a2e-401d-422b-86c5-08b7f3052309",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userEmail\": \"riya.mahadik@dimensionleap.com\",\r\n    \"userUid\": \"0lWMkrdWHTU0AUdW0USdtGHEiJ02\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-email"
+			},
+			"response": []
 		}
 	]
 }
