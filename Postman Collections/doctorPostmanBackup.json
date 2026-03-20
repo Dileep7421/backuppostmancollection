@@ -2705,7 +2705,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8081/user-service/booking/get-selected-treatment-plans?userType=ADMIN&clinicName=SkinAesthetics Hub&pageNumber=1&pageSize=10&planStatus=CONFIRMED",
+					"raw": "localhost:8081/user-service/booking/get-selected-treatment-plans?userType=ADMIN&pageNumber=1&pageSize=10&planStatus=COMPLETED",
 					"host": [
 						"localhost"
 					],
@@ -2722,11 +2722,12 @@
 						},
 						{
 							"key": "clinicName",
-							"value": "SkinAesthetics Hub"
+							"value": "SkinAesthetics Hub",
+							"disabled": true
 						},
 						{
 							"key": "searchBy",
-							"value": "",
+							"value": "Sindhuja",
 							"disabled": true
 						},
 						{
@@ -2739,7 +2740,7 @@
 						},
 						{
 							"key": "planStatus",
-							"value": "CONFIRMED"
+							"value": "COMPLETED"
 						}
 					]
 				}
