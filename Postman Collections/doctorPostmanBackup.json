@@ -3094,6 +3094,28 @@
 				"url": "localhost:8081/user-service/doctor/onboarding/get-doctor-details-by-email"
 			},
 			"response": []
+		},
+		{
+			"name": "payu/refund",
+			"id": "d221ea3b-8eb6-4e38-96a5-6ce12f0df558",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transactionId\": \"403993715537031951\",\r\n    \"amount\": \"545.75\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8093/payment-service/payu/refund"
+			},
+			"response": []
 		}
 	]
 }
