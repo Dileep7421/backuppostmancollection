@@ -3116,6 +3116,53 @@
 				"url": "localhost:8093/payment-service/payu/refund"
 			},
 			"response": []
+		},
+		{
+			"name": "get-slot-images-by-patient-id",
+			"id": "e8462fba-4e83-40fd-abd7-26ad8e5bb9a1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/user-profile/get-slot-images-by-patient-id?patientId=5050339d-a398-4245-ab04-37c1b7706c8e&pageNumber=1&pageSize=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"user-profile",
+						"get-slot-images-by-patient-id"
+					],
+					"query": [
+						{
+							"key": "patientId",
+							"value": "5050339d-a398-4245-ab04-37c1b7706c8e",
+							"type": "text"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
