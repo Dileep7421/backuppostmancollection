@@ -3163,6 +3163,48 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get-booked-slot-summary-by-id",
+			"id": "abd964e0-f36d-40ed-9b34-96f9efe50fcf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/booking/get-booked-slot-summary-by-id?slotId=77b03b47-ecf4-4580-8bb2-ee32d20a7d6a&patientServiceType=BOOK_SERVICE",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"booking",
+						"get-booked-slot-summary-by-id"
+					],
+					"query": [
+						{
+							"key": "slotId",
+							"value": "77b03b47-ecf4-4580-8bb2-ee32d20a7d6a",
+							"type": "text"
+						},
+						{
+							"key": "patientServiceType",
+							"value": "BOOK_SERVICE",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
