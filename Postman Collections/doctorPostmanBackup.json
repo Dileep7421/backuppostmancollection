@@ -2451,7 +2451,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8081/user-service/user-profile/selected-treatment-plan-by-patient?planId=98ad27b3-938d-419a-88be-29cb2b349b39",
+					"raw": "localhost:8081/user-service/user-profile/selected-treatment-plan-by-patient?planId=264be920-af25-4097-9c25-35516dc154ca",
 					"host": [
 						"localhost"
 					],
@@ -2464,7 +2464,7 @@
 					"query": [
 						{
 							"key": "planId",
-							"value": "98ad27b3-938d-419a-88be-29cb2b349b39"
+							"value": "264be920-af25-4097-9c25-35516dc154ca"
 						}
 					]
 				}
@@ -2968,10 +2968,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/user-service/booking/get-slot-details-by-slot-id?slotId=000f2a43-a81e-4868-84d4-615cde1e291d&orderFrom=INVENTORY_MEDICINE_ORDER",
+					"raw": "localhost:8081/user-service/booking/get-slot-details-by-slot-id?slotId=5aaecc53-7437-4d7a-a05b-b6c819e4f499",
 					"host": [
-						"{{baseUrl}}"
+						"localhost"
 					],
+					"port": "8081",
 					"path": [
 						"user-service",
 						"booking",
@@ -2980,12 +2981,12 @@
 					"query": [
 						{
 							"key": "slotId",
-							"value": "000f2a43-a81e-4868-84d4-615cde1e291d"
+							"value": "5aaecc53-7437-4d7a-a05b-b6c819e4f499"
 						},
 						{
 							"key": "orderFrom",
 							"value": "INVENTORY_MEDICINE_ORDER",
-							"type": "text"
+							"disabled": true
 						}
 					]
 				}
@@ -3180,11 +3181,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/booking/get-booked-slot-summary-by-id?slotId=77b03b47-ecf4-4580-8bb2-ee32d20a7d6a&patientServiceType=BOOK_SERVICE",
+					"raw": "{{baseUrl}}/user-service/booking/get-booked-slot-summary-by-id?slotId=c9fd59c8-9030-4b26-a431-312d51d613b6&patientServiceType=BOOK_SERVICE",
 					"host": [
-						"localhost"
+						"{{baseUrl}}"
 					],
-					"port": "8081",
 					"path": [
 						"user-service",
 						"booking",
@@ -3193,13 +3193,11 @@
 					"query": [
 						{
 							"key": "slotId",
-							"value": "77b03b47-ecf4-4580-8bb2-ee32d20a7d6a",
-							"type": "text"
+							"value": "c9fd59c8-9030-4b26-a431-312d51d613b6"
 						},
 						{
 							"key": "patientServiceType",
-							"value": "BOOK_SERVICE",
-							"type": "text"
+							"value": "BOOK_SERVICE"
 						}
 					]
 				}
