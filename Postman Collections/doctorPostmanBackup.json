@@ -1246,7 +1246,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"status\": \"PENDING_REVIEW\",\r\n    \"type\": \"EDUCATION_DETAILS\",\r\n    \"doctorId\": \"45b76175-7935-4873-bef4-589d423db5d0\",\r\n    \"reason\": \"Please check your education details\"\r\n}",
+					"raw": "{\r\n    \"status\": \"EDIT\",\r\n    \"type\": \"EDUCATION_DETAILS\",\r\n    \"doctorId\": \"45b76175-7935-4873-bef4-589d423db5d0\",\r\n    \"reason\": \"Please check your education details\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
