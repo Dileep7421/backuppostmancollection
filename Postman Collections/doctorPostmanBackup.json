@@ -2974,11 +2974,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/user-service/booking/get-slot-details-by-slot-id?slotId=5aaecc53-7437-4d7a-a05b-b6c819e4f499",
+					"raw": "{{baseUrl}}/user-service/booking/get-slot-details-by-slot-id?slotId=caf4dd70-f2e5-4c21-9d05-fb2c743a1f01",
 					"host": [
-						"localhost"
+						"{{baseUrl}}"
 					],
-					"port": "8081",
 					"path": [
 						"user-service",
 						"booking",
@@ -2987,7 +2986,7 @@
 					"query": [
 						{
 							"key": "slotId",
-							"value": "5aaecc53-7437-4d7a-a05b-b6c819e4f499"
+							"value": "caf4dd70-f2e5-4c21-9d05-fb2c743a1f01"
 						},
 						{
 							"key": "orderFrom",
