@@ -2522,7 +2522,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"appointmentDate\": \"2026-05-15\",\r\n    \"appointmentTime\": \"12:30\",\r\n    \"appointmentDay\": \"Sunday\",\r\n    // \"planId\": \"8fa3aa67-2e22-434a-be8b-e6561491fcff\",\r\n    // \"consultationSlotId\": \"ebba12de-aafe-4421-8458-9a5833bf2f1b\",\r\n    \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\r\n    \"doctorName\": \"Dr. Riya\",\r\n    \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\r\n    \"bookingType\": \"BOOK_LAB_TEST\", // CONSULTATION_BOOK_SERVICE or BOOK_LAB_TEST\r\n    \"visitType\": \"WALK_IN\", //WALK_IN, HOME_VISIT, HOSPITAL_VISIT, ONLINE_VISIT\r\n    \"branchId\": \"199\", // required for BOOK_LAB_TEST\r\n    \"cityId\": \"16553\", // required for BOOK_LAB_TEST\r\n    \"areaId\": \"2484\", // required for BOOK_LAB_TEST\r\n    \"patientAddress\": \"Hyderabed\",\r\n    \"branchName\": \"Hi-tech city\",\r\n    \"appointmentBookedBy\": \"PATIENT\", //PATIENT, SUPER_ADMIN, CLINIC_ADMIN\r\n    \"bookingFrom\": \"DIRECT_TEST_BOOKING\", //DIRECT_TEST_BOOKING\r\n    \"items\": [\r\n        // {\r\n        //     \"itemCode\": \"0f6c92a3-abed-475a-8905-4cc3922ac2b5\",\r\n        //     \"itemName\": \"Skin Brightening  Glow IV Drip\"\r\n        // }\r\n        {\r\n            \"itemCode\": \"1e2ac839-7ab4-43d1-aafa-233bf4316924\",\r\n            \"itemName\": \"Liver Function Test\"\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"appointmentDate\": \"2026-05-11\",\r\n    \"appointmentTime\": \"12:30\",\r\n    \"appointmentDay\": \"Sunday\",\r\n    // \"planId\": \"8fa3aa67-2e22-434a-be8b-e6561491fcff\",\r\n    // \"consultationSlotId\": \"ebba12de-aafe-4421-8458-9a5833bf2f1b\",\r\n    \"doctorId\": \"ac5780ce-6816-4342-b011-9fe7dcde2571\",\r\n    \"doctorName\": \"Dr. Riya\",\r\n    \"patientId\": \"5050339d-a398-4245-ab04-37c1b7706c8e\",\r\n    \"bookingType\": \"BOOK_LAB_TEST\", // CONSULTATION_BOOK_SERVICE or BOOK_LAB_TEST\r\n    \"visitType\": \"WALK_IN\", //WALK_IN, HOME_VISIT, HOSPITAL_VISIT, ONLINE_VISIT\r\n    \"branchId\": \"199\", // required for BOOK_LAB_TEST\r\n    \"cityId\": \"16553\", // required for BOOK_LAB_TEST\r\n    \"areaId\": \"2484\", // required for BOOK_LAB_TEST\r\n    \"patientAddress\": \"Hyderabed\",\r\n    \"branchName\": \"Hi-tech city\",\r\n    \"appointmentBookedBy\": \"PATIENT\", //PATIENT, SUPER_ADMIN, CLINIC_ADMIN\r\n    \"bookingFrom\": \"DIRECT_TEST_BOOKING\", //DIRECT_TEST_BOOKING\r\n    \"items\": [\r\n        // {\r\n        //     \"itemCode\": \"0f6c92a3-abed-475a-8905-4cc3922ac2b5\",\r\n        //     \"itemName\": \"Skin Brightening  Glow IV Drip\"\r\n        // }\r\n        {\r\n            \"itemCode\": \"1e2ac839-7ab4-43d1-aafa-233bf4316924\",\r\n            \"itemName\": \"Liver Function Test\"\r\n        },\r\n        {\r\n            \"itemCode\": \"3b5e3f9b-c65c-474c-9183-f1fe9a9c03cb\",\r\n            \"itemName\": \"AFB Culture (MGIT)\"\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -3186,10 +3186,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/user-service/booking/get-booked-slot-summary-by-id?slotId=c9fd59c8-9030-4b26-a431-312d51d613b6&patientServiceType=BOOK_SERVICE",
+					"raw": "localhost:8081/user-service/booking/get-booked-slot-summary-by-id?slotId=a14f4f2a-7420-4287-9650-70ec1123420a&patientServiceType=BOOK_LAB_TEST",
 					"host": [
-						"{{baseUrl}}"
+						"localhost"
 					],
+					"port": "8081",
 					"path": [
 						"user-service",
 						"booking",
@@ -3198,11 +3199,51 @@
 					"query": [
 						{
 							"key": "slotId",
-							"value": "c9fd59c8-9030-4b26-a431-312d51d613b6"
+							"value": "a14f4f2a-7420-4287-9650-70ec1123420a"
 						},
 						{
 							"key": "patientServiceType",
-							"value": "BOOK_SERVICE"
+							"value": "BOOK_LAB_TEST"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-booked-appointment-item",
+			"id": "cfc6b3da-a5b3-43f2-96b5-a11ef74fcd74",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{bearerToken}}"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/user-service/booking/delete-booked-appointment-item?appointmentId=a14f4f2a-7420-4287-9650-70ec1123420a&itemId=c5932042-93d7-449c-a425-98d5b6dfc907",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user-service",
+						"booking",
+						"delete-booked-appointment-item"
+					],
+					"query": [
+						{
+							"key": "appointmentId",
+							"value": "a14f4f2a-7420-4287-9650-70ec1123420a"
+						},
+						{
+							"key": "itemId",
+							"value": "c5932042-93d7-449c-a425-98d5b6dfc907"
 						}
 					]
 				}
